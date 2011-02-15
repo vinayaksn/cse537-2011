@@ -1,0 +1,1749 @@
+
+Temp_eeprom.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000036  00800100  00000718  0000078c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000718  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .debug_aranges 00000020  00000000  00000000  000007c2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_pubnames 00000122  00000000  00000000  000007e2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   00000cdd  00000000  00000000  00000904  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000036f  00000000  00000000  000015e1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000a05  00000000  00000000  00001950  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000170  00000000  00000000  00002358  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    000002c0  00000000  00000000  000024c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    000004c1  00000000  00000000  00002788  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 000000f0  00000000  00000000  00002c49  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   8:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  10:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  14:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  18:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  1c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  20:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  24:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  28:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  2c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  30:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  34:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  38:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  3c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  40:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  44:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  48:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  4c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  50:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  54:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  58:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  5c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  60:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  64:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	11 e0       	ldi	r17, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	e8 e1       	ldi	r30, 0x18	; 24
+  7c:	f7 e0       	ldi	r31, 0x07	; 7
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <.do_copy_data_start>
+
+00000080 <.do_copy_data_loop>:
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+
+00000084 <.do_copy_data_start>:
+  84:	a6 33       	cpi	r26, 0x36	; 54
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <.do_copy_data_loop>
+  8a:	0e 94 c0 01 	call	0x380	; 0x380 <main>
+  8e:	0c 94 8a 03 	jmp	0x714	; 0x714 <_exit>
+
+00000092 <__bad_interrupt>:
+  92:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000096 <lcd_write>:
+static void lcd_write(uint8_t data,uint8_t rs) 
+{
+    unsigned char dataBits ;
+
+
+    if (rs) {   /* write data        (RS=1, RW=0) */
+  96:	66 23       	and	r22, r22
+  98:	11 f0       	breq	.+4      	; 0x9e <lcd_write+0x8>
+       lcd_rs_high();
+  9a:	41 9a       	sbi	0x08, 1	; 8
+  9c:	01 c0       	rjmp	.+2      	; 0xa0 <lcd_write+0xa>
+    } else {    /* write instruction (RS=0, RW=0) */
+       lcd_rs_low();
+  9e:	41 98       	cbi	0x08, 1	; 8
+    }
+    lcd_rw_low();
+  a0:	42 98       	cbi	0x08, 2	; 8
+        LCD_DATA0_PORT = dataBits | 0x0F;
+    }
+    else
+    {
+        /* configure data pins as output */
+        DDR(LCD_DATA0_PORT) |= _BV(LCD_DATA0_PIN);
+  a2:	54 9a       	sbi	0x0a, 4	; 10
+        DDR(LCD_DATA1_PORT) |= _BV(LCD_DATA1_PIN);
+  a4:	55 9a       	sbi	0x0a, 5	; 10
+        DDR(LCD_DATA2_PORT) |= _BV(LCD_DATA2_PIN);
+  a6:	56 9a       	sbi	0x0a, 6	; 10
+        DDR(LCD_DATA3_PORT) |= _BV(LCD_DATA3_PIN);
+  a8:	57 9a       	sbi	0x0a, 7	; 10
+        
+        /* output high nibble first */
+        LCD_DATA3_PORT &= ~_BV(LCD_DATA3_PIN);
+  aa:	5f 98       	cbi	0x0b, 7	; 11
+        LCD_DATA2_PORT &= ~_BV(LCD_DATA2_PIN);
+  ac:	5e 98       	cbi	0x0b, 6	; 11
+        LCD_DATA1_PORT &= ~_BV(LCD_DATA1_PIN);
+  ae:	5d 98       	cbi	0x0b, 5	; 11
+        LCD_DATA0_PORT &= ~_BV(LCD_DATA0_PIN);
+  b0:	5c 98       	cbi	0x0b, 4	; 11
+    	if(data & 0x80) LCD_DATA3_PORT |= _BV(LCD_DATA3_PIN);
+  b2:	87 fd       	sbrc	r24, 7
+  b4:	5f 9a       	sbi	0x0b, 7	; 11
+    	if(data & 0x40) LCD_DATA2_PORT |= _BV(LCD_DATA2_PIN);
+  b6:	86 fd       	sbrc	r24, 6
+  b8:	5e 9a       	sbi	0x0b, 6	; 11
+    	if(data & 0x20) LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);
+  ba:	85 fd       	sbrc	r24, 5
+  bc:	5d 9a       	sbi	0x0b, 5	; 11
+    	if(data & 0x10) LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);   
+  be:	84 fd       	sbrc	r24, 4
+  c0:	5c 9a       	sbi	0x0b, 4	; 11
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+  c2:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+  c4:	00 c0       	rjmp	.+0      	; 0xc6 <lcd_write+0x30>
+    lcd_e_low();
+  c6:	43 98       	cbi	0x08, 3	; 8
+    	if(data & 0x20) LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);
+    	if(data & 0x10) LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);   
+        lcd_e_toggle();
+        
+        /* output low nibble */
+        LCD_DATA3_PORT &= ~_BV(LCD_DATA3_PIN);
+  c8:	5f 98       	cbi	0x0b, 7	; 11
+        LCD_DATA2_PORT &= ~_BV(LCD_DATA2_PIN);
+  ca:	5e 98       	cbi	0x0b, 6	; 11
+        LCD_DATA1_PORT &= ~_BV(LCD_DATA1_PIN);
+  cc:	5d 98       	cbi	0x0b, 5	; 11
+        LCD_DATA0_PORT &= ~_BV(LCD_DATA0_PIN);
+  ce:	5c 98       	cbi	0x0b, 4	; 11
+    	if(data & 0x08) LCD_DATA3_PORT |= _BV(LCD_DATA3_PIN);
+  d0:	83 fd       	sbrc	r24, 3
+  d2:	5f 9a       	sbi	0x0b, 7	; 11
+    	if(data & 0x04) LCD_DATA2_PORT |= _BV(LCD_DATA2_PIN);
+  d4:	82 fd       	sbrc	r24, 2
+  d6:	5e 9a       	sbi	0x0b, 6	; 11
+    	if(data & 0x02) LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);
+  d8:	81 fd       	sbrc	r24, 1
+  da:	5d 9a       	sbi	0x0b, 5	; 11
+    	if(data & 0x01) LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);
+  dc:	80 fd       	sbrc	r24, 0
+  de:	5c 9a       	sbi	0x0b, 4	; 11
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+  e0:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+  e2:	00 c0       	rjmp	.+0      	; 0xe4 <lcd_write+0x4e>
+    lcd_e_low();
+  e4:	43 98       	cbi	0x08, 3	; 8
+    	if(data & 0x02) LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);
+    	if(data & 0x01) LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);
+        lcd_e_toggle();        
+        
+        /* all data pins high (inactive) */
+        LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);
+  e6:	5c 9a       	sbi	0x0b, 4	; 11
+        LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);
+  e8:	5d 9a       	sbi	0x0b, 5	; 11
+        LCD_DATA2_PORT |= _BV(LCD_DATA2_PIN);
+  ea:	5e 9a       	sbi	0x0b, 6	; 11
+        LCD_DATA3_PORT |= _BV(LCD_DATA3_PIN);
+  ec:	5f 9a       	sbi	0x0b, 7	; 11
+    }
+}
+  ee:	08 95       	ret
+
+000000f0 <lcd_read>:
+static uint8_t lcd_read(uint8_t rs) 
+{
+    uint8_t data;
+    
+    
+    if (rs)
+  f0:	88 23       	and	r24, r24
+  f2:	11 f0       	breq	.+4      	; 0xf8 <lcd_read+0x8>
+        lcd_rs_high();                       /* RS=1: read data      */
+  f4:	41 9a       	sbi	0x08, 1	; 8
+  f6:	01 c0       	rjmp	.+2      	; 0xfa <lcd_read+0xa>
+    else
+        lcd_rs_low();                        /* RS=0: read busy flag */
+  f8:	41 98       	cbi	0x08, 1	; 8
+    lcd_rw_high();                           /* RW=1  read mode      */
+  fa:	42 9a       	sbi	0x08, 2	; 8
+        lcd_e_low();
+    }
+    else
+    {
+        /* configure data pins as input */
+        DDR(LCD_DATA0_PORT) &= ~_BV(LCD_DATA0_PIN);
+  fc:	54 98       	cbi	0x0a, 4	; 10
+        DDR(LCD_DATA1_PORT) &= ~_BV(LCD_DATA1_PIN);
+  fe:	55 98       	cbi	0x0a, 5	; 10
+        DDR(LCD_DATA2_PORT) &= ~_BV(LCD_DATA2_PIN);
+ 100:	56 98       	cbi	0x0a, 6	; 10
+        DDR(LCD_DATA3_PORT) &= ~_BV(LCD_DATA3_PIN);
+ 102:	57 98       	cbi	0x0a, 7	; 10
+                
+        /* read high nibble first */
+        lcd_e_high();
+ 104:	43 9a       	sbi	0x08, 3	; 8
+        lcd_e_delay();        
+ 106:	00 c0       	rjmp	.+0      	; 0x108 <lcd_read+0x18>
+        data = 0;
+        if ( PIN(LCD_DATA0_PORT) & _BV(LCD_DATA0_PIN) ) data |= 0x10;
+ 108:	4c 9b       	sbis	0x09, 4	; 9
+ 10a:	02 c0       	rjmp	.+4      	; 0x110 <lcd_read+0x20>
+ 10c:	80 e1       	ldi	r24, 0x10	; 16
+ 10e:	01 c0       	rjmp	.+2      	; 0x112 <lcd_read+0x22>
+ 110:	80 e0       	ldi	r24, 0x00	; 0
+        if ( PIN(LCD_DATA1_PORT) & _BV(LCD_DATA1_PIN) ) data |= 0x20;
+ 112:	4d 99       	sbic	0x09, 5	; 9
+ 114:	80 62       	ori	r24, 0x20	; 32
+        if ( PIN(LCD_DATA2_PORT) & _BV(LCD_DATA2_PIN) ) data |= 0x40;
+ 116:	4e 99       	sbic	0x09, 6	; 9
+ 118:	80 64       	ori	r24, 0x40	; 64
+        if ( PIN(LCD_DATA3_PORT) & _BV(LCD_DATA3_PIN) ) data |= 0x80;
+ 11a:	4f 99       	sbic	0x09, 7	; 9
+ 11c:	80 68       	ori	r24, 0x80	; 128
+        lcd_e_low();
+ 11e:	43 98       	cbi	0x08, 3	; 8
+
+        lcd_e_delay();                       /* Enable 500ns low       */
+ 120:	00 c0       	rjmp	.+0      	; 0x122 <lcd_read+0x32>
+    
+        /* read low nibble */    
+        lcd_e_high();
+ 122:	43 9a       	sbi	0x08, 3	; 8
+        lcd_e_delay();
+ 124:	00 c0       	rjmp	.+0      	; 0x126 <lcd_read+0x36>
+        if ( PIN(LCD_DATA0_PORT) & _BV(LCD_DATA0_PIN) ) data |= 0x01;
+ 126:	4c 99       	sbic	0x09, 4	; 9
+ 128:	81 60       	ori	r24, 0x01	; 1
+        if ( PIN(LCD_DATA1_PORT) & _BV(LCD_DATA1_PIN) ) data |= 0x02;
+ 12a:	4d 99       	sbic	0x09, 5	; 9
+ 12c:	82 60       	ori	r24, 0x02	; 2
+        if ( PIN(LCD_DATA2_PORT) & _BV(LCD_DATA2_PIN) ) data |= 0x04;
+ 12e:	4e 99       	sbic	0x09, 6	; 9
+ 130:	84 60       	ori	r24, 0x04	; 4
+        if ( PIN(LCD_DATA3_PORT) & _BV(LCD_DATA3_PIN) ) data |= 0x08;        
+ 132:	4f 99       	sbic	0x09, 7	; 9
+ 134:	88 60       	ori	r24, 0x08	; 8
+        lcd_e_low();
+ 136:	43 98       	cbi	0x08, 3	; 8
+    }
+    return data;
+}
+ 138:	08 95       	ret
+
+0000013a <lcd_waitbusy>:
+
+{
+    register uint8_t c;
+    
+    /* wait until busy flag is cleared */
+    while ( (c=lcd_read(0)) & (1<<LCD_BUSY)) {}
+ 13a:	80 e0       	ldi	r24, 0x00	; 0
+ 13c:	0e 94 78 00 	call	0xf0	; 0xf0 <lcd_read>
+ 140:	87 fd       	sbrc	r24, 7
+ 142:	fb cf       	rjmp	.-10     	; 0x13a <lcd_waitbusy>
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 144:	82 e0       	ldi	r24, 0x02	; 2
+ 146:	90 e0       	ldi	r25, 0x00	; 0
+ 148:	01 97       	sbiw	r24, 0x01	; 1
+ 14a:	f1 f7       	brne	.-4      	; 0x148 <lcd_waitbusy+0xe>
+    
+    /* the address counter is updated 4us after the busy flag is cleared */
+    delay(2);
+
+    /* now read the address counter */
+    return (lcd_read(0));  // return address counter
+ 14c:	80 e0       	ldi	r24, 0x00	; 0
+ 14e:	0e 94 78 00 	call	0xf0	; 0xf0 <lcd_read>
+    
+}/* lcd_waitbusy */
+ 152:	08 95       	ret
+
+00000154 <lcd_command>:
+Send LCD controller instruction command
+Input:   instruction to send to LCD controller, see HD44780 data sheet
+Returns: none
+*************************************************************************/
+void lcd_command(uint8_t cmd)
+{
+ 154:	1f 93       	push	r17
+ 156:	18 2f       	mov	r17, r24
+    lcd_waitbusy();
+ 158:	0e 94 9d 00 	call	0x13a	; 0x13a <lcd_waitbusy>
+    lcd_write(cmd,0);
+ 15c:	81 2f       	mov	r24, r17
+ 15e:	60 e0       	ldi	r22, 0x00	; 0
+ 160:	0e 94 4b 00 	call	0x96	; 0x96 <lcd_write>
+}
+ 164:	1f 91       	pop	r17
+ 166:	08 95       	ret
+
+00000168 <lcd_data>:
+Send data byte to LCD controller 
+Input:   data to send to LCD controller, see HD44780 data sheet
+Returns: none
+*************************************************************************/
+void lcd_data(uint8_t data)
+{
+ 168:	1f 93       	push	r17
+ 16a:	18 2f       	mov	r17, r24
+    lcd_waitbusy();
+ 16c:	0e 94 9d 00 	call	0x13a	; 0x13a <lcd_waitbusy>
+    lcd_write(data,1);
+ 170:	81 2f       	mov	r24, r17
+ 172:	61 e0       	ldi	r22, 0x01	; 1
+ 174:	0e 94 4b 00 	call	0x96	; 0x96 <lcd_write>
+}
+ 178:	1f 91       	pop	r17
+ 17a:	08 95       	ret
+
+0000017c <lcd_gotoxy>:
+{
+#if LCD_LINES==1
+    lcd_command((1<<LCD_DDRAM)+LCD_START_LINE1+x);
+#endif
+#if LCD_LINES==2
+    if ( y==0 ) 
+ 17c:	66 23       	and	r22, r22
+ 17e:	11 f4       	brne	.+4      	; 0x184 <lcd_gotoxy+0x8>
+        lcd_command((1<<LCD_DDRAM)+LCD_START_LINE1+x);
+ 180:	80 58       	subi	r24, 0x80	; 128
+ 182:	01 c0       	rjmp	.+2      	; 0x186 <lcd_gotoxy+0xa>
+    else
+        lcd_command((1<<LCD_DDRAM)+LCD_START_LINE2+x);
+ 184:	80 54       	subi	r24, 0x40	; 64
+ 186:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+ 18a:	08 95       	ret
+
+0000018c <lcd_getxy>:
+
+/*************************************************************************
+*************************************************************************/
+int lcd_getxy(void)
+{
+    return lcd_waitbusy();
+ 18c:	0e 94 9d 00 	call	0x13a	; 0x13a <lcd_waitbusy>
+}
+ 190:	90 e0       	ldi	r25, 0x00	; 0
+ 192:	08 95       	ret
+
+00000194 <lcd_clrscr>:
+/*************************************************************************
+Clear display and set cursor to home position
+*************************************************************************/
+void lcd_clrscr(void)
+{
+    lcd_command(1<<LCD_CLR);
+ 194:	81 e0       	ldi	r24, 0x01	; 1
+ 196:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+}
+ 19a:	08 95       	ret
+
+0000019c <lcd_home>:
+/*************************************************************************
+Set cursor to home position
+*************************************************************************/
+void lcd_home(void)
+{
+    lcd_command(1<<LCD_HOME);
+ 19c:	82 e0       	ldi	r24, 0x02	; 2
+ 19e:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+}
+ 1a2:	08 95       	ret
+
+000001a4 <lcd_putc>:
+Display character at current cursor position 
+Input:    character to be displayed                                       
+Returns:  none
+*************************************************************************/
+void lcd_putc(char c)
+{
+ 1a4:	1f 93       	push	r17
+ 1a6:	18 2f       	mov	r17, r24
+    uint8_t pos;
+
+
+    pos = lcd_waitbusy();   // read busy-flag and address counter
+ 1a8:	0e 94 9d 00 	call	0x13a	; 0x13a <lcd_waitbusy>
+    if (c=='\n')
+ 1ac:	1a 30       	cpi	r17, 0x0A	; 10
+ 1ae:	49 f4       	brne	.+18     	; 0x1c2 <lcd_putc+0x1e>
+
+#if LCD_LINES==1
+    addressCounter = 0;
+#endif
+#if LCD_LINES==2
+    if ( pos < (LCD_START_LINE2) )
+ 1b0:	80 34       	cpi	r24, 0x40	; 64
+ 1b2:	10 f0       	brcs	.+4      	; 0x1b8 <lcd_putc+0x14>
+ 1b4:	80 e0       	ldi	r24, 0x00	; 0
+ 1b6:	01 c0       	rjmp	.+2      	; 0x1ba <lcd_putc+0x16>
+ 1b8:	80 e4       	ldi	r24, 0x40	; 64
+        addressCounter = LCD_START_LINE4;
+    else 
+        addressCounter = LCD_START_LINE1;
+#endif
+#endif
+    lcd_command((1<<LCD_DDRAM)+addressCounter);
+ 1ba:	80 58       	subi	r24, 0x80	; 128
+ 1bc:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+ 1c0:	04 c0       	rjmp	.+8      	; 0x1ca <lcd_putc+0x26>
+            lcd_write((1<<LCD_DDRAM)+LCD_START_LINE1,0);
+        }
+#endif
+        lcd_waitbusy();
+#endif
+        lcd_write(c, 1);
+ 1c2:	81 2f       	mov	r24, r17
+ 1c4:	61 e0       	ldi	r22, 0x01	; 1
+ 1c6:	0e 94 4b 00 	call	0x96	; 0x96 <lcd_write>
+    }
+
+}/* lcd_putc */
+ 1ca:	1f 91       	pop	r17
+ 1cc:	08 95       	ret
+
+000001ce <lcd_puts>:
+Input:    string to be displayed
+Returns:  none
+*************************************************************************/
+void lcd_puts(const char *s)
+/* print string on lcd (no auto linefeed) */
+{
+ 1ce:	cf 93       	push	r28
+ 1d0:	df 93       	push	r29
+ 1d2:	ec 01       	movw	r28, r24
+ 1d4:	02 c0       	rjmp	.+4      	; 0x1da <lcd_puts+0xc>
+    register char c;
+
+    while ( (c = *s++) ) {
+        lcd_putc(c);
+ 1d6:	0e 94 d2 00 	call	0x1a4	; 0x1a4 <lcd_putc>
+void lcd_puts(const char *s)
+/* print string on lcd (no auto linefeed) */
+{
+    register char c;
+
+    while ( (c = *s++) ) {
+ 1da:	89 91       	ld	r24, Y+
+ 1dc:	88 23       	and	r24, r24
+ 1de:	d9 f7       	brne	.-10     	; 0x1d6 <lcd_puts+0x8>
+        lcd_putc(c);
+    }
+
+}/* lcd_puts */
+ 1e0:	df 91       	pop	r29
+ 1e2:	cf 91       	pop	r28
+ 1e4:	08 95       	ret
+
+000001e6 <lcd_puts_p>:
+Input:     string from program memory be be displayed                                        
+Returns:   none
+*************************************************************************/
+void lcd_puts_p(const char *progmem_s)
+/* print string from program memory on lcd (no auto linefeed) */
+{
+ 1e6:	cf 93       	push	r28
+ 1e8:	df 93       	push	r29
+ 1ea:	ec 01       	movw	r28, r24
+ 1ec:	02 c0       	rjmp	.+4      	; 0x1f2 <lcd_puts_p+0xc>
+    register char c;
+
+    while ( (c = pgm_read_byte(progmem_s++)) ) {
+        lcd_putc(c);
+ 1ee:	0e 94 d2 00 	call	0x1a4	; 0x1a4 <lcd_putc>
+ 1f2:	fe 01       	movw	r30, r28
+void lcd_puts_p(const char *progmem_s)
+/* print string from program memory on lcd (no auto linefeed) */
+{
+    register char c;
+
+    while ( (c = pgm_read_byte(progmem_s++)) ) {
+ 1f4:	21 96       	adiw	r28, 0x01	; 1
+ 1f6:	84 91       	lpm	r24, Z+
+ 1f8:	88 23       	and	r24, r24
+ 1fa:	c9 f7       	brne	.-14     	; 0x1ee <lcd_puts_p+0x8>
+        lcd_putc(c);
+    }
+
+}/* lcd_puts_p */
+ 1fc:	df 91       	pop	r29
+ 1fe:	cf 91       	pop	r28
+ 200:	08 95       	ret
+
+00000202 <lcd_init>:
+                   LCD_DISP_ON_CURSOR      display on, cursor on
+                   LCD_DISP_CURSOR_BLINK   display on, cursor on flashing
+Returns:  none
+*************************************************************************/
+void lcd_init(uint8_t dispAttr)
+{
+ 202:	1f 93       	push	r17
+ 204:	18 2f       	mov	r17, r24
+        DDR(LCD_E_PORT)     |= _BV(LCD_E_PIN);
+    }
+    else
+    {
+        /* configure all port bits as output (LCD data and control lines on different ports */
+        DDR(LCD_RS_PORT)    |= _BV(LCD_RS_PIN);
+ 206:	39 9a       	sbi	0x07, 1	; 7
+        DDR(LCD_RW_PORT)    |= _BV(LCD_RW_PIN);
+ 208:	3a 9a       	sbi	0x07, 2	; 7
+        DDR(LCD_E_PORT)     |= _BV(LCD_E_PIN);
+ 20a:	3b 9a       	sbi	0x07, 3	; 7
+        DDR(LCD_DATA0_PORT) |= _BV(LCD_DATA0_PIN);
+ 20c:	54 9a       	sbi	0x0a, 4	; 10
+        DDR(LCD_DATA1_PORT) |= _BV(LCD_DATA1_PIN);
+ 20e:	55 9a       	sbi	0x0a, 5	; 10
+        DDR(LCD_DATA2_PORT) |= _BV(LCD_DATA2_PIN);
+ 210:	56 9a       	sbi	0x0a, 6	; 10
+        DDR(LCD_DATA3_PORT) |= _BV(LCD_DATA3_PIN);
+ 212:	57 9a       	sbi	0x0a, 7	; 10
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 214:	80 e8       	ldi	r24, 0x80	; 128
+ 216:	9e e3       	ldi	r25, 0x3E	; 62
+ 218:	01 97       	sbiw	r24, 0x01	; 1
+ 21a:	f1 f7       	brne	.-4      	; 0x218 <lcd_init+0x16>
+        DDR(LCD_DATA3_PORT) |= _BV(LCD_DATA3_PIN);
+    }
+    delay(16000);        /* wait 16ms or more after power-on       */
+    
+    /* initial write to lcd is 8bit */
+    LCD_DATA1_PORT |= _BV(LCD_DATA1_PIN);  // _BV(LCD_FUNCTION)>>4;
+ 21c:	5d 9a       	sbi	0x0b, 5	; 11
+    LCD_DATA0_PORT |= _BV(LCD_DATA0_PIN);  // _BV(LCD_FUNCTION_8BIT)>>4;
+ 21e:	5c 9a       	sbi	0x0b, 4	; 11
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+ 220:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+ 222:	00 c0       	rjmp	.+0      	; 0x224 <lcd_init+0x22>
+    lcd_e_low();
+ 224:	43 98       	cbi	0x08, 3	; 8
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 226:	80 e8       	ldi	r24, 0x80	; 128
+ 228:	93 e1       	ldi	r25, 0x13	; 19
+ 22a:	01 97       	sbiw	r24, 0x01	; 1
+ 22c:	f1 f7       	brne	.-4      	; 0x22a <lcd_init+0x28>
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+ 22e:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+ 230:	00 c0       	rjmp	.+0      	; 0x232 <lcd_init+0x30>
+    lcd_e_low();
+ 232:	43 98       	cbi	0x08, 3	; 8
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 234:	80 e4       	ldi	r24, 0x40	; 64
+ 236:	90 e0       	ldi	r25, 0x00	; 0
+ 238:	fc 01       	movw	r30, r24
+ 23a:	31 97       	sbiw	r30, 0x01	; 1
+ 23c:	f1 f7       	brne	.-4      	; 0x23a <lcd_init+0x38>
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+ 23e:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+ 240:	00 c0       	rjmp	.+0      	; 0x242 <lcd_init+0x40>
+    lcd_e_low();
+ 242:	43 98       	cbi	0x08, 3	; 8
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 244:	fc 01       	movw	r30, r24
+ 246:	31 97       	sbiw	r30, 0x01	; 1
+ 248:	f1 f7       	brne	.-4      	; 0x246 <lcd_init+0x44>
+    /* repeat last command a third time */
+    lcd_e_toggle();      
+    delay(64);           /* delay, busy flag can't be checked here */
+
+    /* now configure for 4bit mode */
+    LCD_DATA0_PORT &= ~_BV(LCD_DATA0_PIN);   // LCD_FUNCTION_4BIT_1LINE>>4
+ 24a:	5c 98       	cbi	0x0b, 4	; 11
+
+#if LCD_IO_MODE
+/* toggle Enable Pin to initiate write */
+static void toggle_e(void)
+{
+    lcd_e_high();
+ 24c:	43 9a       	sbi	0x08, 3	; 8
+    lcd_e_delay();
+ 24e:	00 c0       	rjmp	.+0      	; 0x250 <lcd_init+0x4e>
+    lcd_e_low();
+ 250:	43 98       	cbi	0x08, 3	; 8
+static inline void _delayFourCycles(unsigned int __count)
+{
+    if ( __count == 0 )    
+        __asm__ __volatile__( "rjmp 1f\n 1:" );    // 2 cycles
+    else
+        __asm__ __volatile__ (
+ 252:	01 97       	sbiw	r24, 0x01	; 1
+ 254:	f1 f7       	brne	.-4      	; 0x252 <lcd_init+0x50>
+    /* Display with KS0073 controller requires special commands for enabling 4 line mode */
+	lcd_command(KS0073_EXTENDED_FUNCTION_REGISTER_ON);
+	lcd_command(KS0073_4LINES_MODE);
+	lcd_command(KS0073_EXTENDED_FUNCTION_REGISTER_OFF);
+#else
+    lcd_command(LCD_FUNCTION_DEFAULT);      /* function set: display lines  */
+ 256:	88 e2       	ldi	r24, 0x28	; 40
+ 258:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+#endif
+    lcd_command(LCD_DISP_OFF);              /* display off                  */
+ 25c:	88 e0       	ldi	r24, 0x08	; 8
+ 25e:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+    lcd_clrscr();                           /* display clear                */ 
+ 262:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+    lcd_command(LCD_MODE_DEFAULT);          /* set entry mode               */
+ 266:	86 e0       	ldi	r24, 0x06	; 6
+ 268:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+    lcd_command(dispAttr);                  /* display/cursor control       */
+ 26c:	81 2f       	mov	r24, r17
+ 26e:	0e 94 aa 00 	call	0x154	; 0x154 <lcd_command>
+
+}/* lcd_init */
+ 272:	1f 91       	pop	r17
+ 274:	08 95       	ret
+
+00000276 <i2c_init>:
+*************************************************************************/
+void i2c_init(void)
+{
+  /* initialize TWI clock: 100 kHz clock, TWPS = 0 => prescaler = 1 */
+  
+  TWSR = 0;                         /* no prescaler */
+ 276:	10 92 b9 00 	sts	0x00B9, r1
+  TWBR = ((F_CPU/SCL_CLOCK)-16)/2;  /* must be > 10 for stable operation */
+ 27a:	88 e4       	ldi	r24, 0x48	; 72
+ 27c:	80 93 b8 00 	sts	0x00B8, r24
+
+}/* i2c_init */
+ 280:	08 95       	ret
+
+00000282 <i2c_start>:
+/*************************************************************************	
+  Issues a start condition and sends address and transfer direction.
+  return 0 = device accessible, 1= failed to access device
+*************************************************************************/
+unsigned char i2c_start(unsigned char address)
+{
+ 282:	98 2f       	mov	r25, r24
+    uint8_t   twst;
+
+	// send START condition
+	TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);
+ 284:	84 ea       	ldi	r24, 0xA4	; 164
+ 286:	80 93 bc 00 	sts	0x00BC, r24
+
+	// wait until transmission completed
+	while(!(TWCR & (1<<TWINT)));
+ 28a:	80 91 bc 00 	lds	r24, 0x00BC
+ 28e:	87 ff       	sbrs	r24, 7
+ 290:	fc cf       	rjmp	.-8      	; 0x28a <i2c_start+0x8>
+
+	// check value of TWI Status Register. Mask prescaler bits.
+	twst = TW_STATUS & 0xF8;
+ 292:	80 91 b9 00 	lds	r24, 0x00B9
+ 296:	88 7f       	andi	r24, 0xF8	; 248
+	if ( (twst != TW_START) && (twst != TW_REP_START)) return 1;
+ 298:	88 30       	cpi	r24, 0x08	; 8
+ 29a:	21 f0       	breq	.+8      	; 0x2a4 <i2c_start+0x22>
+ 29c:	80 31       	cpi	r24, 0x10	; 16
+ 29e:	11 f0       	breq	.+4      	; 0x2a4 <i2c_start+0x22>
+ 2a0:	81 e0       	ldi	r24, 0x01	; 1
+ 2a2:	08 95       	ret
+
+	// send device address
+	TWDR = address;
+ 2a4:	90 93 bb 00 	sts	0x00BB, r25
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 2a8:	84 e8       	ldi	r24, 0x84	; 132
+ 2aa:	80 93 bc 00 	sts	0x00BC, r24
+
+	// wail until transmission completed and ACK/NACK has been received
+	while(!(TWCR & (1<<TWINT)));
+ 2ae:	80 91 bc 00 	lds	r24, 0x00BC
+ 2b2:	87 ff       	sbrs	r24, 7
+ 2b4:	fc cf       	rjmp	.-8      	; 0x2ae <i2c_start+0x2c>
+
+	// check value of TWI Status Register. Mask prescaler bits.
+	twst = TW_STATUS & 0xF8;
+ 2b6:	90 91 b9 00 	lds	r25, 0x00B9
+ 2ba:	98 7f       	andi	r25, 0xF8	; 248
+	if ( (twst != TW_MT_SLA_ACK) && (twst != TW_MR_SLA_ACK) ) return 1;
+ 2bc:	98 31       	cpi	r25, 0x18	; 24
+ 2be:	11 f4       	brne	.+4      	; 0x2c4 <i2c_start+0x42>
+ 2c0:	80 e0       	ldi	r24, 0x00	; 0
+ 2c2:	08 95       	ret
+ 2c4:	80 e0       	ldi	r24, 0x00	; 0
+ 2c6:	90 34       	cpi	r25, 0x40	; 64
+ 2c8:	09 f0       	breq	.+2      	; 0x2cc <i2c_start+0x4a>
+ 2ca:	81 e0       	ldi	r24, 0x01	; 1
+
+	return 0;
+
+}/* i2c_start */
+ 2cc:	08 95       	ret
+
+000002ce <i2c_start_wait>:
+ If device is busy, use ack polling to wait until device is ready
+ 
+ Input:   address and transfer direction of I2C device
+*************************************************************************/
+void i2c_start_wait(unsigned char address)
+{
+ 2ce:	98 2f       	mov	r25, r24
+
+
+    while ( 1 )
+    {
+	    // send START condition
+	    TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);
+ 2d0:	44 ea       	ldi	r20, 0xA4	; 164
+    	twst = TW_STATUS & 0xF8;
+    	if ( (twst != TW_START) && (twst != TW_REP_START)) continue;
+    
+    	// send device address
+    	TWDR = address;
+    	TWCR = (1<<TWINT) | (1<<TWEN);
+ 2d2:	34 e8       	ldi	r19, 0x84	; 132
+    	// check value of TWI Status Register. Mask prescaler bits.
+    	twst = TW_STATUS & 0xF8;
+    	if ( (twst == TW_MT_SLA_NACK )||(twst ==TW_MR_DATA_NACK) ) 
+    	{    	    
+    	    /* device busy, send stop condition to terminate write operation */
+	        TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+ 2d4:	24 e9       	ldi	r18, 0x94	; 148
+
+
+    while ( 1 )
+    {
+	    // send START condition
+	    TWCR = (1<<TWINT) | (1<<TWSTA) | (1<<TWEN);
+ 2d6:	40 93 bc 00 	sts	0x00BC, r20
+    
+    	// wait until transmission completed
+    	while(!(TWCR & (1<<TWINT)));
+ 2da:	80 91 bc 00 	lds	r24, 0x00BC
+ 2de:	87 ff       	sbrs	r24, 7
+ 2e0:	fc cf       	rjmp	.-8      	; 0x2da <i2c_start_wait+0xc>
+    
+    	// check value of TWI Status Register. Mask prescaler bits.
+    	twst = TW_STATUS & 0xF8;
+ 2e2:	80 91 b9 00 	lds	r24, 0x00B9
+ 2e6:	88 7f       	andi	r24, 0xF8	; 248
+    	if ( (twst != TW_START) && (twst != TW_REP_START)) continue;
+ 2e8:	88 30       	cpi	r24, 0x08	; 8
+ 2ea:	11 f0       	breq	.+4      	; 0x2f0 <i2c_start_wait+0x22>
+ 2ec:	80 31       	cpi	r24, 0x10	; 16
+ 2ee:	99 f7       	brne	.-26     	; 0x2d6 <i2c_start_wait+0x8>
+    
+    	// send device address
+    	TWDR = address;
+ 2f0:	90 93 bb 00 	sts	0x00BB, r25
+    	TWCR = (1<<TWINT) | (1<<TWEN);
+ 2f4:	30 93 bc 00 	sts	0x00BC, r19
+    
+    	// wail until transmission completed
+    	while(!(TWCR & (1<<TWINT)));
+ 2f8:	80 91 bc 00 	lds	r24, 0x00BC
+ 2fc:	87 ff       	sbrs	r24, 7
+ 2fe:	fc cf       	rjmp	.-8      	; 0x2f8 <i2c_start_wait+0x2a>
+    
+    	// check value of TWI Status Register. Mask prescaler bits.
+    	twst = TW_STATUS & 0xF8;
+ 300:	80 91 b9 00 	lds	r24, 0x00B9
+ 304:	88 7f       	andi	r24, 0xF8	; 248
+    	if ( (twst == TW_MT_SLA_NACK )||(twst ==TW_MR_DATA_NACK) ) 
+ 306:	80 32       	cpi	r24, 0x20	; 32
+ 308:	11 f0       	breq	.+4      	; 0x30e <i2c_start_wait+0x40>
+ 30a:	88 35       	cpi	r24, 0x58	; 88
+ 30c:	39 f4       	brne	.+14     	; 0x31c <i2c_start_wait+0x4e>
+    	{    	    
+    	    /* device busy, send stop condition to terminate write operation */
+	        TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+ 30e:	20 93 bc 00 	sts	0x00BC, r18
+	        
+	        // wait until stop condition is executed and bus released
+	        while(TWCR & (1<<TWSTO));
+ 312:	80 91 bc 00 	lds	r24, 0x00BC
+ 316:	84 fd       	sbrc	r24, 4
+ 318:	fc cf       	rjmp	.-8      	; 0x312 <i2c_start_wait+0x44>
+ 31a:	dd cf       	rjmp	.-70     	; 0x2d6 <i2c_start_wait+0x8>
+ 31c:	08 95       	ret
+
+0000031e <i2c_rep_start>:
+ Return:  0 device accessible
+          1 failed to access device
+*************************************************************************/
+unsigned char i2c_rep_start(unsigned char address)
+{
+    return i2c_start( address );
+ 31e:	0e 94 41 01 	call	0x282	; 0x282 <i2c_start>
+
+}/* i2c_rep_start */
+ 322:	08 95       	ret
+
+00000324 <i2c_stop>:
+ Terminates the data transfer and releases the I2C bus
+*************************************************************************/
+void i2c_stop(void)
+{
+    /* send stop condition */
+	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+ 324:	84 e9       	ldi	r24, 0x94	; 148
+ 326:	80 93 bc 00 	sts	0x00BC, r24
+	
+	// wait until stop condition is executed and bus released
+	while(TWCR & (1<<TWSTO));
+ 32a:	80 91 bc 00 	lds	r24, 0x00BC
+ 32e:	84 fd       	sbrc	r24, 4
+ 330:	fc cf       	rjmp	.-8      	; 0x32a <i2c_stop+0x6>
+
+}/* i2c_stop */
+ 332:	08 95       	ret
+
+00000334 <i2c_write>:
+unsigned char i2c_write( unsigned char data )
+{	
+    uint8_t   twst;
+    
+	// send data to the previously addressed device
+	TWDR = data;
+ 334:	80 93 bb 00 	sts	0x00BB, r24
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 338:	84 e8       	ldi	r24, 0x84	; 132
+ 33a:	80 93 bc 00 	sts	0x00BC, r24
+
+	// wait until transmission completed
+	while(!(TWCR & (1<<TWINT)));
+ 33e:	80 91 bc 00 	lds	r24, 0x00BC
+ 342:	87 ff       	sbrs	r24, 7
+ 344:	fc cf       	rjmp	.-8      	; 0x33e <i2c_write+0xa>
+
+	// check value of TWI Status Register. Mask prescaler bits
+	twst = TW_STATUS & 0xF8;
+ 346:	80 91 b9 00 	lds	r24, 0x00B9
+ 34a:	90 e0       	ldi	r25, 0x00	; 0
+ 34c:	88 7f       	andi	r24, 0xF8	; 248
+ 34e:	88 32       	cpi	r24, 0x28	; 40
+ 350:	09 f0       	breq	.+2      	; 0x354 <i2c_write+0x20>
+ 352:	91 e0       	ldi	r25, 0x01	; 1
+	if( twst != TW_MT_DATA_ACK) return 1;
+	return 0;
+
+}/* i2c_write */
+ 354:	89 2f       	mov	r24, r25
+ 356:	08 95       	ret
+
+00000358 <i2c_readAck>:
+ 
+ Return:  byte read from I2C device
+*************************************************************************/
+unsigned char i2c_readAck(void)
+{
+	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWEA);
+ 358:	84 ec       	ldi	r24, 0xC4	; 196
+ 35a:	80 93 bc 00 	sts	0x00BC, r24
+	while(!(TWCR & (1<<TWINT)));    
+ 35e:	80 91 bc 00 	lds	r24, 0x00BC
+ 362:	87 ff       	sbrs	r24, 7
+ 364:	fc cf       	rjmp	.-8      	; 0x35e <i2c_readAck+0x6>
+
+    return TWDR;
+ 366:	80 91 bb 00 	lds	r24, 0x00BB
+
+}/* i2c_readAck */
+ 36a:	08 95       	ret
+
+0000036c <i2c_readNak>:
+ 
+ Return:  byte read from I2C device
+*************************************************************************/
+unsigned char i2c_readNak(void)
+{
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 36c:	84 e8       	ldi	r24, 0x84	; 132
+ 36e:	80 93 bc 00 	sts	0x00BC, r24
+	while(!(TWCR & (1<<TWINT)));
+ 372:	80 91 bc 00 	lds	r24, 0x00BC
+ 376:	87 ff       	sbrs	r24, 7
+ 378:	fc cf       	rjmp	.-8      	; 0x372 <i2c_readNak+0x6>
+	
+    return TWDR;
+ 37a:	80 91 bb 00 	lds	r24, 0x00BB
+
+}/* i2c_readNak */
+ 37e:	08 95       	ret
+
+00000380 <main>:
+#include"lcd.c"
+#include "i2cmaster.h"
+#include "twimaster.c"
+#define Dev24C02  0xA2      // device address of EEPROM 24C02, see datasheet
+int main()
+{
+ 380:	2f 92       	push	r2
+ 382:	3f 92       	push	r3
+ 384:	4f 92       	push	r4
+ 386:	5f 92       	push	r5
+ 388:	6f 92       	push	r6
+ 38a:	7f 92       	push	r7
+ 38c:	8f 92       	push	r8
+ 38e:	9f 92       	push	r9
+ 390:	af 92       	push	r10
+ 392:	bf 92       	push	r11
+ 394:	cf 92       	push	r12
+ 396:	df 92       	push	r13
+ 398:	ef 92       	push	r14
+ 39a:	ff 92       	push	r15
+ 39c:	0f 93       	push	r16
+ 39e:	1f 93       	push	r17
+ 3a0:	df 93       	push	r29
+ 3a2:	cf 93       	push	r28
+ 3a4:	cd b7       	in	r28, 0x3d	; 61
+ 3a6:	de b7       	in	r29, 0x3e	; 62
+ 3a8:	c0 5a       	subi	r28, 0xA0	; 160
+ 3aa:	d0 40       	sbci	r29, 0x00	; 0
+ 3ac:	0f b6       	in	r0, 0x3f	; 63
+ 3ae:	f8 94       	cli
+ 3b0:	de bf       	out	0x3e, r29	; 62
+ 3b2:	0f be       	out	0x3f, r0	; 63
+ 3b4:	cd bf       	out	0x3d, r28	; 61
+  uint16_t value;
+  char str[50];
+  uint8_t ret;
+  lcd_init(LCD_DISP_ON);
+ 3b6:	8c e0       	ldi	r24, 0x0C	; 12
+ 3b8:	0e 94 01 01 	call	0x202	; 0x202 <lcd_init>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 3bc:	8f e3       	ldi	r24, 0x3F	; 63
+ 3be:	9d e0       	ldi	r25, 0x0D	; 13
+ 3c0:	a3 e0       	ldi	r26, 0x03	; 3
+ 3c2:	b0 e0       	ldi	r27, 0x00	; 0
+ 3c4:	01 97       	sbiw	r24, 0x01	; 1
+ 3c6:	a1 09       	sbc	r26, r1
+ 3c8:	b1 09       	sbc	r27, r1
+ 3ca:	00 00       	nop
+ 3cc:	01 f0       	breq	.+0      	; 0x3ce <main+0x4e>
+ 3ce:	d1 f7       	brne	.-12     	; 0x3c4 <main+0x44>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 3d0:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 3d2:	00 00       	nop
+  
+  _delay_ms(100);
+
+  ADCSRA|= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); //set prescalar
+ 3d4:	80 91 7a 00 	lds	r24, 0x007A
+ 3d8:	87 60       	ori	r24, 0x07	; 7
+ 3da:	80 93 7a 00 	sts	0x007A, r24
+   ADMUX|= (1 << REFS0); // set reference to avcc
+ 3de:	80 91 7c 00 	lds	r24, 0x007C
+ 3e2:	80 64       	ori	r24, 0x40	; 64
+ 3e4:	80 93 7c 00 	sts	0x007C, r24
+  ADCSRA|= (1 << ADEN); //enable ADC
+ 3e8:	80 91 7a 00 	lds	r24, 0x007A
+ 3ec:	80 68       	ori	r24, 0x80	; 128
+ 3ee:	80 93 7a 00 	sts	0x007A, r24
+  ADCSRA|=(1<<ADSC); //Stard A2D conversion
+ 3f2:	80 91 7a 00 	lds	r24, 0x007A
+ 3f6:	80 64       	ori	r24, 0x40	; 64
+ 3f8:	80 93 7a 00 	sts	0x007A, r24
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 3fc:	8f e7       	ldi	r24, 0x7F	; 127
+ 3fe:	94 e8       	ldi	r25, 0x84	; 132
+ 400:	ae e1       	ldi	r26, 0x1E	; 30
+ 402:	b0 e0       	ldi	r27, 0x00	; 0
+ 404:	01 97       	sbiw	r24, 0x01	; 1
+ 406:	a1 09       	sbc	r26, r1
+ 408:	b1 09       	sbc	r27, r1
+ 40a:	00 00       	nop
+ 40c:	01 f0       	breq	.+0      	; 0x40e <main+0x8e>
+ 40e:	d1 f7       	brne	.-12     	; 0x404 <main+0x84>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 410:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 412:	00 00       	nop
+ 
+ _delay_ms(1000);
+  lcd_clrscr();
+ 414:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+*************************************************************************/
+void i2c_init(void)
+{
+  /* initialize TWI clock: 100 kHz clock, TWPS = 0 => prescaler = 1 */
+  
+  TWSR = 0;                         /* no prescaler */
+ 418:	10 92 b9 00 	sts	0x00B9, r1
+  TWBR = ((F_CPU/SCL_CLOCK)-16)/2;  /* must be > 10 for stable operation */
+ 41c:	88 e4       	ldi	r24, 0x48	; 72
+ 41e:	80 93 b8 00 	sts	0x00B8, r24
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 422:	4f e3       	ldi	r20, 0x3F	; 63
+ 424:	a4 2e       	mov	r10, r20
+ 426:	4d e0       	ldi	r20, 0x0D	; 13
+ 428:	b4 2e       	mov	r11, r20
+ 42a:	43 e0       	ldi	r20, 0x03	; 3
+ 42c:	c4 2e       	mov	r12, r20
+ 42e:	d1 2c       	mov	r13, r1
+  ADCSRA|=(1<<ADIF);//Clear ADIF by writing one to it
+
+   value = ADCL; //take ADCL value
+   value|= (ADCH<<8); //left shift ADCH & OR with val
+   uint8_t temp = value/2;
+   strcpy(tmp,"Temp=");
+ 430:	3d e3       	ldi	r19, 0x3D	; 61
+ 432:	63 2e       	mov	r6, r19
+ 434:	71 2c       	mov	r7, r1
+ 436:	6c 0e       	add	r6, r28
+ 438:	7d 1e       	adc	r7, r29
+{	
+    uint8_t   twst;
+    
+	// send data to the previously addressed device
+	TWDR = data;
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 43a:	24 e8       	ldi	r18, 0x84	; 132
+ 43c:	e2 2e       	mov	r14, r18
+ 43e:	9f e7       	ldi	r25, 0x7F	; 127
+ 440:	29 2e       	mov	r2, r25
+ 442:	94 e8       	ldi	r25, 0x84	; 132
+ 444:	39 2e       	mov	r3, r25
+ 446:	9e e1       	ldi	r25, 0x1E	; 30
+ 448:	49 2e       	mov	r4, r25
+ 44a:	51 2c       	mov	r5, r1
+ 44c:	d6 01       	movw	r26, r12
+ 44e:	c5 01       	movw	r24, r10
+ 450:	01 97       	sbiw	r24, 0x01	; 1
+ 452:	a1 09       	sbc	r26, r1
+ 454:	b1 09       	sbc	r27, r1
+ 456:	00 00       	nop
+ 458:	01 f0       	breq	.+0      	; 0x45a <main+0xda>
+ 45a:	d1 f7       	brne	.-12     	; 0x450 <main+0xd0>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 45c:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 45e:	00 00       	nop
+  i2c_stop();*/
+ while(1)
+ {
+   
+   _delay_ms(100);
+   lcd_clrscr();
+ 460:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+   // i2c_init(); 
+	 lcd_clrscr();                      // initialize I2C library
+ 464:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 468:	d6 01       	movw	r26, r12
+ 46a:	c5 01       	movw	r24, r10
+ 46c:	01 97       	sbiw	r24, 0x01	; 1
+ 46e:	a1 09       	sbc	r26, r1
+ 470:	b1 09       	sbc	r27, r1
+ 472:	00 00       	nop
+ 474:	01 f0       	breq	.+0      	; 0x476 <main+0xf6>
+ 476:	d1 f7       	brne	.-12     	; 0x46c <main+0xec>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 478:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 47a:	00 00       	nop
+     _delay_ms(100);
+	 lcd_puts("Initialized I2C Lib");
+ 47c:	80 e0       	ldi	r24, 0x00	; 0
+ 47e:	91 e0       	ldi	r25, 0x01	; 1
+ 480:	0e 94 e7 00 	call	0x1ce	; 0x1ce <lcd_puts>
+ 484:	ff 24       	eor	r15, r15
+
+   char tmp[100];
+  
+ for(int i=0;i<30;i++)
+ {  
+ ADCSRA|=(1<<ADSC); // start conversion
+ 486:	80 91 7a 00 	lds	r24, 0x007A
+ 48a:	80 64       	ori	r24, 0x40	; 64
+ 48c:	80 93 7a 00 	sts	0x007A, r24
+
+ while(!(ADCSRA & (1<<ADIF)));// Conversion completion
+ 490:	80 91 7a 00 	lds	r24, 0x007A
+ 494:	84 ff       	sbrs	r24, 4
+ 496:	fc cf       	rjmp	.-8      	; 0x490 <main+0x110>
+
+  ADCSRA|=(1<<ADIF);//Clear ADIF by writing one to it
+ 498:	80 91 7a 00 	lds	r24, 0x007A
+ 49c:	80 61       	ori	r24, 0x10	; 16
+ 49e:	80 93 7a 00 	sts	0x007A, r24
+
+   value = ADCL; //take ADCL value
+ 4a2:	00 91 78 00 	lds	r16, 0x0078
+ 4a6:	10 e0       	ldi	r17, 0x00	; 0
+   value|= (ADCH<<8); //left shift ADCH & OR with val
+ 4a8:	80 91 79 00 	lds	r24, 0x0079
+   uint8_t temp = value/2;
+ 4ac:	98 2e       	mov	r9, r24
+ 4ae:	88 24       	eor	r8, r8
+ 4b0:	08 29       	or	r16, r8
+ 4b2:	19 29       	or	r17, r9
+ 4b4:	16 95       	lsr	r17
+ 4b6:	07 95       	ror	r16
+ 4b8:	10 2f       	mov	r17, r16
+   strcpy(tmp,"Temp=");
+ 4ba:	c3 01       	movw	r24, r6
+ 4bc:	64 e1       	ldi	r22, 0x14	; 20
+ 4be:	71 e0       	ldi	r23, 0x01	; 1
+ 4c0:	0e 94 2b 03 	call	0x656	; 0x656 <strcpy>
+   itoa(temp,str,10);
+ 4c4:	80 2f       	mov	r24, r16
+ 4c6:	90 e0       	ldi	r25, 0x00	; 0
+ 4c8:	be 01       	movw	r22, r28
+ 4ca:	65 5f       	subi	r22, 0xF5	; 245
+ 4cc:	7f 4f       	sbci	r23, 0xFF	; 255
+ 4ce:	4a e0       	ldi	r20, 0x0A	; 10
+ 4d0:	50 e0       	ldi	r21, 0x00	; 0
+ 4d2:	0e 94 32 03 	call	0x664	; 0x664 <itoa>
+   strcat(tmp,str);
+ 4d6:	c3 01       	movw	r24, r6
+ 4d8:	be 01       	movw	r22, r28
+ 4da:	65 5f       	subi	r22, 0xF5	; 245
+ 4dc:	7f 4f       	sbci	r23, 0xFF	; 255
+ 4de:	0e 94 20 03 	call	0x640	; 0x640 <strcat>
+   lcd_clrscr();
+ 4e2:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+  lcd_puts(tmp);
+ 4e6:	c3 01       	movw	r24, r6
+ 4e8:	0e 94 e7 00 	call	0x1ce	; 0x1ce <lcd_puts>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 4ec:	d6 01       	movw	r26, r12
+ 4ee:	c5 01       	movw	r24, r10
+ 4f0:	01 97       	sbiw	r24, 0x01	; 1
+ 4f2:	a1 09       	sbc	r26, r1
+ 4f4:	b1 09       	sbc	r27, r1
+ 4f6:	00 00       	nop
+ 4f8:	01 f0       	breq	.+0      	; 0x4fa <main+0x17a>
+ 4fa:	d1 f7       	brne	.-12     	; 0x4f0 <main+0x170>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 4fc:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 4fe:	00 00       	nop
+    _delay_ms(100);
+   //start writing
+   i2c_start_wait(Dev24C02+I2C_WRITE);     // set device address and write mode
+ 500:	82 ea       	ldi	r24, 0xA2	; 162
+ 502:	0e 94 67 01 	call	0x2ce	; 0x2ce <i2c_start_wait>
+unsigned char i2c_write( unsigned char data )
+{	
+    uint8_t   twst;
+    
+	// send data to the previously addressed device
+	TWDR = data;
+ 506:	f0 92 bb 00 	sts	0x00BB, r15
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 50a:	e0 92 bc 00 	sts	0x00BC, r14
+
+	// wait until transmission completed
+	while(!(TWCR & (1<<TWINT)));
+ 50e:	80 91 bc 00 	lds	r24, 0x00BC
+ 512:	87 ff       	sbrs	r24, 7
+ 514:	fc cf       	rjmp	.-8      	; 0x50e <main+0x18e>
+
+	// check value of TWI Status Register. Mask prescaler bits
+	twst = TW_STATUS & 0xF8;
+ 516:	80 91 b9 00 	lds	r24, 0x00B9
+unsigned char i2c_write( unsigned char data )
+{	
+    uint8_t   twst;
+    
+	// send data to the previously addressed device
+	TWDR = data;
+ 51a:	10 93 bb 00 	sts	0x00BB, r17
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 51e:	e0 92 bc 00 	sts	0x00BC, r14
+
+	// wait until transmission completed
+	while(!(TWCR & (1<<TWINT)));
+ 522:	80 91 bc 00 	lds	r24, 0x00BC
+ 526:	87 ff       	sbrs	r24, 7
+ 528:	fc cf       	rjmp	.-8      	; 0x522 <main+0x1a2>
+
+	// check value of TWI Status Register. Mask prescaler bits
+	twst = TW_STATUS & 0xF8;
+ 52a:	80 91 b9 00 	lds	r24, 0x00B9
+ Terminates the data transfer and releases the I2C bus
+*************************************************************************/
+void i2c_stop(void)
+{
+    /* send stop condition */
+	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+ 52e:	84 e9       	ldi	r24, 0x94	; 148
+ 530:	80 93 bc 00 	sts	0x00BC, r24
+	
+	// wait until stop condition is executed and bus released
+	while(TWCR & (1<<TWSTO));
+ 534:	80 91 bc 00 	lds	r24, 0x00BC
+ 538:	84 fd       	sbrc	r24, 4
+ 53a:	fc cf       	rjmp	.-8      	; 0x534 <main+0x1b4>
+ 53c:	f3 94       	inc	r15
+     _delay_ms(100);
+	 lcd_puts("Initialized I2C Lib");
+
+   char tmp[100];
+  
+ for(int i=0;i<30;i++)
+ 53e:	8e e1       	ldi	r24, 0x1E	; 30
+ 540:	f8 16       	cp	r15, r24
+ 542:	09 f0       	breq	.+2      	; 0x546 <main+0x1c6>
+ 544:	a0 cf       	rjmp	.-192    	; 0x486 <main+0x106>
+     i2c_write(temp);                        // write value 0x75 to EEPROM
+     i2c_stop();    
+                         // set stop conditon = release bus
+						 
+}
+  lcd_clrscr();
+ 546:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+   
+  lcd_puts("Writing complete");
+ 54a:	8a e1       	ldi	r24, 0x1A	; 26
+ 54c:	91 e0       	ldi	r25, 0x01	; 1
+ 54e:	0e 94 e7 00 	call	0x1ce	; 0x1ce <lcd_puts>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 552:	d6 01       	movw	r26, r12
+ 554:	c5 01       	movw	r24, r10
+ 556:	01 97       	sbiw	r24, 0x01	; 1
+ 558:	a1 09       	sbc	r26, r1
+ 55a:	b1 09       	sbc	r27, r1
+ 55c:	00 00       	nop
+ 55e:	01 f0       	breq	.+0      	; 0x560 <main+0x1e0>
+ 560:	d1 f7       	brne	.-12     	; 0x556 <main+0x1d6>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 562:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 564:	00 00       	nop
+  _delay_ms(100);
+   //_delay_ms(100);
+       // read previously written value back from EEPROM address 5 
+     i2c_start_wait(Dev24C02+I2C_WRITE);     // set device address and write mode
+ 566:	82 ea       	ldi	r24, 0xA2	; 162
+ 568:	0e 94 67 01 	call	0x2ce	; 0x2ce <i2c_start_wait>
+unsigned char i2c_write( unsigned char data )
+{	
+    uint8_t   twst;
+    
+	// send data to the previously addressed device
+	TWDR = data;
+ 56c:	10 92 bb 00 	sts	0x00BB, r1
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 570:	e0 92 bc 00 	sts	0x00BC, r14
+
+	// wait until transmission completed
+	while(!(TWCR & (1<<TWINT)));
+ 574:	80 91 bc 00 	lds	r24, 0x00BC
+ 578:	87 ff       	sbrs	r24, 7
+ 57a:	fc cf       	rjmp	.-8      	; 0x574 <main+0x1f4>
+
+	// check value of TWI Status Register. Mask prescaler bits
+	twst = TW_STATUS & 0xF8;
+ 57c:	80 91 b9 00 	lds	r24, 0x00B9
+ Return:  0 device accessible
+          1 failed to access device
+*************************************************************************/
+unsigned char i2c_rep_start(unsigned char address)
+{
+    return i2c_start( address );
+ 580:	83 ea       	ldi	r24, 0xA3	; 163
+ 582:	0e 94 41 01 	call	0x282	; 0x282 <i2c_start>
+
+     i2c_write(0x00);                        // write address = 5
+     i2c_rep_start(Dev24C02+I2C_READ);       // set device address and read mode
+     lcd_clrscr();
+ 586:	0e 94 ca 00 	call	0x194	; 0x194 <lcd_clrscr>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 58a:	d6 01       	movw	r26, r12
+ 58c:	c5 01       	movw	r24, r10
+ 58e:	01 97       	sbiw	r24, 0x01	; 1
+ 590:	a1 09       	sbc	r26, r1
+ 592:	b1 09       	sbc	r27, r1
+ 594:	00 00       	nop
+ 596:	01 f0       	breq	.+0      	; 0x598 <main+0x218>
+ 598:	d1 f7       	brne	.-12     	; 0x58e <main+0x20e>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 59a:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 59c:	00 00       	nop
+    _delay_ms(100);
+     lcd_puts("Average = ");
+ 59e:	8b e2       	ldi	r24, 0x2B	; 43
+ 5a0:	91 e0       	ldi	r25, 0x01	; 1
+ 5a2:	0e 94 e7 00 	call	0x1ce	; 0x1ce <lcd_puts>
+ 5a6:	00 e0       	ldi	r16, 0x00	; 0
+ 5a8:	10 e0       	ldi	r17, 0x00	; 0
+ 5aa:	20 e0       	ldi	r18, 0x00	; 0
+ 5ac:	30 e0       	ldi	r19, 0x00	; 0
+ 
+ Return:  byte read from I2C device
+*************************************************************************/
+unsigned char i2c_readAck(void)
+{
+	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWEA);
+ 5ae:	84 ec       	ldi	r24, 0xC4	; 196
+ 5b0:	80 93 bc 00 	sts	0x00BC, r24
+	while(!(TWCR & (1<<TWINT)));    
+ 5b4:	80 91 bc 00 	lds	r24, 0x00BC
+ 5b8:	87 ff       	sbrs	r24, 7
+ 5ba:	fc cf       	rjmp	.-8      	; 0x5b4 <main+0x234>
+
+    return TWDR;
+ 5bc:	80 91 bb 00 	lds	r24, 0x00BB
+	 int average=0;
+
+     for(int i=0;i<30;i++)
+	 {
+	  ret= i2c_readAck();
+	  average+=ret;
+ 5c0:	08 0f       	add	r16, r24
+ 5c2:	11 1d       	adc	r17, r1
+    _delay_ms(100);
+     lcd_puts("Average = ");
+
+	 int average=0;
+
+     for(int i=0;i<30;i++)
+ 5c4:	2f 5f       	subi	r18, 0xFF	; 255
+ 5c6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 5c8:	2e 31       	cpi	r18, 0x1E	; 30
+ 5ca:	31 05       	cpc	r19, r1
+ 5cc:	81 f7       	brne	.-32     	; 0x5ae <main+0x22e>
+	 }
+
+	 average=average/30;
+
+	 char str[10];
+	 lcd_gotoxy(0,1);
+ 5ce:	80 e0       	ldi	r24, 0x00	; 0
+ 5d0:	61 e0       	ldi	r22, 0x01	; 1
+ 5d2:	0e 94 be 00 	call	0x17c	; 0x17c <lcd_gotoxy>
+	  itoa(average,str,10);
+ 5d6:	c8 01       	movw	r24, r16
+ 5d8:	6e e1       	ldi	r22, 0x1E	; 30
+ 5da:	70 e0       	ldi	r23, 0x00	; 0
+ 5dc:	0e 94 63 03 	call	0x6c6	; 0x6c6 <__divmodhi4>
+ 5e0:	cb 01       	movw	r24, r22
+ 5e2:	be 01       	movw	r22, r28
+ 5e4:	6f 5f       	subi	r22, 0xFF	; 255
+ 5e6:	7f 4f       	sbci	r23, 0xFF	; 255
+ 5e8:	4a e0       	ldi	r20, 0x0A	; 10
+ 5ea:	50 e0       	ldi	r21, 0x00	; 0
+ 5ec:	0e 94 32 03 	call	0x664	; 0x664 <itoa>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 5f0:	d2 01       	movw	r26, r4
+ 5f2:	c1 01       	movw	r24, r2
+ 5f4:	01 97       	sbiw	r24, 0x01	; 1
+ 5f6:	a1 09       	sbc	r26, r1
+ 5f8:	b1 09       	sbc	r27, r1
+ 5fa:	00 00       	nop
+ 5fc:	01 f0       	breq	.+0      	; 0x5fe <main+0x27e>
+ 5fe:	d1 f7       	brne	.-12     	; 0x5f4 <main+0x274>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 600:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 602:	00 00       	nop
+	   _delay_ms(1000);
+	   
+	  lcd_puts(str);
+ 604:	ce 01       	movw	r24, r28
+ 606:	01 96       	adiw	r24, 0x01	; 1
+ 608:	0e 94 e7 00 	call	0x1ce	; 0x1ce <lcd_puts>
+}
+
+static __inline__ void      /* exactly 8 cycles/loop, max 2**32 loops */
+_delay_loop_3_x( uint32_t __n )
+{                                               /* cycles per loop      */
+    __asm__ volatile (                          /* __n..one        zero */
+ 60c:	d2 01       	movw	r26, r4
+ 60e:	c1 01       	movw	r24, r2
+ 610:	01 97       	sbiw	r24, 0x01	; 1
+ 612:	a1 09       	sbc	r26, r1
+ 614:	b1 09       	sbc	r27, r1
+ 616:	00 00       	nop
+ 618:	01 f0       	breq	.+0      	; 0x61a <main+0x29a>
+ 61a:	d1 f7       	brne	.-12     	; 0x610 <main+0x290>
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+static __inline__ void _NOP2 (void) { __asm__ volatile ( "rjmp 1f" "\n\t"  "1:" "\n\t" ); }
+static __inline__ void _NOP3 (void) { __asm__ volatile ( "lpm    " "\n\t" ); }
+ 61c:	c8 95       	lpm
+ *
+ * These NOPs will be used for very short delays where
+ * it is more code efficient than executing loops.
+ *
+ */
+static __inline__ void _NOP1 (void) { __asm__ volatile ( "nop    " "\n\t" ); }
+ 61e:	00 00       	nop
+ 
+ Return:  byte read from I2C device
+*************************************************************************/
+unsigned char i2c_readNak(void)
+{
+	TWCR = (1<<TWINT) | (1<<TWEN);
+ 620:	e0 92 bc 00 	sts	0x00BC, r14
+	while(!(TWCR & (1<<TWINT)));
+ 624:	80 91 bc 00 	lds	r24, 0x00BC
+ 628:	87 ff       	sbrs	r24, 7
+ 62a:	fc cf       	rjmp	.-8      	; 0x624 <main+0x2a4>
+	
+    return TWDR;
+ 62c:	80 91 bb 00 	lds	r24, 0x00BB
+ Terminates the data transfer and releases the I2C bus
+*************************************************************************/
+void i2c_stop(void)
+{
+    /* send stop condition */
+	TWCR = (1<<TWINT) | (1<<TWEN) | (1<<TWSTO);
+ 630:	84 e9       	ldi	r24, 0x94	; 148
+ 632:	80 93 bc 00 	sts	0x00BC, r24
+	
+	// wait until stop condition is executed and bus released
+	while(TWCR & (1<<TWSTO));
+ 636:	80 91 bc 00 	lds	r24, 0x00BC
+ 63a:	84 fd       	sbrc	r24, 4
+ 63c:	fc cf       	rjmp	.-8      	; 0x636 <main+0x2b6>
+ 63e:	06 cf       	rjmp	.-500    	; 0x44c <main+0xcc>
+
+00000640 <strcat>:
+ 640:	fb 01       	movw	r30, r22
+ 642:	dc 01       	movw	r26, r24
+ 644:	0d 90       	ld	r0, X+
+ 646:	00 20       	and	r0, r0
+ 648:	e9 f7       	brne	.-6      	; 0x644 <strcat+0x4>
+ 64a:	11 97       	sbiw	r26, 0x01	; 1
+ 64c:	01 90       	ld	r0, Z+
+ 64e:	0d 92       	st	X+, r0
+ 650:	00 20       	and	r0, r0
+ 652:	e1 f7       	brne	.-8      	; 0x64c <strcat+0xc>
+ 654:	08 95       	ret
+
+00000656 <strcpy>:
+ 656:	fb 01       	movw	r30, r22
+ 658:	dc 01       	movw	r26, r24
+ 65a:	01 90       	ld	r0, Z+
+ 65c:	0d 92       	st	X+, r0
+ 65e:	00 20       	and	r0, r0
+ 660:	e1 f7       	brne	.-8      	; 0x65a <strcpy+0x4>
+ 662:	08 95       	ret
+
+00000664 <itoa>:
+ 664:	fb 01       	movw	r30, r22
+ 666:	9f 01       	movw	r18, r30
+ 668:	e8 94       	clt
+ 66a:	42 30       	cpi	r20, 0x02	; 2
+ 66c:	c4 f0       	brlt	.+48     	; 0x69e <itoa+0x3a>
+ 66e:	45 32       	cpi	r20, 0x25	; 37
+ 670:	b4 f4       	brge	.+44     	; 0x69e <itoa+0x3a>
+ 672:	4a 30       	cpi	r20, 0x0A	; 10
+ 674:	29 f4       	brne	.+10     	; 0x680 <itoa+0x1c>
+ 676:	97 fb       	bst	r25, 7
+ 678:	1e f4       	brtc	.+6      	; 0x680 <itoa+0x1c>
+ 67a:	90 95       	com	r25
+ 67c:	81 95       	neg	r24
+ 67e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 680:	64 2f       	mov	r22, r20
+ 682:	77 27       	eor	r23, r23
+ 684:	0e 94 76 03 	call	0x6ec	; 0x6ec <__udivmodhi4>
+ 688:	80 5d       	subi	r24, 0xD0	; 208
+ 68a:	8a 33       	cpi	r24, 0x3A	; 58
+ 68c:	0c f0       	brlt	.+2      	; 0x690 <itoa+0x2c>
+ 68e:	89 5d       	subi	r24, 0xD9	; 217
+ 690:	81 93       	st	Z+, r24
+ 692:	cb 01       	movw	r24, r22
+ 694:	00 97       	sbiw	r24, 0x00	; 0
+ 696:	a1 f7       	brne	.-24     	; 0x680 <itoa+0x1c>
+ 698:	16 f4       	brtc	.+4      	; 0x69e <itoa+0x3a>
+ 69a:	5d e2       	ldi	r21, 0x2D	; 45
+ 69c:	51 93       	st	Z+, r21
+ 69e:	10 82       	st	Z, r1
+ 6a0:	c9 01       	movw	r24, r18
+ 6a2:	0c 94 53 03 	jmp	0x6a6	; 0x6a6 <strrev>
+
+000006a6 <strrev>:
+ 6a6:	dc 01       	movw	r26, r24
+ 6a8:	fc 01       	movw	r30, r24
+ 6aa:	67 2f       	mov	r22, r23
+ 6ac:	71 91       	ld	r23, Z+
+ 6ae:	77 23       	and	r23, r23
+ 6b0:	e1 f7       	brne	.-8      	; 0x6aa <strrev+0x4>
+ 6b2:	32 97       	sbiw	r30, 0x02	; 2
+ 6b4:	04 c0       	rjmp	.+8      	; 0x6be <strrev+0x18>
+ 6b6:	7c 91       	ld	r23, X
+ 6b8:	6d 93       	st	X+, r22
+ 6ba:	70 83       	st	Z, r23
+ 6bc:	62 91       	ld	r22, -Z
+ 6be:	ae 17       	cp	r26, r30
+ 6c0:	bf 07       	cpc	r27, r31
+ 6c2:	c8 f3       	brcs	.-14     	; 0x6b6 <strrev+0x10>
+ 6c4:	08 95       	ret
+
+000006c6 <__divmodhi4>:
+ 6c6:	97 fb       	bst	r25, 7
+ 6c8:	09 2e       	mov	r0, r25
+ 6ca:	07 26       	eor	r0, r23
+ 6cc:	0a d0       	rcall	.+20     	; 0x6e2 <__divmodhi4_neg1>
+ 6ce:	77 fd       	sbrc	r23, 7
+ 6d0:	04 d0       	rcall	.+8      	; 0x6da <__divmodhi4_neg2>
+ 6d2:	0c d0       	rcall	.+24     	; 0x6ec <__udivmodhi4>
+ 6d4:	06 d0       	rcall	.+12     	; 0x6e2 <__divmodhi4_neg1>
+ 6d6:	00 20       	and	r0, r0
+ 6d8:	1a f4       	brpl	.+6      	; 0x6e0 <__divmodhi4_exit>
+
+000006da <__divmodhi4_neg2>:
+ 6da:	70 95       	com	r23
+ 6dc:	61 95       	neg	r22
+ 6de:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000006e0 <__divmodhi4_exit>:
+ 6e0:	08 95       	ret
+
+000006e2 <__divmodhi4_neg1>:
+ 6e2:	f6 f7       	brtc	.-4      	; 0x6e0 <__divmodhi4_exit>
+ 6e4:	90 95       	com	r25
+ 6e6:	81 95       	neg	r24
+ 6e8:	9f 4f       	sbci	r25, 0xFF	; 255
+ 6ea:	08 95       	ret
+
+000006ec <__udivmodhi4>:
+ 6ec:	aa 1b       	sub	r26, r26
+ 6ee:	bb 1b       	sub	r27, r27
+ 6f0:	51 e1       	ldi	r21, 0x11	; 17
+ 6f2:	07 c0       	rjmp	.+14     	; 0x702 <__udivmodhi4_ep>
+
+000006f4 <__udivmodhi4_loop>:
+ 6f4:	aa 1f       	adc	r26, r26
+ 6f6:	bb 1f       	adc	r27, r27
+ 6f8:	a6 17       	cp	r26, r22
+ 6fa:	b7 07       	cpc	r27, r23
+ 6fc:	10 f0       	brcs	.+4      	; 0x702 <__udivmodhi4_ep>
+ 6fe:	a6 1b       	sub	r26, r22
+ 700:	b7 0b       	sbc	r27, r23
+
+00000702 <__udivmodhi4_ep>:
+ 702:	88 1f       	adc	r24, r24
+ 704:	99 1f       	adc	r25, r25
+ 706:	5a 95       	dec	r21
+ 708:	a9 f7       	brne	.-22     	; 0x6f4 <__udivmodhi4_loop>
+ 70a:	80 95       	com	r24
+ 70c:	90 95       	com	r25
+ 70e:	bc 01       	movw	r22, r24
+ 710:	cd 01       	movw	r24, r26
+ 712:	08 95       	ret
+
+00000714 <_exit>:
+ 714:	f8 94       	cli
+
+00000716 <__stop_program>:
+ 716:	ff cf       	rjmp	.-2      	; 0x716 <__stop_program>
