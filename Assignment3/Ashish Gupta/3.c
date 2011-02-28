@@ -1,9 +1,6 @@
 #define F_CPU 16000000UL
-#define Dev24C08 0xA0
-
-#include<avr/io.h>
-
-#include <stdlib.h>
+#include <avr/io.h>
+#include<stdlib.h>
 #include <stdio.h>
 #include "lcd.h"
 #include "lcd.c"
@@ -11,142 +8,159 @@
 #include "i2cmaster.h"
 #include "twimaster.c"
 
-int main(){
 
+#define Dev24C02  0xA2      // device address of EEPROM 24C02, see datasheet
 
-unsigned char  ret;
+int sum=0;
+unsigned char ret;
+unsigned int read;
+char buf [100];
 
-//char buf[10];
-lcd_init(LCD_DISP_ON);
-lcd_clrscr();
-_delay_ms(1000);
+int main(void)
+{
 
 	
-        char buf[100];
-        char write[10];
+	
+ 	lcd_init(LCD_DISP_ON);
+	lcd_clrscr();
+	_delay_ms(1000);
+   	
+	lcd_clrscr();
+  	_delay_ms(100);
+	lcd_puts("EEPROM");	  
+ 	 _delay_ms(1000);
+	
+	temp_init();
+    i2c_init();                                // init I2C interface
+	
+	while(1){
+	
+	temp_sense();
+	
+        /* write ok, read value back from eeprom address 0x05, wait until 
+           the device is no longer busy from the previous write operation */
         
 		
+	/*	for(int i=0;i<15;i++)
+		{
+			
+		}
+		read = i2c_readNak();
+		sprintf( buf, "read is: %d", read );
+			sum = sum+ read;
+			lcd_clrscr();
+	  		_delay_ms(100);
+			lcd_puts(buf);	  
+	 	 	_delay_ms(1000); 
+	*/	
 
-void temperature(){
+		int average = sum/30;
+			sprintf( buf, "Sum is: %d", sum );
+			lcd_clrscr();
+	  		_delay_ms(100);
+			lcd_puts(buf);	  
+	 	 	_delay_ms(1000);
 
-ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // Set ADC prescalar to 128 - 125KHz sample rate @ 16MHz      
+			sprintf( buf, "Average is: %d", average );
+			lcd_clrscr();
+	  		_delay_ms(100);
+			lcd_puts(buf);	  
+	 	 	_delay_ms(1000);	
+}
+
+}
+
+void temp_init(){
+	lcd_clrscr();
+ 	_delay_ms(100);
+	lcd_puts("Starting ADC");	  
+	_delay_ms(1000);
+
+	ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // Set ADC prescalar to 128 - 125KHz sample rate @ 16MHz      
         
    ADMUX |= (1 << REFS0); // set refrence voltage
-
   // ADMUX |= (0 << ADLAR); // left adjust ADC result.
 
-   ADCSRA |= (1 << ADATE); 
+   ADCSRA |= (1 << ADATE); // Set ADC to Free-Running Mode
    
    ADCSRA |= (1 << ADEN); // Enable ADC 
-   ADCSRA|=(1<<ADSC);
-
+   
+   //ADCSRA |= (1 << ADIE);  // Enable ADC Interrupt
+   
+   ADCSRA|=(1<<ADSC);		// Start A2D Conversions
 }
 
-i2c_init();
-
-		temperature();
-/*  // FOR SINGLE READ WRITE
-i2c_start(Dev24C08+I2C_WRITE);       // set device address and write mode
-        i2c_write(0x05);                       // write address = 5
-        i2c_write(0x75);                       // ret=0 -> Ok, ret=1 -> no ACK 
-        i2c_stop();                            // set stop conditon = release bus
-
-        i2c_start_wait(Dev24C08+I2C_WRITE);     // set device address and write mode
-        i2c_write(0x05);                        // write address = 5
-        i2c_rep_start(Dev24C08+I2C_READ);       // set device address and read mode
-        ret = i2c_readNak();                    // read one byte
-        i2c_stop();
-    
-
-
-	sprintf( buf, "read : %c", ret );
-	 
+void temp_sense(){
+	unsigned char ret;
+	unsigned int write;
 		lcd_clrscr();
-	  _delay_ms(100);	  
-      lcd_puts( buf );	  
-	  _delay_ms(1000);
+ 	_delay_ms(100);
+	lcd_puts("Sensing Now");	  
+	_delay_ms(1000);	
+	sum=0;
 
-
-
-lcd_clrscr();
-	  _delay_ms(100);
-lcd_puts("Read"+temp);
-_delay_ms(1000);
-*/
-	lcd_clrscr();
-	  _delay_ms(100);
-		lcd_puts( "Reading" );	  
-	  _delay_ms(1000);
-	      	  
-while(1){
-
-		int average =0 ;
-		//unsigned char  mem_W =0x05,mem_R =0x05;
-		i2c_start(Dev24C08+I2C_WRITE);       // set device address and write mode
-		i2c_write(0x05);
-		for(int i=0;i<15;i++)
-		{
+	for(int i=0;i<30;i++)
+	{
 		unsigned int adc;
-		int temp;
-		 adc = ADCL; 
-         adc |= (ADCH<<8); //left shift 
-		 adc = adc / 5;
-		 temp = adc;
+    	double temp;
+		adc = ADCL; 
+    	adc |= (ADCH<<8); //left shift 
+		char value[100];
+
+	//The implementation of the steinhart equation.
 	
-		lcd_clrscr();
-	  _delay_ms(100);
-		lcd_puts( "Reading" );	  
-	  _delay_ms(1000);
-	      	  
-		itoa((int)temp,buf,10);
-		lcd_clrscr();
-	  	_delay_ms(1000);
-		lcd_puts(buf);
-		_delay_ms(1000);
-        i2c_write('a');       // set stop conditon = release bu
-		}
- 		
- 		i2c_stop(); 
-
-			lcd_clrscr();
-	  _delay_ms(100);
-lcd_puts( "Written" );	  
-	  _delay_ms(1000);
-
-
-	i2c_start_wait(Dev24C08+I2C_WRITE);// set device address and write mode
-        
-		i2c_write(0x05);                        // write address = 5
-        	
-		lcd_clrscr();
-	  _delay_ms(100);
-		lcd_puts( "Reading" );	  
-	  _delay_ms(1000); 
+		float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
+		float R = 1000.0; 			// Fixed resistance in the voltage divider
+		float logRt,Rt;
+		int T;
+		int Vo = adc;
+		Rt = R*( 1023.0 / (float)Vo - 1.0 );
+		logRt = log(Rt);
+		T = ( 1.0 / (c1 + c2*logRt + c3*logRt*logRt*logRt ) ) - 273.15;   //SteinHart equation implementation
+		itoa(T, value, 10);
+    
+	    /*lcd_clrscr();
+    	_delay_ms(1000);
+    	lcd_puts("Temp=");
+		lcd_puts(value);
+		lcd_puts("*C");
+        _delay_ms(1000);*/
 		
-		i2c_rep_start(Dev24C08+I2C_READ);       // set device address and read mode
-        
-		for(int i=0;i<15;i++)
-		{
+		ret = i2c_start(Dev24C02+I2C_WRITE);       // set device address and write mode
+		i2c_write(0x00);                       // write address = 5
+
+		//write to eeprom
+    	  if ( ret ) 
+		  {
 			lcd_clrscr();
-	  _delay_ms(100);
-lcd_puts( "Reading" );	  
-	  _delay_ms(1000);
-	 	ret = i2c_readNak();
-		average += (double) ret *5;                    // read one byte
-    	}
+	  		_delay_ms(100);
+			lcd_puts( "Error.." );	  
+	  		_delay_ms(1000);
+        	/* failed to issue start condition, possibly no device found */
+        	i2c_stop();
+    	  }
+		
+		else{          /* issuing start condition ok, device accessible */
+			write = T;
+			i2c_write(write);                       // ret=0 -> Ok, ret=1 -> no ACK 
+			i2c_stop();
+		}
 
+		i2c_start_wait(Dev24C02+I2C_WRITE);     // set device address and write mode
+        i2c_write(0x00);                        // write address = 5
+        i2c_rep_start(Dev24C02+I2C_READ);       // set device address and read mode
+    	read = i2c_readNak();                    // read one byte
+		sprintf( buf, "read is: %d", read );
+		sum = sum+ read;
+		//lcd_clrscr();
+	  	_delay_ms(100);
+		//lcd_puts(buf);	  
+	 	//_delay_ms(1000);
 		i2c_stop();
+		sum = sum + read;
+	}
+	                            // set stop conditon = release bus
 	
-	
-		average = average/30;
-
-	  	itoa(average,buf, 10);                       // write address = 5
-       
-    	sprintf( buf, "read : %d", average );
-	
-	  lcd_puts( buf );	  
-
-
 }
 
-}
+
