@@ -5,10 +5,12 @@ Sales forecasts predict that green car sales will comprise 20%–25% of all vehi
 The hybrid electric vehicle (HEV) is quickly becoming the most popular green car and by 2015 is expected to comprise approximately 12% of global vehicle sales.
 Another class of cars that are growing are electric cars which right now are low in number but is going to be the thing to turn to after fuel becomes scarce for Hybrid vehicles as these solely run on the battery and hence battery management is an even bigger task here.
 Hybrid electric vehicles employ complex power electronic circuitry to control the flow of electric energy through the vehicle.
-Examples of such cars are:;
-1. Toyota Prius;
-2. Honda Civic;
-3. Honda Insight;
+# one
+#two
+Examples of such cars are:
+1. Toyota Prius
+2. Honda Civic
+3. Honda Insight
 4. Honda Accord
 5. Ford Escape
 
