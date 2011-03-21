@@ -1,5 +1,6 @@
 #summary Shows how micro-controllers help efficient use of battery in hybrid and electric vehicles.
 = Introduction =
+Electric and Hybrid electric vehicles are increasing in popularity and demand due to the rising fuel prices and concerns towards the rising CO,,2,, content in the atmosphere as world is more aware.
 Consumers are embracing environmentally friendly "green cars" as a result of the rising cost of fossil fuels and a growing concern for the health of the environment. 
 Sales forecasts predict that green car sales will comprise 20%–25% of all vehicle sales by the year 2015.
 The hybrid electric vehicle (HEV) is quickly becoming the most popular green car and by 2015 is expected to comprise approximately 12% of global vehicle sales.
@@ -23,3 +24,8 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+
+
+= _References_ =
+ # 
