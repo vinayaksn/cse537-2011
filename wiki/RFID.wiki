@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Radio Frequency Identification is basically used for tracking and identification purposes. It has been widely used all over the world in libraries, shopping stores, smart cards etc. 
+Radio Frequency Identification is basically used for tracking and identification purposes. It is widely used all over the world in libraries, shopping stores, smart cards etc. 
 
 The basic components of RFID are : -
 
