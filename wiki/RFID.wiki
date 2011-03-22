@@ -1,10 +1,13 @@
 #summary This wiki-page explores Radio Frequency ID(RFID) and tries to analyse how it can be used for access control/inventory management options.
 
 = Introduction =
+
 Radio Frequency Identification is basically used for tracking and identification purposes. It has been widely used all over the world in libraries, shopping stores, smart cards etc. 
 
 The basic components of RFID are : -
-1) RFID tag - which is inserted in the object that is to be tracked.
+
+1) RFID tag - which is inserted in the object to be tracked.
+
 2) RFID reader - used to read the information in the tag.
 
 = Details =
