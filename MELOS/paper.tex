@@ -39,6 +39,7 @@
 \newcommand{\bluecolor}[1]{\textcolor{blue}{#1}}
 
 \newcommand{\melos}{MELOS }
+\newcommand{\melosnospace}{MELOS}
 %\def\melos{{\sc MELOS}\xspace}
 
 
@@ -73,7 +74,7 @@
 %       \email{email@example.edu}
 %}
 
-\title{\vspace{-5mm} \melos: A Low-cost and Low-energy Generic Sensing Attachment for Mobile phones \vspace{-7mm}}
+\title{\vspace{-5mm} \melosnospace: A Low-Cost and Low-Energy Generic Sensing Attachment for Mobile Phones \vspace{-7mm}}
 
 %
 % stock conference info---get from the publisher
@@ -90,7 +91,7 @@
 \begin{abstract}
 Ubiquitous availability of cellular network and cheap mobile phones have made them promising sensing platforms. The applications span various domains including healthcare, environment, and astronomy among others. However, existing mobile phone platforms, including even smartphones, provide limited in-built sensing capabilities and lack standard interfaces to connects external sensors. In this paper, we propose \melos (Mobile Extension for LOw-energy Sensing) a low-cost mobile phone extension that works virtually with all the mobile phones, including low-cost phones since it interfaces with the phone over standard audio port and Bluetooth. 
 
-The proposed platform augments mobile phones with additional sensing capabilities with minimal overhead in terms of energy consumption. \melos provides capability to switch on-board modules off as per application requirements while keeping low power interface (audio) ``always-on" (to keep the connection) thus resulting in significantly small active mode power consumption. Local storage capability on it ensures that the data is transferred over high bandwidth, high-power consuming Bluetooth interface in burst mode resulting in low energy consumption per byte of data transfer. Interface with a mobile phone ensures that the capabilities of the \melos platform can be exploited remotely using the cellular connectivity. We prototype a sample application to monitor energy consumed by an incandescent bulb and also demonstrate appliance control using a relay based circuit incorporated in \melos . 
+The proposed platform augments mobile phones with additional sensing capabilities with minimal overhead in terms of energy consumption. \melos provides capability to switch on-board modules off as per application requirements while keeping low power interface (audio) ``always-on" (to keep the connection) thus resulting in significantly small active mode power consumption. Local storage capability on it ensures that the data is transferred over high bandwidth, high-power consuming Bluetooth interface in burst mode resulting in low energy consumption per byte of data transfer. Interface with a mobile phone ensures that the capabilities of the \melos platform can be exploited remotely using the cellular connectivity. We prototype a sample application to monitor energy consumed by an incandescent bulb and also demonstrate appliance control using a relay based circuit incorporated in \melosnospace. 
 \end{abstract}
 
 %
@@ -126,7 +127,7 @@ In modern day scenario mobile phones have evolved from being just communication 
 \begin{figure}
 \centering
 \epsfig{file=figs/melosboard.eps,scale=.12}
-\caption{Prototype board of \melos with all components}
+\caption{Prototype board of \melos connected to a mobile phone.}
 \label{fig:melosboard}
 \end{figure}
 
@@ -139,13 +140,13 @@ In this paper, we present a low-energy and low-cost generic sensing attachment \
 %Previous sensing platforms, like LEAP~\cite{LEAP}, have developed custom software and hardware to minimize power consumption. Also, mobile attachments like FoneAstra~\cite{foneastra} and HiJack~\cite{hijack} aim to enhance the sensing capabilities of mobile phones. \melos aims to combine both these aspects and provides an architecture that augments a mobile phone's sensing capabilities as well as consumes minimum power.
 
 \looseness -1
-\melos takes control information in the form of DTMF (Dual Tone Multiple Frequency) tones from locally connected mobile phone. The control information can be provided remotely both using SMS and audio call based network interfaces from a remote mobile phone to the local mobile phone. At the heart of \melos node is an AVR microcontroller. The microcontroller takes input in the form of DTMF tones to process the commands mapped to the corresponding tones. We demonstrate commands for switching on-board modules (Bluetooth communication and memory interface) for low power operation, switching external appliances using on-board relay, and switching the on-board ADC to start sensing the necessary parameters. We prototype a sample application to monitor energy consumed by an incandescent bulb and also demonstrate appliance control using a relay based circuit incorporated in \melos .  
+\melos takes control information in the form of DTMF (Dual Tone Multiple Frequency) tones from locally connected mobile phone. The control information can be provided remotely both using SMS and audio call based network interfaces from a remote mobile phone to the local mobile phone. At the heart of \melos node is an AVR microcontroller. The microcontroller takes input in the form of DTMF tones to process the commands mapped to the corresponding tones. We demonstrate commands for switching on-board modules (Bluetooth communication and memory interface) for low power operation, switching external appliances using on-board relay, and switching the on-board ADC to start sensing the necessary parameters. We prototype a sample application to monitor energy consumed by an incandescent bulb and also demonstrate appliance control using a relay based circuit incorporated in \melosnospace.  
 
 \looseness -1
 In summary, the key contribution of our work is a generic mobile phone extension platform that connects to any mobile phone over standard audio and Bluetooth interface. We minimize power consumption of the platform by providing fine-grained control of various system components. We further extended the capabilities of the platform to switch external appliances and allow for remote command input over both SMS and simple voice call over cellular network. 
 
 \looseness -1
-The rest of the paper is organized as follows. \secref{sec:rw} reviews the related systems and explores the pros and cons of existing systems. In \secref{sec:sysDes}, we present both the software and the hardware architecture of \melos platform, followed by discussing its various components and different modes of operation. \secref{sec:sysDes} also presents the evaluation of \melos. A case study of \melos for energy monitoring system is explained in \secref{sec:case} followed by conclusion and future work in \secref{sec:conc}.
+The rest of the paper is organized as follows. \secref{sec:rw} reviews the related systems and explores the pros and cons of existing systems. In \secref{sec:sysDes}, we present an architecture of \melos platform, followed by discussing its various components and different modes of operation. \secref{sec:sysDes} also presents the evaluation of \\melosnospace. A case study of \melos for energy monitoring system is explained in \secref{sec:case} followed by conclusion and future work in \secref{sec:conc}.
 %In section 5, we discuss the future work where we explains possible ways to extend it.
 
 \section{Related Work}
@@ -165,7 +166,7 @@ HiJack uses iPhone's audio port for two-way communication between the phone and 
 \begin{figure}
 \centering
 \epsfig{file=figs/blockdiagram.eps,scale=.43}
-\caption{Architectural diagram of \melos node}
+\caption{An architectural diagram of \melos node.}
 \label{fig:blockdiagram}
 \end{figure}
 
@@ -179,18 +180,18 @@ HiJack uses iPhone's audio port for two-way communication between the phone and 
 \section{System Design and Evaluation}
 \label{sec:sysDes}
 \looseness -1
-Hardware design typically entails a trade-off between overall system cost (and other parameters such as power consumption) and time to develop a prototype platform. For our \melos prototype platform, we are currently using off-the-shelf hardware attachments for several modules involved in the design (such as Bluetooth communication and external memory interface) that helped us reduce the time to develop a working platform. Further, using external hardware attachments also results in increased power consumption for the overall system due to additional ICs incorporated on each of these attachments. Even with such an approach of using multiple off-the-shelf hardware attachments, the overall system cost as well as system power consumption is small. We believe that a customized hardware design with required components laid out on a single board will reduce the overall cost as well as the power consumption by a significant factor from the current values. Next, we explain the hardware architecture of \melos in detail followed by different modes of operation and evaluation of the system for overall power consumption.
+Hardware design typically entails a trade-off between overall system cost (and other parameters such as power consumption) and time to develop a prototype platform. For our \melos prototype platform, we are currently using off-the-shelf hardware attachments for several modules involved in the design (such as Bluetooth communication and external memory interface) that helped us reduce the time to develop a working platform. Further, using external hardware attachments also results in increased power consumption for the overall system due to additional ICs incorporated on each of these attachments. Even with such an approach of using multiple off-the-shelf hardware attachments, the overall system cost as well as system power consumption is small. We believe that a customized hardware design with required components laid out on a single board will reduce the overall cost as well as the power consumption by a significant factor from the current values. Next, we explain the architecture of \melos in detail followed by different modes of operation and evaluation of the system for overall power consumption.
 
 %\begin{comment}
 \begin{figure}
 \centering
 \epsfig{file=figs/meloscircuit.eps,scale=.12}
-\caption{Different modules of \melos node wired together}
+\caption{Different modules of \melos node wired together.}
 \label{fig:meloscircuit}
 \end{figure}
 %\end{comment}
 
-\subsection{Hardware Architecture}
+\subsection{Architecture}
 \looseness -1
 \figref{fig:blockdiagram} displays the architectural diagram of \melos node. The platform interfaces with a local mobile phone over the audio interface using a standard 3.5 mm audio jack. Communication with a local mobile phone over the audio port works as a one way communication from the phone to the platform wherein different commands can be send from the phone to the node using DTMF tones. The advantage of using the audio port for interface are three folds - 1. It is a standard interface across phones from all manufacturers and across all price range; 2. Even a non-programmable phone (with auto-answer capability) can be used as an interfacing device to receive the commands from a remote mobile phone over the cellular network; 3. Audio interface consume insignificant power when in standby mode thus ensuring low power ``always on" interface between the phone and the \melos node. 
 
@@ -239,20 +240,20 @@ To collect the sensed data remotely, a Bluetooth module is used to communicate s
 %{|c|c|l| p{1.5cm}|c|} 
 {|c|c|c| c|c|c|c|c|} 
 \hline
-Mode &Controller Kit& Bluetooth & SD Card & DTMF Decoder & Miscellaneous & Total rated power & Measured power\\
+Mode &Controller kit& Bluetooth & SD card & DTMF decoder & Miscellaneous & Total rated power & Measured power\\
  (Power) & (100mW) & (230mW) & (300mW) & (15mW) & power (mW) & (mW) & (mW) \\ \hline
 Stand by & On & Off & Off & On & 100 & 115 & 235 \\ \hline
 Data logging & On & Off & On & On & 165 & 415 & 500\\ \hline
 Data Transfer& On & On & On & On & 165 & 645 & 400-700\\ \hline
 \end{tabular}
-\caption{Total rated power and Measured power for different modes of \melos. Power consumption of passive components and sensor is listed as Miscellaneous power}
+\caption{Total rated power and measured power for different modes of operation of \melosnospace. Power consumption of passive components and sensor is listed as miscellaneous power.}
 \label{table:modes}
 \end{table*}
 
 \begin{figure*}
 \centering
-\epsfig{file=figs/oscilloscope.eps,scale=.4}
-\caption{Voltage readings from Oscilloscope for different modes of \melos}
+\epsfig{file=figs/oscilloscope.eps,scale=.33}
+\caption{Voltage readings from oscilloscope for different modes of operation of \melosnospace.}
 \label{fig:oscilloscope}
 \end{figure*}
 
@@ -263,17 +264,17 @@ We divide operations of \melos into three primitive modes - Standby, Data Loggin
 \begin{figure}
 \centering
 \epsfig{file=figs/statetransition.eps,scale=.36}
-\caption{Transition diagram for Data logging and Data transfer mode of \melos}
+\caption{Transition diagram for Data Logging and Data Transfer modes of operation of \melosnospace.}
 \label{fig:statetransition}
 \end{figure}
 
 %\ohm
 \looseness -1
-To evaluate the power consumption for each mode we connected a 10Ohms resistor in series to the power supply of \melos. Then we measured the voltage across this resistor using oscilloscope from which we calculated the current consumption. \figref{fig:oscilloscope} shows the plot of voltage change for each mode of \melos . The measured power in  \tabref{table:modes} includes the power consumption of few passive components we used on the board. Also, the microcontroller kit consumes 100mW because it has inbuilt FTDI IC and few more passive components. All these passive components power can be reduced if we design \melos on single board. An overview of different mode, various operations, state of each module, total rated power and measured power for each module is explained in detail below.  
+To evaluate the power consumption for each mode we connected a 10Ohms resistor in series to the power supply of \melosnospace. Then we measured the voltage across this resistor using oscilloscope from which we calculated the current consumption. \figref{fig:oscilloscope} shows the plot of voltage change for each mode of \melosnospace. The measured power in  \tabref{table:modes} includes the power consumption of few passive components we used on the board. Also, the microcontroller kit consumes 100mW because it has inbuilt FTDI IC and few more passive components. All these passive components power can be reduced if we design \melos on single board. An overview of different mode, various operations, state of each module, total rated power and measured power for each module is explained in detail below.  
 
 \subsubsection{Standby Mode}
 \looseness -1
-This is the initial and the default mode of \melos . After powering up or reseting the node, the microcontroller initializes all sub modules connected to \melos and goes to the Standby mode. In Standby mode, no operation is performed and the microcontroller keeps on waiting to receive control information. All modules are powered down except the DTMF decoder, from which, the control information is received. Depending upon the control information received from DTMF decoder, \melos goes to either Data Logging or Data Transfer mode. The total rated power consumption in standby mode is power consumption of microcontroller kit and DTMF decoder on the board, which is about 115mW. The measured power in standby mode is 235mW including the the power consumption of passive components.
+This is the initial and the default mode of \melosnospace. After powering up or reseting the node, the microcontroller initializes all sub modules connected to \melos and goes to the Standby mode. In Standby mode, no operation is performed and the microcontroller keeps on waiting to receive control information. All modules are powered down except the DTMF decoder, from which, the control information is received. Depending upon the control information received from DTMF decoder, \melos goes to either Data Logging or Data Transfer mode. The total rated power consumption in standby mode is power consumption of microcontroller kit and DTMF decoder on the board, which is about 115mW. The measured power in standby mode is 235mW including the the power consumption of passive components.
 
 \subsubsection{Data Logging Mode}
 \looseness -1
@@ -286,30 +287,29 @@ In the Data Logging mode, the total rated power consumption is the consumed powe
 \looseness -1
 \melos goes into Data Transfer mode when user wants to transfer the logged data from the SD card to another device, which could be a mobile phone or laptop with Bluetooth support. Once it receives the unique control information for data transfer, Bluetooth module is switched on. The Bluetooth module will be in listening mode to accept connection from other Bluetooth enabled devices to which data is to be transferred. After establishing the connection, microcontroller switches on the SD card module, if it is not already switched on. Then, the microcontroller starts sending the logged data via Bluetooth as a data stream. Maximum power is consumed in this mode as all the modules of \melos are switched on and functioning. The total rated power consumption of this mode is about 645mW and measured power consumption is between 400 to 700mW which is depends upon the duration of  Bluetooth connection establishment.
 
-\section{Case Study : Energy Monitoring}
+\section{Case Study: Energy Monitoring}
 \label{sec:case}
 \looseness -1
-Energy consumption in residential and commercial buildings, account for a significant percentage of total national consumption across the world.  Even a small percentage reduction at building level can have significant additive impact in reducing the overall consumption. A system that allows fine-grained monitoring of energy consumption of appliances can give a great insight into the consumption during different time-intervals in the day. This information can then make the user aware of an optimum usage pattern that
-can minimize the overall power consumption.
+Energy consumption in residential and commercial buildings account for a significant percentage of total national consumption across the world.  Even a small percentage reduction at building level can have significant additive impact in reducing the overall consumption. A system that allows fine-grained monitoring of energy consumption of appliances can give a great insight into the consumption during different time-intervals in the day. This information can then make the user aware of an optimum usage pattern that can minimize the overall power consumption.
 
 \looseness -1
 \melos act as a platform that can both remotely control appliances as well as monitor the energy consumed by each appliance using ubiquitous cellular network. We interface a current sensor ACS714\footnote{\url{http://www.rhydolabz.com/index.php?main_page=product_info&products_id=506}} that can  measure bidirectional current in the range -5A to +5A . The appliance to control and monitor is connected in series with the current sensor and the switching relay (driven by one of the GPIO pin of the microcontroller). Using DTMF tones passed on as a command from a remote phone (over SMS/audio call), the control information is passed to the microcontroller to turn on the appliance and start sensing the current.
 
-\begin{figure*}
+\begin{figure}
 \centering
-\epsfig{file=figs/energychart.eps,scale=.55}
-\caption{Energy consumption of Incandescent bulb, Wall-mount Fan and Computer which also shows modes of each appliance }
+\epsfig{file=figs/energychart.eps,scale=.32}
+\caption{Energy consumption of an incandescent bulb, a wall-mounted fan, and a computer along with the modes of operation of each appliance.}
 \label{fig:energychart}
-\end{figure*}
+\end{figure}
 
 %\begin{comment}
 %For the sake of simplicity, we assumed the bulb acts as a purely resistive load. We used the ADC interrupt to read the samples of current consumed by the light bulb. Then with 220V as the Root Mean Square (RMS) voltage consumption of the bulb , the current consumed by the bulb is 181 mA. Our setup returns the current consumed by the bulb as \redcolor{XX}mA which corresponds to power consumption of \redcolor{YY}Watts indicating an error of \redcolor{ZZ}\%
 %\end{comment}
 
 \looseness -1
-\figref{fig:energychart} shows the plot of energy consumption of three appliances: An incandescent bulb,  wall-mount fan and computer as monitored by the \melos node. Current sensing observations were collected in the local memory and passed on to the computer over Bluetooth. A negative spike in the plot for the computer happened when it went to sleep mode. For wall-mount fan, we manually adjusted the speed to measure the power consumption in each state. 
+\figref{fig:energychart} shows the plot of energy consumption of three appliances: An incandescent bulb, wall-mounted fan, and a computer as monitored by the \melos node. Current sensing observations were collected in the local memory and passed on to the computer over Bluetooth. A negative spike in the plot for the computer happened when it went to sleep mode. For wall-mounted fan, we manually adjusted the speed to measure the power consumption in each state. 
 %With valid assumptions, we compared each appliance's measured power with their rated power to know the error rate which was around 6\%. 
-Together with current sensing, we can also have a diode based full wave AC to DC rectifier circuit, followed by a step down converter to measure the voltage consumed by the load using the ADC ports available on \melos . Furthermore, we can also use zero-crossing detectors to measure the power factor thus giving a more accurate idea of power consumption of each load. Using on-board relays, switching of external appliances can also be performed easily using \melos node. This switching can be either manually controlled (through commands passed using remote mobile phone) or can also be automated based on sensor observation as performed by the \melos node. The setup can be easily extended to monitor home and office premises by attaching sensors like motion, light, vibration, and gas, among others.
+Together with current sensing, we can also have a diode-based full wave AC to DC rectifier circuit, followed by a step down converter to measure the voltage consumed by the load using the ADC ports available on \melosnospace. Furthermore, we can also use zero-crossing detectors to measure the power factor thus giving a more accurate idea of power consumption of each load. Using on-board relays, switching of external appliances can also be performed easily using \melos node. This switching can be either manually controlled (through commands passed using remote mobile phone) or can also be automated based on sensor observation as performed by the \melos node. The setup can be easily extended to monitor home and office premises by attaching sensors like motion, light, vibration, and gas among others.
 
 %\begin{comment}
 %We present a case study where we use \melos
@@ -363,13 +363,13 @@ Together with current sensing, we can also have a diode based full wave AC to DC
 \label{sec:conc}
 \looseness -1
 Low cost and low energy sensing attachments for low end mobile phones can significantly enhance their capabilities for use in critical sensing applications such as energy monitoring and environmental sensing. In this paper, we proposed a mobile extension called \melos, that interfaces with a mobile phone over generic audio and Bluetooth interface. The generic audio port is used as low-energy, ``always-on" unidirectional interface for passing the control information from the locally attached mobile phone to the \melos node. This control information can be used for multiple purposes - 1. Control switching the on-board memory and communication interface as per application requirements to further reduce the power consumption of the \melos node; 2. Control switching of external appliances using on-board relays; 3. Initiate sensing of necessary parameters.
-We discuss the hardware architecture and various modes of operation illustrating reduced energy consumption of the \melos node. We also present a case study for energy monitoring and appliance control system using \melos node. 
+We discuss the architecture and various modes of operation illustrating reduced energy consumption of the \melos node. We also present a case study for energy monitoring and appliance control system using \melos node. 
 
-In the future we plan to perform extensive case studies for energy monitoring in buildings using \melos node. We plan to integrate other sensors, such as temperature, humidity, air-flow that can give accurate state information about the indoor environment using which automated switching of electrical appliances can be performed.
+In future, we plan to perform extensive case studies for energy monitoring in buildings using \melos node. We plan to integrate other sensors, such as temperature, humidity, and air-flow that can give accurate state information about the indoor environment using which automated switching of electrical appliances can be performed.
 
 \section{Acknowledgment}
 \looseness -1
-We would like to thank Nokia Research Lab, Finland for funding part of the research for this project. We also acknowledge that the initial idea of using the audio port for mobile phone extension came from a product called Nano Ganesh used for remotely switching water pumps in agriculture domain.
+We would like to thank Nokia Research Center for funding part of the research for this project. We also acknowledge that the initial idea of using the audio port for mobile phone extension came from a product called Nano Ganesh used for remotely switching water pumps in agriculture domain.
 
 \bibliographystyle{abbrv}
 \bibliography{references}
