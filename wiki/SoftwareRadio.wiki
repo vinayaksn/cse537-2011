@@ -1,5 +1,5 @@
 #summary One-sentence summary of this page.
-Software Radio is the software problem of building radios with the help of software.
+Software Radio is the software problem of building radios with the help of software;the main aim is to diminish the hardware gap between the software and the antennae, as much as doable, by dissolving the RF hardware in between.
 = Introduction =
 
 Radio devices are almost everywhere around us like FM radios, mobile phones, home automation devices like gate openers & so many others. The motivation behind the software radio is that different kinds of radio devices can not talk to each other but the software can reconfigure devices on the fly so that they can talk and listen to multiple channels  then it helps us to make out the full utilization of the radio frequency of the electronic spectrum. 
@@ -10,5 +10,5 @@ Add your content here.
 
 1 GNU Radio
 
-GNU Radio is a free software development toolkit that provides the signal processing runtime and processing blocks to implement software radios using readily-available, low-cost external RF hardware and commodity processors.
+GNU Radio is a free software development toolkit that provides the signal processing at the runtime and processing blocks to implement software radios using readily-available, low-cost external RF hardware and commodity processors.
 [Source: http://gnuradio.org/redmine/wiki/gnuradio]
