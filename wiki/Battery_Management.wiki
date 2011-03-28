@@ -20,6 +20,7 @@ There are  a number of factors affecting batteries in vehicle hence it is import
  # DOD(Depth of Discharge) : The rate at which the battery is discharged and for how long also affects the battery life.
  # Charging: The level of charging, the voltage at which the battery is charged and for how long at a stretch also affects the battery as charging the battery for too long might                   damage it and other such factors.
  # Voltage affects : Rechargeable batteries each have a characteristic working voltage range associated with the particular cell chemistry employed. The practical voltage limits                   are a consequence of the onset of undesirable chemical reactions which take place beyond the safe working range.
+ # Power to weight ratio : The battery capacity also depends on the weight of the vehicle as the we need more and more powerful batteries for for heavier vehicles.
  # Other factors : factors like cell ageing,weather,usage, maintainance etc also affect the battery and these should also be catered to.
 
 = Details =
