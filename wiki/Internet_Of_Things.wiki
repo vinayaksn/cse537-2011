@@ -1,4 +1,4 @@
-#summary _This page talks about the concept and application of interconnecting everyday objects to constitute a intelligent network_
+#summary This page talks about the concept and application of interconnecting everyday objects to constitute a intelligent network
 
 = Introduction =
 Internet of Things, is a new concept which involves connecting diverse objects over internet to make our day to day chores much simpler, faster and much more productive than before. Objects transform into "Smart Objects" by making themselves recognizable and recognizing other objects, communicating with each other over internet and accessing aggregated data. Alarm clocks go off early if there’s traffic; plants communicate to the sprinkler system when it’s time for them to be watered; running shoes communicate time, speed and distance so that their wearers can compete in real time with people on the other side of the world; medicine containers tell your family members if you forget to take the medicine. All objects can get an active role thanks to their connection to the Internet.
