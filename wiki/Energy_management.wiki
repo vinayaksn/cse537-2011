@@ -1,4 +1,4 @@
-#Explores the design and analysis of Energy management systems for enterprise/home
+Explores the design and analysis of Energy management systems for enterprise/home
 
 = Introduction =
 
