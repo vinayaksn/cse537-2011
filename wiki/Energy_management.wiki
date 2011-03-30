@@ -2,8 +2,7 @@ Explores the design and analysis of Energy management systems for enterprise/hom
 
 = Introduction =
 
-Add your content here.
-
+Electrical energy is a precious resource which needs to be utilized properly. Enterprises and homes consume huge amount of energy through out the world. 
 
 = Details =
 
