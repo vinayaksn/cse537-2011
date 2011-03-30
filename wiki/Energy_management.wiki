@@ -2,9 +2,18 @@ Explores the design and analysis of Energy management systems for enterprise/hom
 
 = Introduction =
 
-Electrical energy is a precious resource which needs to be utilized properly. Enterprises and homes consume huge amount of energy through out the world. 
+Electrical energy is a precious resource which needs to be utilized properly. Enterprises and homes consume huge amount of energy through out the world. This wiki page will explores the design and analysis of Home and Enterprise energy management systems. 
 
 = Details =
+
+I have identified the below papers for the survey. Other details will be updated soon when I go through the papers.
+
+Younghun Kim, Thomas Schmid, Yan Wang, Mani B Srivastava, "Challenges in Resource Monitoring for Residential Spaces"
+
+Younghun Kim, Thomas Schmid, Zainul M Charbiwala, Mani B Srivastava, "ViridiScope: Design and Implementation of a Fine Grained Power Monitoring System for Homes"
+
+M. Chetty, D. Tran, and R. E. Grinter. "Getting to green:
+understanding resource consumption in the home"
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
