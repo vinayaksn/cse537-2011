@@ -6,16 +6,10 @@ Electrical energy is a precious resource which needs to be utilized properly. En
 
 = Details =
 
-I have identified the below papers for the survey. Other details will be updated soon when I go through the papers.
+I have identified the below papers for the survey. Specific sections will be updated soon.
 
-Younghun Kim, Thomas Schmid, Yan Wang, Mani B Srivastava, "Challenges in Resource Monitoring for Residential Spaces"
+  * Younghun Kim, Thomas Schmid, Yan Wang, Mani B Srivastava, "Challenges in Resource Monitoring for Residential Spaces"
 
-Younghun Kim, Thomas Schmid, Zainul M Charbiwala, Mani B Srivastava, "ViridiScope: Design and Implementation of a Fine Grained Power Monitoring System for Homes"
+  * Younghun Kim, Thomas Schmid, Zainul M Charbiwala, Mani B Srivastava, "ViridiScope: Design and Implementation of a Fine Grained Power Monitoring System for Homes"
 
-M. Chetty, D. Tran, and R. E. Grinter. "Getting to green:
-understanding resource consumption in the home"
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * M. Chetty, D. Tran, and R. E. Grinter. "Getting to green: understanding resource consumption in the home"
