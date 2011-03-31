@@ -1,0 +1,21 @@
+This Page surveys how the use of data technologies in water networks, makes them smarter, more efficient and more sustainable. 
+= Introduction =
+
+Even as billions of dollars are being spent around the world to modernize the electricity grid, the systems to delivery fresh water are also in desperate need of a 21st century upgrade.The solution to this problem had to be an intersection of Water and IT. A Smart Water network essentially has following features :
+
+
+1. It delivers water from suppliers to consumers using two-way digital technology to control consumption at consumers’ homes to save water, reduce cost and increase reliability and transparency. 
+
+2. It overlays the water distribution system with an information and net metering system. A Smart Water network includes an intelligent monitoring system that keeps track of all water flowing in the system. It also incorporates the use of monitored water mains for less water loss, as well as the capability of integrating renewable water. 
+
+
+
+= Details =
+
+The three pillars of Smart Water Networks:
+
+Information: making full use of all data produced by a water utility
+
+Integration: utilizing current IT systems to maximize previous investments(Previous investments implies the already laid network of pipelines which are currently in use)
+
+Innovation: having the flexibility to meet future challenges
