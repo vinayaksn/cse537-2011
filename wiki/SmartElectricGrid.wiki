@@ -1,8 +1,6 @@
 #summary A smart grid is a form of electricity network which helps to save energy, reduce costs and increase reliability and transparency of the network.
 = Introduction =
-
-Add your content here.
-
+The traditional electric power grid is one way push-out-to-consumers. It will be replaced by smart electric grid in the future. This grid has smarter components that talk to each other in two way communication using digital communication. The smart grid will include new technology that captures wind and solar power, will include in its infrastructure power for plug-in vehicles, automated power meters in homes/businesses and more.
 
 = Details =
 
