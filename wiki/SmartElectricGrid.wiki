@@ -4,7 +4,7 @@ The traditional electric power grid is one way push-out-to-consumers. It will be
 
 U.S. power industry experts say smart electrical grids that synchronize supply and demand will be a crucial weapon in the fight against global climate change. It allows households to cut electricity costs by using energy-consuming devices at low-rate times of day and enables utility companies to cut peak-time demand and avoid costly blackouts. [1]
 
-[File: G:\6th sem\embedded\smart grid\1.jpg | frame|none|alt=alt text|caption Smart Grid: A vision for the future]
+[[File: G:\6th sem\embedded\smart grid\1.jpg | frame|none|alt=alt text|caption Smart Grid: A vision for the future]]
 
 
 = References =
