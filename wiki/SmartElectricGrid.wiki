@@ -2,9 +2,9 @@
 = Introduction =
 The traditional electric power grid is one way push-out-to-consumers. It will be replaced by smart electric grid in the future. This grid has smarter components that talk to each other in two way communication using digital communication. The smart grid will include new technology that captures wind and solar power, will include in its infrastructure power for plug-in vehicles, automated power meters in homes/businesses and more.
 
-= Details =
+U.S. power industry experts say smart electrical grids that synchronize supply and demand will be a crucial weapon in the fight against global climate change. It allows households to cut electricity costs by using energy-consuming devices at low-rate times of day and enables utility companies to cut peak-time demand and avoid costly blackouts. [1]
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+= References =
+
+[1] http://www.upi.com/Top_News/World-News/2010/11/19/Smart-electrical-grids-coming/UPI-16221290199711/#ixzz1ICBOmTUG
