@@ -1,9 +1,11 @@
 #summary One-sentence summary of this page.
 Software Radio, also known as software-defined radio, is a software problem of building radio components(eg. mixer, detector, modulator/demodulator etc)with the help of software instead of hardware.Typically, the main aim is to diminish the hardware gap between the software and the antennae, as much as doable, by dissolving the RF hardware in between.
 
-Contents 
+= Contents =
 1. Introduction
+
 2. Purpose of RF front-end
+
 3. Reciever Design and issues
 
 = Introduction =
