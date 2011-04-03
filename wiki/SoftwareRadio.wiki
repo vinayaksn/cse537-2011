@@ -1,5 +1,5 @@
 #summary One-sentence summary of this page.
-Software Radio, also known as software-defined radio, is a software problem of building radio components(eg. mixer, detector, modulator/demodulator etc)with the help of software instead of hardware.Typically, the main aim is to diminish the hardware gap between the software and the antennae, as much as doable, by dissolving the RF hardware in between.
+Software Radio, also known as software-defined radio, is a software problem of building radio components(eg. mixer, detector, modulator/demodulator etc)with the help of software instead of hardware.In other words we can say the aim is to diminish the hardware gap between the software and the antennae, as much as doable, by dissolving the RF hardware in between. This approach increases device  flexibility, simplifies manufacturing and reduces costs.
 
 = Contents =
 1. Introduction
@@ -11,7 +11,7 @@ Software Radio, also known as software-defined radio, is a software problem of b
 4. Smart Antennas
 
 = 1. Introduction =
-Radio devices are almost everywhere around us like FM radios, mobile phones, home automation devices like gate openers & so many others. The motivation behind the software radio approach is that different radio devices can not talk to each other but the software can reconfigure devices on the fly so that they can talk and listen to multiple channels. Which helps us to make out the full utilization of the radio frequency of the electronic spectrum. 
+Radio devices are almost everywhere around us like FM radios, mobile phones, home automation devices like gate openers & so many others. The motivation behind the software radio approach is that different radio devices can not talk to each other but the software can reconfigure devices on the fly so that they can talk and listen to multiple channels.Software radio approach provides a flexible radio architecture that allows changing the radio personality,possibly in real-time and guarantees a desired quality of service. Which helps us to make out the full utilization of the radio frequency of the electronic spectrum. 
 Add your content here.
 
 = 2. Purpose of RF front-end = 
