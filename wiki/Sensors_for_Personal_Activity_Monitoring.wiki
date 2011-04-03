@@ -1,7 +1,6 @@
-#This wiki page will provide a brief overview of commercially available devices that monitor physical activities.
+#summary This wiki page will provide a brief overview of commercially available devices that monitor physical activities.
 
 = Introduction =
 
 This page will provide a brief overview of commercially available devices that monitor physical activities. We will also try to include all possible technologies used in these devices. Many of these devices can be effectively used in metabolic assessment, behavior therapy, and weight management, becoming an essential part of the solution to diabetes, obesity and chronic diseases.
 Characteristics of physical activity are indicative of one’s mobility level, latent chronic diseases and aging process.
-
