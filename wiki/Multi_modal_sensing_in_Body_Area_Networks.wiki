@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Add your content here.
+A Body Area Network is a network of miniaturized Body Sensor Units and a single Body Central Unit worn at the human body.
 
 
 = Details =
