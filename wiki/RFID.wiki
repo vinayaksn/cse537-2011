@@ -10,6 +10,19 @@ The basic components of RFID are : -
 
 2) RFID reader - used to read the information in the tag.
 
+An antenna is installed in the RFID tag which can transmit and receive signals which can be caught by the RFID reader. Apart from this, an IC (integrated circuit) is installed in the tag to store and process the information.
+
+= Types of RFID tags =
+
+RFID tags come in a very wide variety of shapes and sizes. Tags can be shaped according to the use. For example for identifying wooden items, tags can be screw shaped or can be in the shape of a credit card so that
+they can be used in access applications. The size could be as small as a pencil lead in diameter. Such kind of RFID tags are used for tracking Animals. The merchandises in stores have an anti-theft hard plastic tag attached to it. Those tags are actually RFID tags only.
+
+There are two types of RFID tags:-
+
+1) Active RFID Tags: - contain a battery and therefore can transmit signals automatically and they are read/write tags i.e. the tag data can be written or modified. The memory size of active tag varies according to the requirements.
+
+2) Passive RFID Tags: -doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
+
 = Details =
 
 [http://en.wikipedia.org/wiki/Radio-frequency_identification]-to visit the Wikipedia page of RFID.
