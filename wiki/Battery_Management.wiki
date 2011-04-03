@@ -1,4 +1,4 @@
-#summary Shows how micro-controllers help efficient use of battery in hybrid and electric vehicles.
+#summary Efficient battery management in Hybrid and Electric vehicles.
 = Introduction =
 Electric and Hybrid electric vehicles are increasing in popularity and demand due to the rising fuel prices and concerns towards the rising CO,,2,, content in the atmosphere as world is more aware.
 Consumers are embracing environmentally friendly "green cars" as a result of the rising cost of fossil fuels and a growing concern for the health of the environment. 
@@ -13,15 +13,16 @@ Examples of such cars are:
  # Honda Insight
  # Honda Accord
  # Ford Escape
+ # Reva -- Electric
 
 
-There are  a number of factors affecting batteries in vehicle hence it is important to have effecient battery management. The facetors affecting battery life are :
- # Temperature :Temperature has severe affects on battery performance and these affects depend greatly on the battery chemistry used. A rule of thumb for temperature degradation is                 that battery performance will decrease by 35% at either the upper or lower range of the specified operating threshold, outside the threshold the battery may not                     work at all.
- # DOD(Depth of Discharge) : The rate at which the battery is discharged and for how long also affects the battery life.
- # Charging: The level of charging, the voltage at which the battery is charged and for how long at a stretch also affects the battery as charging the battery for too long might                   damage it and other such factors.
- # Voltage affects : Rechargeable batteries each have a characteristic working voltage range associated with the particular cell chemistry employed. The practical voltage limits                   are a consequence of the onset of undesirable chemical reactions which take place beyond the safe working range.
- # Power to weight ratio : The battery capacity also depends on the weight of the vehicle as the we need more and more powerful batteries for for heavier vehicles.
- # Other factors : factors like cell ageing,weather,usage, maintainance etc also affect the battery and these should also be catered to.
+There are  a number of factors affecting batteries in vehicle hence it is important to have effecient battery management. The factors affecting battery life are :
+ # _Temperature_ :Temperature has severe affects on battery performance and these affects depend greatly on the battery chemistry used. A rule of thumb for temperature degradation is that battery performance will decrease by 35% at either the upper or lower range of the specified operating threshold, outside the threshold the battery may not                     work at all.
+ # _DOD(Depth of Discharge)_ : The rate at which the battery is discharged and for how long also affects the battery life.
+ # _Charging_: The level of charging, the voltage at which the battery is charged and for how long at a stretch also affects the battery as charging the battery for too long might damage it and other such factors.
+ # _Voltage affects_ : Rechargeable batteries each have a characteristic working voltage range associated with the particular cell chemistry employed. The practical voltage limits are a consequence of the onset of undesirable chemical reactions which take place beyond the safe working range.
+ # _Power to weight ratio_ : The battery capacity also depends on the weight of the vehicle as we need more and more powerful batteries for heavier vehicles.
+ # _Other factors_ : factors like cell ageing, weather, usage, maintainance, etc. also affect the battery and these should also be catered to.
 
 = Details =
 
