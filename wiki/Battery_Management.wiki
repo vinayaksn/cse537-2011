@@ -1,4 +1,4 @@
-#summary Efficient battery management in Hybrid and Electric vehicles.
+#summary Efficient battery management in Hybrid Electric vehicles.
 = Introduction =
 Electric and Hybrid electric vehicles are increasing in popularity and demand due to the rising fuel prices and concerns towards the rising CO,,2,, content in the atmosphere as world is more aware.
 Consumers are embracing environmentally friendly "green cars" as a result of the rising cost of fossil fuels and a growing concern for the health of the environment. 
@@ -13,9 +13,16 @@ Examples of such cars are:
  # Honda Insight
  # Honda Accord
  # Ford Escape
- # Reva -- Electric
+ 
+= Contents = 
+ # Hybrid Electric Vehicles (Need /Types)
+ # Working (Of a particular type)
+ # Need for Battery Management
+ # Process of Battery Management (Including Types of batteries)
+ # Factors affecting Battery Performance
+ # Future (related to introduction to some new battery technology)
 
-
+= Factors Affecting Battery Performance =
 There are  a number of factors affecting batteries in vehicle hence it is important to have effecient battery management. The factors affecting battery life are :
  # _Temperature_ :Temperature has severe affects on battery performance and these affects depend greatly on the battery chemistry used. A rule of thumb for temperature degradation is that battery performance will decrease by 35% at either the upper or lower range of the specified operating threshold, outside the threshold the battery may not                     work at all.
  # _DOD(Depth of Discharge)_ : The rate at which the battery is discharged and for how long also affects the battery life.
