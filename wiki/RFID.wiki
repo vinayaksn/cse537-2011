@@ -2,7 +2,8 @@
 
 = Introduction =
 
-Radio Frequency Identification is basically used for tracking and identification purposes. It is widely used all over the world in libraries, shopping stores, smart cards etc. 
+RFID stands for Radio Frequency Identification. RFID systems are 
+basically used for tracking and identification purposes. It is widely used all over the world in libraries, shopping stores, smart cards etc. 
 
 The basic components of RFID are : -
 
