@@ -9,13 +9,24 @@ Even as billions of dollars are being spent around the world to modernize the el
 2. It overlays the water distribution system with an information and net metering system. A Smart Water network includes an intelligent monitoring system that keeps track of all water flowing in the system. It also incorporates the use of monitored water mains for less water loss, as well as the capability of integrating renewable water. 
 
 
-
 = Details =
 
 The three pillars of Smart Water Networks:
 
-Information: making full use of all data produced by a water utility
+Information: Each and every water management activity creates data(information) which can be used/analyzed to manage water in an efficient way.
 
-Integration: utilizing current IT systems to maximize previous investments(Previous investments implies the already laid network of pipelines which are currently in use)
+Integration: Utilizing current IT systems to maximize previous investments(Previous investments implies the already laid network of pipelines which are currently in use) is taken care of. Also we should
 
-Innovation: having the flexibility to meet future challenges
+Innovation: We should develop current system keeping in mind the future challenges. Current assets should be analyzed to find a gap between current and future requirements.
+
+= Application scenarios =
+
+1. Energy Optimization - Monitor power consumption throughout the network, and optimize energy costs, reduce carbon footprint.
+
+2. Demand Forecasting - Balance supply and demand, using weather forecasts and consumption history and trends.
+
+3. Leak Detection - Apply one or more methods best suited for the network.
+
+4. Water Quality Management - optimize treatment based on real-time quality monitoring.
+
+
