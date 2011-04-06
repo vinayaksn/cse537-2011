@@ -1,4 +1,4 @@
-Software Radio, also known as software-defined radio, is a software problem of building radio components(eg. mixer, detector, modulator/demodulator etc)with the help of software instead of hardware.
+#summary Software Radio, also known as software-defined radio, is a software problem of building radio components(eg. mixer, detector, modulator/demodulator etc)with the help of software instead of hardware.
 
 
 = SOFTWARE RADIO =
