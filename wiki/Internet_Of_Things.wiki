@@ -5,11 +5,15 @@ Internet of Things, is a new concept which involves connecting diverse objects o
 
 
 = Details =
-This page will have following sections in the coming days:
-
 *1. Intelligence*
 
+While the environment around us has always generated a huge amount of data, but we were not able to effectively use this data for our advantage. Now as technologies have become cheaper, faster and smarter we could capture this data and apply intelligence to generate wisdom out of it as to make our lives simpler and more productive.
+
 *2. Evolution*
+
+From _Internet of People_ to _Internet of Things_
+
+a) EDI (Electronic Data Interchange)
 
 *3. Architecture*
 
