@@ -1,4 +1,4 @@
-#summary This page talks about the current scenario in Artificial Vision.
+#summary This page is a survey on Artificial Vision.
 #labels Artificialvision,Prosthetics,Bioniceye
 
 = Introduction =
