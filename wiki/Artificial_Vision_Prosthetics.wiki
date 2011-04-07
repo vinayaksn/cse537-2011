@@ -9,10 +9,10 @@ Add your content here.
 = Details =
 
 ==The Biological Eye==
-To appreciate and understand the ideas behind bionic eye, it is necessary to know the basics of the biological eye. Atleast knowledge about the basic working of the biological eye and the main actors inside it, is vital.Though it appears a daunting task, specially for a IT student, to read (leave aside understanding)a page of medical science, the structure of eye and its basics are quite easy to grasp. 
+To appreciate and understand the ideas behind bionic eye, it is necessary to know the basics of the biological eye. Atleast knowledge about the basic working of the biological eye and the main actors inside it, is vital.Though it appears a daunting task, specially for a IT student, to read(leave aside understanding)a page of medical science, the structure of eye and its basics are quite easy to grasp. 
   
-Light reflected from the object enters the eye through the cornea and is projected onto the retina by the lens.The retina senses the light and sends signals to the brain through the optical nerve.The brain,finally, interprets the signals to give form to the scene.
 
+Light reflected from the object enters the eye through the cornea and is projected onto the retina by the lens.The retina senses the light and sends signals to the brain through the optical nerve.The brain,finally, interprets the signals to give form to the scene.
 One crucial actor is the retina.We need to dig more inside retina since this is where things go wrong.Retina is a thin membrane at the end of the eye and its function is to receive light and transmit signals to the brain.Three types of cells are present inside retina:-
  # Rods
  # Cones
