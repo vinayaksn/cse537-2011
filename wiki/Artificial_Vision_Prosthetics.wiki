@@ -1,4 +1,5 @@
-#This page talks about the current scenario in the field of Artificial Vision.
+#labels Artificialvision,Prosthetics,Bioniceye
+This page talks about the current scenario in Artificial Vision.
 
 = Introduction =
 
@@ -7,13 +8,14 @@ Add your content here.
 
 = Details =
 
-*The Biological Eye*
+==The Biological Eye==
 To appreciate and understand the ideas behind bionic eye, it is necessary to know the basics of the biological eye. Atleast knowledge about the basic working of the biological eye and the main actors inside it, is vital.Though it appears a daunting task, specially for a IT student, to read (leave aside understanding)a page of medical science, the structure of eye and its basics are quite easy to grasp.   
 Light reflected from the object enters the eye through the cornea and is projected onto the retina by the lens.The retina senses the light and sends signals to the brain through the optical nerve.The brain,finally, interprets the signals to give form to the scene.
 One crucial actor is the retina.We need to dig more inside retina since this is where things go wrong.Retina is a thin membrane at the end of the eye and its function is to receive light and transmit signals to the brain.Three types of cells are present inside retina:-
-1. Rods
+#1. Rods
 2. Cones
 3. Ganglion cells
+#
 Rods and cones are the photoreceptors.While rods function in low levels of light and are responsible for the black and white sensing of scene, the cones are responsible to fill the color in the scene and provide high resolution to the view.The Ganglion cells receive the information from rods and cones , interprets it and send corresponding signals to brain through the optic nerve.
 
 Retinitis Pigmentosa(RP) and Age Related Macular Degeneration are two leading causes of vision loss.Both these disease affect the retina and render the rods and cones inoperative.However these diseases do not affect the ganglion cells and the optic nerve.This means that if the function of rods and cones can be artificially performed, the information could still be sent to brain for interpretation.  
