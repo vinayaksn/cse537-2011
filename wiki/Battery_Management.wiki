@@ -42,7 +42,7 @@ There are  a number of factors affecting batteries in vehicle hence it is import
 
 
 = _References_ =
- #http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
+ # http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
  # http://www.dolcera.com/wiki/index.php?title=Hybrid_Electric_Vehicle_Battery_System
  # http://www.automobile-hibride.ro/imagini/txt/articole_diverse/Paper_06_Buretea_ESFA.pdf
  # http://www.allhybridcars.com/hybrid-car-faqs.html
