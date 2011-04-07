@@ -20,9 +20,4 @@ One crucial actor is the retina.We need to dig more inside retina since this is 
 
 Rods and cones are the photoreceptors.While rods function in low levels of light and are responsible for the black and white sensing of scene, the cones are responsible to fill the color in the scene and provide high resolution to the view.The Ganglion cells receive the information from rods and cones , interprets it and send corresponding signals to brain through the optic nerve.
 
-Retinitis Pigmentosa(RP) and Age Related Macular Degeneration are two leading causes of vision loss.Both these disease affect the retina and render the rods and cones inoperative.However these diseases do not affect the ganglion cells and the optic nerve.This means that if the function of rods and cones can be artificially performed, the information could still be sent to brain for interpretation.  
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Retinitis Pigmentosa(RP) and Age Related Macular Degeneration(AMD) are two leading causes of vision loss.1.5 million people are affected with RP world wide while 700,000 new cases of AMD are diagnosed annually in US.Both these disease affect the retina and render the rods and cones inoperative.However these diseases do not affect the ganglion cells and the optic nerve.This means that if the function of rods and cones can be artificially performed, the information could still be sent to brain for interpretation.This is where the research on Artificial Vision starts and ends.
