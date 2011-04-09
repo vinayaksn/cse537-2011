@@ -23,10 +23,18 @@ Rods and cones are the photoreceptors.While rods function in low levels of light
 
 ==The Bionic Eye==
 The origin of the field of Artificial Vision dates back to 1929 when Foerster a German neurosurgeon demonstrated that electrical stimulation of the visual cortex could lead to the perception of light spots by the subject.The field further received a jolt when Dr Mark Humayun demonstrated that a blind person could be made to see light by stimulating the Ganglion cells with an electrical current.These developments implied that the communications between different parts of the visual system, can be electrically simulated hence exposing possibility to bypass the affected part of eye by directly stimulating the healthy part. 
+
 In the functioning of the eye described above, the problem can arise at either the retina where the retinal cells ( rods,cones,ganglion cells) are rendered inoperative or the optic nerve may be affected.Depending upon the affected part of visual system,research is currently undergoing in three areas trying to bypass the affected part:-
 
- #Retinal Prosthesis - Bypasses rods and cones to directly stimulate the ganglion cells.
- #Optic Nerve Prosthesis - Bypasses the whole retina to directly stimulate the optic nerve.
- #Cortical Prosthesis - Directly stimulates the visual cortex , bypassing whole visual system before cortex - retina,optic nerve.
+ # Retinal Prosthesis - Bypasses rods and cones to directly stimulate the ganglion cells.
+ # Optic Nerve Prosthesis - Bypasses the whole retina to directly stimulate the optic nerve.
+ # Cortical Prosthesis - Directly stimulates the visual cortex , bypassing whole visual system before cortex - retina,optic nerve.
+
+
+
+
+
+
+
 
 Retinitis Pigmentosa(RP) and Age Related Macular Degeneration(AMD) are two leading causes of vision loss.1.5 million people are affected with RP world wide while 700,000 new cases of AMD are diagnosed annually in US.Both these disease affect the retina and render the rods and cones inoperative.However these diseases do not affect the ganglion cells and the optic nerve.This means that if the function of rods and cones can be artificially performed, the information could still be sent to brain for interpretation.This is where the research on Artificial Vision starts and ends.
