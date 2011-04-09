@@ -51,3 +51,13 @@ Following technological challenges are involved in order to make artificial visi
  # Image processing needs to be performed in *real time*.
  # Efficient delivery of *power* to the implant and further efficient utilization of power by the implant.
  # Efficient *packaging* of the implant in order to create as small implants as possible. 
+
+=References=
+ # Weiland, J. D., and Humayun, M. S., “Visual Prosthesis,” Proceedings of the IEEE, 96(7), 1076-1084 (2008)
+ # Brig A Banarji et al, Visual Prosthesis : Artificial Vision, Medical Journal Armed Forces India, October 2009, Volume 65, Number 4
+ # http://artificialretina.energy.gov/progress.shtml
+ # http://health.howstuffworks.com/medicine/modern/artificial-vision.htm
+ # http://health.howstuffworks.com/medicine/modern/bionic-eye.htm
+ # http://www.2-sight.eu/ee/how-does-argus-ii-produce-sight
+ # http://en.wikipedia.org/wiki/Visual_prosthesis
+ # http://www.brps.org.uk/index.php?tln=research&pageid=24
