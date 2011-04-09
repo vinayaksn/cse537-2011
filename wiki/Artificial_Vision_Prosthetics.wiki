@@ -44,7 +44,7 @@ Camera captures the images and sends these image to the video processor in real 
 
 ===Technological Challenges Involved===
 Following technological challenges are involved in order to make artificial vision a reality:
- # *Characteristics of the implant material* - 
+ # Characteristics of the *implant material* - 
     # Bio-compatible with delicate eye tissue.
     # Tough enough to withstand the corrosion effect of the salty environment.
  # The *resolution* of images produced depend upon the number of electrodes.But since the area to be stimulated is too small,in order to increase the number of electrodes, the size of each electrode has to be reduced.
@@ -54,7 +54,7 @@ Following technological challenges are involved in order to make artificial visi
 
 =References=
  # Weiland, J. D., and Humayun, M. S., “Visual Prosthesis,” Proceedings of the IEEE, 96(7), 1076-1084 (2008)
- # Brig A Banarji et al, Visual Prosthesis : Artificial Vision, Medical Journal Armed Forces India, October 2009, Volume 65, Number 4
+ # Brig A Banarji et al, "Visual Prosthesis : Artificial Vision", Medical Journal Armed Forces India, October 2009, Volume 65, Number 4
  # http://artificialretina.energy.gov/progress.shtml
  # http://health.howstuffworks.com/medicine/modern/artificial-vision.htm
  # http://health.howstuffworks.com/medicine/modern/bionic-eye.htm
