@@ -24,21 +24,21 @@ There are two types of RFID tags:-
 
 2) Passive RFID Tags: -doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
 
-History and significance of RFID?
+=History and significance of RFID?=
 
-Summary of RFID standards?
+=Summary of RFID standards?=
 
-Application of RFID?
+=Application of RFID?=
 
-Benefits of RFID?
+=Benefits of RFID?=
 
-How to develop a RFID strategy in a company?
+=How to develop a RFID strategy in a company?=
 
-How RFID helps in giving returns?
+=How RFID helps in giving returns?=
 
-Can RIFD disrupt your business?
+=Can RIFD disrupt your business?=
 
-How to deploy RIFD successfully?
+=How to deploy RIFD successfully?=
 
 
 = Details =
