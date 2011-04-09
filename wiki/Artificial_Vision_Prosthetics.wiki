@@ -47,7 +47,7 @@ Following technological challenges are involved in order to make artificial visi
  # *Characteristics of the implant material* - 
     # Bio-compatible with delicate eye tissue.
     # Tough enough to withstand the corrosion effect of the salty environment.
- # The resolution of images produced depend upon the number of electrodes.But since the area to be stimulated is too small,in order to increase the number of electrodes, the size of each electrode has to be reduced.
- # Image processing needs to be performed in real time.
- # Efficient delivery of power to the implant and further efficient utilization of power by the implant.
- # Efficient packaging of the implant in order to create as small implants as possible. 
+ # The *resolution* of images produced depend upon the number of electrodes.But since the area to be stimulated is too small,in order to increase the number of electrodes, the size of each electrode has to be reduced.
+ # Image processing needs to be performed in *real time*.
+ # Efficient delivery of *power* to the implant and further efficient utilization of power by the implant.
+ # Efficient *packaging* of the implant in order to create as small implants as possible. 
