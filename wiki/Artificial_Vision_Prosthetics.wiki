@@ -30,7 +30,14 @@ In the functioning of the eye described above, the problem can arise at either t
  # Optic Nerve Prosthesis - Bypasses the whole retina to directly stimulate the optic nerve.
  # Cortical Prosthesis - Directly stimulates the visual cortex , bypassing whole visual system before cortex - retina,optic nerve.
 
-Below we survey the technologies  developed and clinical trials performed in each of the these three research areas.
+These three prosthesis differ from each other primarily on the basis of the anatomical location of their implant.The technology involved in these prosthesis are similar to a large extent.Below we discuss the technology behind these artificial vision systems.
 
-===Retinal Prosthesis=== 
-Retinitis Pigmentosa(RP) and Age Related Macular Degeneration(AMD) are two leading causes of vision loss.1.5 million people are affected with RP world wide while 700,000 new cases of AMD are diagnosed annually in US.Both these disease affect the retina and render the rods and cones inoperative.However these diseases do not affect the ganglion cells and the optic nerve.This means that if the function of rods and cones can be artificially performed, the information could still be sent to brain for interpretation.
+===The Technology===
+A prosthesis consist of following parts:
+ # An external *digital camera* generally built into a pair of glasses. 
+ # A *video-processing unit* connected to the camera.It processes images into electrical pulses.
+ # A radio *transmitter* that wirelessly transmits pulses from the video processing unit to a receiver implanted above the ear or under the eye.
+ # A radio *receiver* that receives the pulses from the transmitter and sends them to the retinal implant.
+ # A *implant* with an array of electrodes on a chip in contact with the part of the eye to be stimulated.
+
+Camera captures the images and sends these image to the video processor in real time.The processor interprets the image and converts them into a series of electrical pulses. The processor sends these pulses to a radio transmitter, which then transmits the pulses in radio form to a receiver implanted underneath the subject's skin. The receiver is directly connected via a wire to the electrode array implanted at the site of the eye to be stimulated.When the pulses reach the implant, they excite the electrode array. The electrodes are stimulated in accordance with the encoded pattern of pulses.
