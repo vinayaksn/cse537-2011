@@ -41,3 +41,10 @@ A prosthesis consist of following parts:
  # A *implant* with an array of electrodes on a chip in contact with the part of the eye to be stimulated.
 
 Camera captures the images and sends these image to the video processor in real time.The processor interprets the image and converts them into a series of electrical pulses. The processor sends these pulses to a radio transmitter, which then transmits the pulses in radio form to a receiver implanted underneath the subject's skin. The receiver is directly connected via a wire to the electrode array implanted at the site of the eye to be stimulated.When the pulses reach the implant, they excite the electrode array. The electrodes are stimulated in accordance with the encoded pattern of pulses.
+
+===Technological Challenges Involved===
+Following technological challenges are involved in order to make artificial vision a reality:
+ # *Characteristics of the implant material* - 
+    # biocompatible.
+    #jhjhkj
+ #jkjk;
