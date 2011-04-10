@@ -1,5 +1,4 @@
-#summary One-sentence summary of this page.
-Electrocardiogram(ECG) using Atmega328p micro controller.
+#summary Electrocardiogram(ECG) using Atmega328p micro controller.
 
 = Introduction =
 
