@@ -8,14 +8,31 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 The following are the hardware required:                                
  # IR sensors
  # Relays
-   two types of relay will be used 5A and 15A for fan and AC
+Two types of relay will be used - 5A and 15A for fan and AC
  # Ethernet shield
  # Current sensor
  # ATmega328 microcontroller
 
-= Details =
+= Hardware Functionality =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+1. IR sensors: the sensors help to identify the presence of number of people entering or leaving the room.
+
+2. Relays: it will be used to operate all the lights and fans in the room.
+
+3. Ethernet Shield: it will be used to inform the user over the internet about the status of the electricity usage in the room.
+
+4. Current Sensor: it will be used to measure the total electricity usage in the room.
+
+5. LCD: To display the number of people in the room.
+
+= Steps =
+
+1.Increment the count when someone enters the room. This will be done by the IR sensors. (Done)
+
+2.If the count is greater than 0 i.e. there is one or more people in the room turn on all of the appliances. (Done) 
+
+3.If the count is equal to 0 i.e. there is no one in the room turn off all of the appliances. (Done) 
+
+4.The current sensors measure the current consumption in all the devices, through which we can calculate the energy saved. (To be done)
+
+5.Through the Ethernet shield send the collected data to the computer, where it can be hoisted on the web. (To be done)
