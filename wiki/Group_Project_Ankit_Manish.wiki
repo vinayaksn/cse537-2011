@@ -39,6 +39,6 @@ b) Processing : It is an open source programming language and environment used i
 
 2. [http://www.arduino.cc/]
 
-3. [http://www.wikipedia.org/ecg/]
+3. [http://en.wikipedia.org/wiki/Electrocardiography]
 
-3. [http://www.open-ecg-project.org/]
+4. [http://www.open-ecg-project.org/]
