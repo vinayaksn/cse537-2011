@@ -27,13 +27,13 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
 
 = Hardware Required =
 
-1) MMA 7260 3 axis Accelerometer 
-2)Smoke detector: Air quality control sensor, MQ135
-3)Temperature Sensor LM35
-4) LCD 16x2 h
-5) Motor with Fan as an AC prototype: MOT-1191,12v 60rpm DC motor
-6) Ultrasonic (distance) sensor
-7) AVR Board
-8) 12 V battery
-9) Fan (for simulation of monitoring of AC)
-10) Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V)
+# MMA 7260 3 axis Accelerometer 
+#Smoke detector: Air quality control sensor, MQ135
+#Temperature Sensor LM35
+# LCD 16x2 h
+# Motor with Fan as an AC prototype: MOT-1191,12v 60rpm DC motor
+# Ultrasonic (distance) sensor
+# AVR Board
+# 12 V battery
+# Fan (for simulation of monitoring of AC)
+# Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V)
