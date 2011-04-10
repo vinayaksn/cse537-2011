@@ -19,6 +19,13 @@ a) Arduino IDE
 
 b) Processing : It is an open source programming language and enviornment used in our project for generating visual presentation of the data serially written by the micro-controller.
 
+= Progress So Far =
+
+1. The installation of neccessary software has been done as well as the familiarity with the *Processing* has been built.
+
+2. Some examples of ploting analog values received at one of the port of the host system have been tried.
+
+
 = Reference =
 
 1. [http://www.processing.org/]
