@@ -34,11 +34,7 @@ There are two types of RFID tags:-
 
 =How to develop a RFID strategy in a company?=
 
-=How RFID helps in giving returns?=
-
-=Can RIFD disrupt your business?=
-
-=How to deploy RIFD successfully?=
+=How to deploy RFID successfully?=
 
 
 = Details =
