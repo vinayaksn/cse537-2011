@@ -1,0 +1,29 @@
+#summary Estimating the traffic density between two traffic lights.
+
+= Introduction: Original Proposal=
+
+As more and more vehicles continue to crowd the roads, the traffic jams are becoming an everyday norm – increasing the carbon emissions. To help the user drive to his destination without being stuck in jams, we propose an application that will help the user make an informed choice regarding his route and possibly he can avoid crowded routes and contribute his bit in reducing the carbon emissions. Assuming there will be many other users, each user’s location and moving speed will be aggregated at the data center and thus the places where traffic is stuck will be determined and the updates will be broadcasted on Twitter. Using these updates, another user, who would be setting out to travel, can alter his route according to his convenience.
+
+= Cut Down Version =
+
+Currently, we are making a system which will estimate the traffic density between only two traffic lights based on data obtained from the cars crossing the light.
+
+If time will permit during the semester, we will incorporate the functionality of updating the traffic on Twitter.
+
+
+= Hardware Requirement =
+
+The two main components which will constitute the system are:
+1. A Vehicle installed with the following hardware:
+  ● A microcontroller
+  ● A accelerometer
+  ● A Zigbee module
+2. A traffic red light with the following hardware:
+  ● A microcontroller
+  ● A Zigbee module (Coordinator)
+  ● An Ethernet shield (required in case of Twitter updates)
+
+= Progress So Far =
+
+1. Currently, we have interfaced the Zigbee module with the micro-controller and exchanged data between two modules.
+Tutorial For Zigbee: http://www.ladyada.net/make/xbee/
