@@ -1,13 +1,23 @@
-#summary One-sentence summary of this page.
+#summary .
 
 = Introduction =
 
-Add your content here.
+.............
+{{{
+Biosensors
+A biosensor typically comprises of five steps.These are
+	Biological reaction.
+		A conversion of a substrate into product which either directly or indirectly measures the 			event that is to be measured.
+	A transducer.
+		This can be said to be the most significant portion of a biosensor.This is what maps the 			reaction mentioned in step 1 to an electrical signal.
+	Amplification
+		The signal produced in the above step is typically weak and needs to be amplified.
+	Processing & Display
+		The resulting electric signal is then processed into a meaningful and understandable value 		which can be read by the user
 
+	types
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+History
+The biggest commercial success of medical sensing was Blood glucose monitoring which allowed sensing of the blood glucose level of a person. This is done through blood glucose meters which are essentially biosensors in themselves.The reaction of a small drop of blood with A chemically active strip is interfaced with the digital meter which reacts with a small amount of blood taken from the patient's finger.The recieved data is then processed and displayed on the meter.
+ The sensing technology used is obviously chemical in nature but different techniques are being worked at which are aimed at removing the need to take blood from the patient.These techniques are termed as non-invasive technology or minimal noninvasive technologies.
+}}}
