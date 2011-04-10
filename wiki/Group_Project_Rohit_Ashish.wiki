@@ -1,0 +1,60 @@
+#summary A Wireless Pulse-Oximter with an ability to log Data over an SD card as well as to the Internet
+
+= Introduction =
+
+  Pulse Oximetry is a non invasive method of measuring a person's oxygenation level. It monitors the percentage of hemoglobin (Hb) which is saturated with oxygen. A probe is attached to the patients finger or ear lobe comprising LEDs and photo-detector. As the light from the two LEDs (red - 660 nm and infrared - 950 nm) pass through the body tissues to a photo-detector, it is absorbed by blood and soft tissue.
+
+
+= Theory & Working Principle =
+
+  The light absorption rate at the two wavelengths by the hemoglobin is different and depends on the degree of oxygenation. The light level changes as the blood is pumped by the heart. As a consequence, the oximeter also measures the heart rate in beats per minute (BPM)
+
+*Biometric sensors that can detect pulse and oxygen content in the blood are called Pulse Oximeters.*
+
+The principle of pulse oximetry is based on the red and infrared light absorption characteristics of oxygenated and de-oxygenated hemoglobin. Oxygenated hemoglobin absorbs more infrared light and allows more red light to pass through. De-oxygenated (or reduced) hemoglobin absorbs more red light and allows more infrared light to pass through. Red light is in the 600-750 nm wavelength light band. Infrared light is in the 850-1000 nm wavelength light band.
+
+Pulse oximetry uses a light emitter with red and infrared LEDs that shines through a reasonably translucent site with good blood flow. Opposite the emitter is a photo-detector that receives the light that passes through the measuring site.
+
+
+= Basic Architecture =
+
+The whole system comprises of two subsystems, namely :-
+	a) The Sensor subsystem, and
+	b) The Base Station
+The Sensor subsystem comprises of IR and Red LEDs, Photo-Detector, RF Transmitters, a low power small size microcontroller(preferably from the ATTiny family, though not fully decided) to keep all these components working in proper manner.
+
+The Base station comprises of RF Receivers, SD cards attached to an SD card reader-writer(to Log data locally), LCDs(to Display Data Real Time), an Ethernet Shield(to log data over the Internet), all joined over together with our Arduino Boards.
+
+= Cut Down Version =
+
+The sensors are worn by the patient in the form of a clip over his finger wherein a photo-detector detects the frequency of light it absorbs that is initially emitted by the IR and the Red LED. This read value is amplified and sent to a base system using RF radios wirelessly. The base system comprises of LCD's to display the result in real time as well as writes the current read data onto an attached SD card and also uploads the same over the Internet so that a remotely located doctor is able to keep track of all his out-station patients. Making the sensor subsystem wireless gives us better manouverability as well as keep it light as majority of the heavy hardware is with the base station.
+
+
+= Hardware Requirement =
+
+1) For Sensor Subsystem:-
+	* RED LED,
+	* IR Transmitter
+	* Photo-Detector(namely TSL235R)
+	* LM358N Amplifier
+	* RF Transmitter(434 Mhz)
+	* A Micro-Controller(confusion still remians whether to go for Atmega168A or an ATTiny85 Micro-Controller)
+	* Power Source
+
+2) For Base Station:-
+	* RF Receivers
+	* SD Card slot
+	* SD Card
+	* Ethernet Shield
+	* LCDs
+	* Arduino Boards
+	* Power Source
+
+= Reference =
+
+1. [http://www.oximetry.org/pulseox/principles.htm]
+
+2. [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1276174700]
+
+3. [http://en.wikipedia.org/wiki/Pulse_oximetry]
+
