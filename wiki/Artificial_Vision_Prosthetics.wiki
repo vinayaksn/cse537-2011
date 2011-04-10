@@ -46,7 +46,7 @@ Camera captures the images and sends these image to the video processor in real 
 ===4. The Current State===
 
     * Current state-of-the-art and near-future artificial vision implants provide tens of electrodes, allowing for limited resolution visual perception.
-    * A company ,SecondSight,has been actively involved in the retinal prosthesis and have performed clinical trials on a series of retinal prosthesis.Their first generation implant had 16 electrodes and was implanted in 6 completely blind subjects between 2002 and 2004. These subjects, who were all completely blind prior to implantation, can now detect motion and identify certain shapes of objects..
+    * A company ,Second Sight,has been actively involved in the retinal prosthesis and have performed clinical trials on a series of retinal prosthesis.Their first generation implant had 16 electrodes and was implanted in 6 completely blind subjects between 2002 and 2004. These subjects, who were all completely blind prior to implantation, can now detect motion and identify certain shapes of objects..
     * Preclinical testing of a retinal prosthesis with more than 200 electrodes is under way and has the potential to significantly improve the visual acuity of people with RP and age-related macular degeneration. Additional research and development efforts are expected to produce artificial retinas with more than 1000 electrodes.
     * Based on studies, it is estimated that a 1000 electrode implant would provide capability of face recognition and reading
     * Artificial vision prosthesis has progressed more quickly and demonstrated more success than stem cell transplants and other potential treatments such as gene, pharmaceutical, and nutritional therapies.
