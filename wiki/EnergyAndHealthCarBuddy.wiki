@@ -12,6 +12,8 @@ Energy efficient vehicles can cut your travel costs, reduce your greenhouse gas 
 The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback of the driving pattern and monitoring the performance of the Air condition. It helps to keep a check on the air pollution level in the car, in order to give passengers a pollution free ride and even assist the driver in parking with the help of ultrasonic sensor. 
 
 
+
+
 = Motivation =
 
 •Our aim is to create a multifunctional device that would at least be useful to us and we will love to put it in our cars. 
@@ -19,6 +21,9 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
 •Automobiles, 2nd biggest factor after industry to contributing to global warming by producing green house gases such as: CO, CO2, NO2, CH4 (methane).
 •Low fuel efficiencies make us more vulnerable to oil price spikes and greater use of fuel.
 •So much pollution in the air, especially on busy roads poses threat to humans.  
+
+
+
 
 = Hardware Required =
 
