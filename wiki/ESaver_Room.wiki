@@ -1,4 +1,4 @@
-# This wiki page describes the details about the ESaver Room project.
+#summary This wiki page describes the details about the ESaver Room project.
 
 = Introduction =
 
