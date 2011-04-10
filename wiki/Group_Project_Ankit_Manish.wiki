@@ -23,7 +23,7 @@ b) Processing : It is an open source programming language and enviornment used i
 
 1. The installation of neccessary software has been done as well as the familiarity with the *Processing* has been built.
 
-2. Some examples of ploting analog values received at one of the port of the host system have been tried.
+2. Some examples of ploting analog values received at one of the port of the host system have been attempted.
 
 
 = Reference =
