@@ -14,10 +14,12 @@ If time will permit during the semester, we will incorporate the functionality o
 = Hardware Requirement =
 
 The two main components which will constitute the system are:
+
 1. A Vehicle installed with the following hardware:
   ● A microcontroller
   ● A accelerometer
   ● A Zigbee module
+
 2. A traffic red light with the following hardware:
   ● A microcontroller
   ● A Zigbee module (Coordinator)
