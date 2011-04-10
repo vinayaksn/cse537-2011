@@ -5,7 +5,7 @@
 We all waste a lot of power throughout the day due to our carelessness when we don't turn off the small things like fans, lights, ACs etc when we leave the room. How about making a smarter room which can automatically switch off the equipments if there is nobody inside the room and switch them on when somebody enters the room. This project describes how we can use a micro-controller to upgrade our room into a smart electricity saving room.
 
 = Hardware required =
-The following are the hardware required:
+The following are the hardware required:                                
 1. IR sensors
 2. Relays
    two types of relay will be used 5A and 15A for fan and AC
