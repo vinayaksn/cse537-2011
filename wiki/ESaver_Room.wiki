@@ -1,0 +1,13 @@
+# This wiki page describes the details about the ESaver Room project.
+
+= Introduction =
+
+We all waste a lot of power throughout the day due to our carelessness when we don't turn off the small things like fans, lights, ACs etc when we leave the room. How about making a smarter room which can automatically switch off the equipments if there is nobody inside the room and switch them on when somebody enters the room. This project describes how we can use a micro-controller to upgrade our room into a smart electricity saving room.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
