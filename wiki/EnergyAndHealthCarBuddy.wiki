@@ -12,7 +12,7 @@ Energy efficient vehicles can cut your travel costs, reduce your greenhouse gas 
 The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback of the driving pattern and monitoring the performance of the Air condition. It helps to keep a check on the air pollution level in the car, in order to give passengers a pollution free ride and even assist the driver in parking with the help of ultrasonic sensor. 
 
 
-= MOTIVATION =
+= Motivation =
 
 •Our aim is to create a multifunctional device that would at least be useful to us and we will love to put it in our cars. 
 •It is a fact that improving mileage would compromise safety is untrue, increasing fuel efficiency would cost consumers significantly more. EHCB would be cheap and the return on investment would be really good as it’s highly useful thing.
@@ -20,7 +20,7 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
 •Low fuel efficiencies make us more vulnerable to oil price spikes and greater use of fuel.
 •So much pollution in the air, especially on busy roads poses threat to humans.  
 
-= HARDWARE REQUIRED =
+= Hardware Required =
 
 1) MMA 7260 3 axis Accelerometer 
 2)Smoke detector: Air quality control sensor, MQ135
