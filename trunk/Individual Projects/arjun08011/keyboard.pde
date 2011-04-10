@@ -44,9 +44,9 @@ void setup()
   delay(1000);
 }
 
-void readbuf(char buf[32]) {
+int readbuf(char buf[16]) {
   //lcd.clear();
-  lcd.setCursor(0,0);
+  // lcd.setCursor(0,0);
   byte data, i = 0;
   
   Serial.print("reading buf\n");
@@ -54,20 +54,34 @@ void readbuf(char buf[32]) {
   //while (!keyboard.available());  
   Serial.print("keyboard available\n");
   data = keyboard.read();
-  while (data != '\n' && data != PS2_KC_ESC && i < 31) {
+  while (data != '\n' && data != PS2_KC_ESC && i < 15) {
     Serial.print("\nread data: ");
     buf[i] = data;
     lcd.print((char)i);
     Serial.print((char)i);
     
-    if (++i == 16)
-      lcd.setCursor(0, 1);
+    if (data == PC_KC_BKSP) {
+      lcd.rightToLeft();
+      lcd.print(" "); 
+      lcd.leftToRight();
+      lcd.print(" "); 
+      lcd.rightToLeft();
+      lcd.print(" "); 
+      lcd.leftToRight(); 
+      data[i] = 0;
+      --i;
+    }
+    
+    //if (++i == 16)
+    //  lcd.setCursor(0, 1);
     
     while (!keyboard.available());  
     data = keyboard.read();
   }
   
   buf[i] = data;
+  
+  return i+1;
 }
 
 /**
@@ -124,7 +138,11 @@ void loop()
   lcd.clear();
   i = 0;
   while (1) {
-    while (!keyboard.available());
+    
+    byte n = readbuf(buf);
+    out.write(buf, n);
+    
+    /*while (!keyboard.available());
     data = keyboard.read();
     if (data == PS2_KC_ESC)
       break;
