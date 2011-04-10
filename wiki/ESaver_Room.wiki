@@ -36,3 +36,15 @@ Two types of relay will be used - 5A and 15A for fan and AC
 4.The current sensors measure the current consumption in all the devices, through which we can calculate the energy saved. (To be done)
 
 5.Through the Ethernet shield send the collected data to the computer, where it can be hoisted on the web. (To be done)
+
+= Project Demo =
+
+When somebody enters into the room then the counter is incremented by one and the light and other appliances in the room will be switched ON and when any one leaves the room then the counter is decremented by one.
+ 
+The light will be only switched OFF until all the persons in the room go out. The total number of persons inside the room is also displayed on the LCD. 
+
+The microcontroller with the help of relay does the above job. It receives the signals from the IR sensors, and this signal is operated under the control of software, which is stored in ROM.
+
+Microcontroller ATmega328P continuously monitors the Infrared Receivers, When any object passes through the IR Receiver's then the IR Rays falling on the receivers are obstructed , this obstruction is sensed by the Microcontroller and the counter is incremented or decremented accordingly.
+
+Further current sensors will be used to monitor the current usage and then ethernet shield will be used to send this data on to the net so that the user can view the usage log(functionality of smart meter).
