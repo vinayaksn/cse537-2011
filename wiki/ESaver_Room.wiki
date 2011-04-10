@@ -6,12 +6,12 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 
 = Hardware required =
 The following are the hardware required:                                
-1. IR sensors
-2. Relays
+ # IR sensors
+ # Relays
    two types of relay will be used 5A and 15A for fan and AC
-3. Ethernet shield
-4. Current sensor
-5. ATmega328 microcontroller
+ # Ethernet shield
+ # Current sensor
+ # ATmega328 microcontroller
 
 = Details =
 
