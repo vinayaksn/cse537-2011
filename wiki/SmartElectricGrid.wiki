@@ -4,9 +4,26 @@ The traditional electric power grid is one way push-out-to-consumers. It will be
 
 U.S. power industry experts say smart electrical grids that synchronize supply and demand will be a crucial weapon in the fight against global climate change. It allows households to cut electricity costs by using energy-consuming devices at low-rate times of day and enables utility companies to cut peak-time demand and avoid costly blackouts. [1]
 
+= Security Issues =
+When estimating the risk level of any new technology, we have to think about the potential attackers and their motives.
+"For example, if we compare two technologies that are emerging, internet connectivity to kitchen appliances and the smart power grid, there is not much to be gained from hacking a fridge, so the risk is not likely, but extremists might want to take down electricity nationwide"
+== Possible Threats ==
+Introduction of any new technology has it's pros as well as the cons. Introduction of smart grid on a large scale has some projected risks. There will surely be some security issues which will arise as the technology comes into use by the common man. Some of the projected Security issues are as follows:
+ * Information about who uses what electrical devices at particular times of the day, would represent a highly valuable marketing resource, but at the same time can become a privacy issue.
+ * If usage data ever fell into the wrong hands, criminals would have a complete profile of when people were likely to be away from home.
+ * Denial Of Service Attack: One of the most expected attacks on the smart grid is DOS. DOS attack can help the attacker shut down various sources of energy by hacking the smart meters and giving the output to the utility that the energy consumption is very high. This will hence force the users or the utility to switch off the electricity supply. Hence a DOS attack can be a big threat to the smart grid. It is also a threat that could actually grow exponentially which might even have the potential to crash the complete smart grid.
+ * Insecure Meters: This is a complete dimension for attacks on the smart grid. The security of the meter is as important as the security of the network. Insecure meters can actually lead to large scale security issues which might not even be estimated or predicted.
+
+== A Secure Smart Grid: Areas to Work Upon ==
+To make smart grids a reality it's a foremost important to defend the possible security issues with counter solutions. A secure smart grid must:
+* Meet the confidentiality, integrity availability and legal privacy requirements related to information collected by energy suppliers. 
+* The physical and information security of the meters themselves by having anti tamper mechanism and strong authentication. 
+* The security of the communication links with the meters and ensuring that the meters will not create an entry point for attacks on the critical national infrastructure.
+ 
 
 
 
 = References =
 
 [1] http://www.upi.com/Top_News/World-News/2010/11/19/Smart-electrical-grids-coming/UPI-16221290199711/#ixzz1ICBOmTUG
+[2] http://www.computerweekly.com/Articles/2011/01/25/245074/Smart-meter-and-smart-grids-security-risk-or-opportunity.htm
