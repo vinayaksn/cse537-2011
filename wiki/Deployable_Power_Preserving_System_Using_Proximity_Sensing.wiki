@@ -24,8 +24,8 @@ Interfacing the IR sensing module with the micro-controller and experimenting to
 Microcontroller Board: ATMega328p (already have)
 
 IR Sensor : Infrared Proximity Sensor Long Range - Sharp GP2Y0A02YK0F
-Price : Rs. 880/-http://www.rhydolabz.com
-_/index.php?main_page=product_info&cPath=137_150&products_id=469_
+Price : Rs. 880
+/-http://www.rhydolabz.com_index.php?main_page=product_info&cPath=137_150&products_id=469_
 
 Relay Switches.
  
