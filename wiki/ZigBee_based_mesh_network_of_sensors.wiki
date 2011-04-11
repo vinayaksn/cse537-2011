@@ -11,3 +11,4 @@ In this Project we will form a Mesh network of ZigBee Nodes which will used to p
   * Make a point to multipoint and mesh network of ZigBee nodes.
   * Configuring ZigBee coordinator and router
   * Interfacing sensors (temperature or motion) to each node and deploy the network and collecting data.
+  * Collecting and plotting the data
