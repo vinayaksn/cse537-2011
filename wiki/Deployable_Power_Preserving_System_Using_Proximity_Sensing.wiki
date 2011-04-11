@@ -1,4 +1,4 @@
-#summary _Designing a automatic cutoff system for electronic appliances using proximity sensor and measuring the power use statistics with a current sensor_
+#summary Designing a automatic cutoff system for electronic appliances using proximity sensor and measuring the power use statistics with a current sensor
 
 = Introduction =
 
