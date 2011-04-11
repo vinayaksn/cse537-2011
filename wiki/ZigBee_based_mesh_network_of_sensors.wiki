@@ -5,7 +5,4 @@ Mesh networking (topology) is a type of networking where each node must not only
 
 *Introduction*
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+In this Project we will form a Mesh network of ZigBee Nodes which will used to pass sensory data from multiple node to Master Node. Each Zigbee node will be interfaced with sensors. Sensory data collected from these nodes will pass to Master Node using this mesh network.
