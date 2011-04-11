@@ -1,12 +1,18 @@
+A wireless switching system
 
-= Introduction =
+=Introduction=
+A system where a mobile phone can be used to control electronic appliances or any circuitary connected.The microcontroller and the mobile phone connect through bluetooth over which the communication takes place.The actual switching is done through relays which are interfaced with the mcu and the circuitry involved.The mcu will have a bluetooth module interfaced to it from which it can communicate to a mobile.
 
-Add your content here.
+=Hardware Required=
+Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
+A mobile device with midp support.
+Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
+=Steps=
+ * Interface the bluetooth module to the microcontroller.
+ * Build an application for the mobile to connect to the mcu which allows one to choose the device from a list which can then be operated on.
+ * Interface relays with the microcontroller and integrate.
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+=Progress=
+ * Interfaced the bluetooth module(bluelink2) to the microcontroller. 
+  * used level converter at Tx because bluelink worked on 3.3V.
+ * Connected to my laptop(for now) through hyperlink.	
