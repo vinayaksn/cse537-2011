@@ -12,6 +12,8 @@ Two types of relay will be used - 5A and 15A for fan and AC
  # Ethernet shield
  # Current sensor
  # ATmega328 microcontroller
+ # PIR sensor
+ # contact sensor
 
 = Hardware Functionality =
 
@@ -24,6 +26,8 @@ Two types of relay will be used - 5A and 15A for fan and AC
 4. Current Sensor: it will be used to measure the total electricity usage in the room.
 
 5. LCD: To display the number of people in the room.
+
+6. Contact sensor: tells when the door is opened.
 
 = Steps =
 
