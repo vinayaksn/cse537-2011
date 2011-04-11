@@ -1,0 +1,28 @@
+We are essentially finding a way to transfer the electricity consumption from each wire to a central point through Ethernet. 
+
+= Introduction =
+We live in the age of internet. In this project we will try and take a small step in this direction by transmitting the electrical usage on the ethernet to some remote location. 
+
+Add your content here.
+
+
+= Details =
+
+The reading from the wires is taken through the Current Transformers. It's a transformer designed to measure the AC current flowing in a single conductor. The current to be measured is a wire routed through the center hole of the transformer. The measured AC current is the ratio transferred to the windings of the CT. To use in a Arduino this secondary current must be terminated in a resistance load and then rectified, filtered and scaled before wiring to an Arduino A/D input pin. A current transformer is a basically a transformer where the wire going in acts as a primary and the output is coming from an output coil. 
+
+In the first stage,we will put multiple clamp-on CTs in multiple output connections and connect them to multiple ADC channels. We will send this individual CT information over ethernet to a central location. In this stage we will connect a meter and manually take the readings from the meter (or some other accurate source such that we know the accuracy of your experiments). 
+
+In the Second stage we will , add a smart meter as well and interface it to the microcontroller over serial interface.The serial interface can be RS232. 
+
+= Hardware = 
+1. Ethernet Shield
+2. Current Tranformers
+3. Atmega 328p micro controller. 
+4. Smart meters.
+5. Normal meters.  
+
+= References = 
+http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1246826892/all
+http://www.arduino.cc/en/Main/ArduinoEthernetShield
+http://www.abctransformers.in/current-transformer.html
+http://www.altoindia.com/query.php
