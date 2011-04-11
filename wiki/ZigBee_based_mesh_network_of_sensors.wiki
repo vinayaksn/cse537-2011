@@ -12,3 +12,11 @@ In this Project we will form a Mesh network of ZigBee Nodes which will used to p
   * Configuring ZigBee coordinator and router
   * Interfacing sensors (temperature or motion) to each node and deploy the network and collecting data.
   * Collecting and plotting the data
+
+=References=
+  * http://www.sparkfun.com/datasheets/Wireless/Zigbee/XBee-Datasheet.pdf
+  * http://antipastohw.blogspot.com/2009/01/xbee-shield-to-xbee-shield.html
+  * http://arduino.cc/playground/Shields/Xbee012
+  * https://sites.google.com/site/xbeetutorial/
+  * http://www.johnhenryshammer.com/WOW2/pagesHowTo/networkOverview.php#index
+  
