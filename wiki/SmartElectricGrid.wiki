@@ -16,9 +16,9 @@ Introduction of any new technology has it's pros as well as the cons. Introducti
 
 == A Secure Smart Grid: Areas to Work Upon ==
 To make smart grids a reality it's a foremost important to defend the possible security issues with counter solutions. A secure smart grid must:
-* Meet the confidentiality, integrity availability and legal privacy requirements related to information collected by energy suppliers. 
-* The physical and information security of the meters themselves by having anti tamper mechanism and strong authentication. 
-* The security of the communication links with the meters and ensuring that the meters will not create an entry point for attacks on the critical national infrastructure.
+ * Meet the confidentiality, integrity availability and legal privacy requirements related to information collected by energy suppliers. 
+ * The physical and information security of the meters themselves by having anti tamper mechanism and strong authentication. 
+ * The security of the communication links with the meters and ensuring that the meters will not create an entry point for attacks on the critical national infrastructure.
  
 
 
