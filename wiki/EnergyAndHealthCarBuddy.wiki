@@ -4,10 +4,10 @@
 
 Energy efficient vehicles can cut your travel costs, reduce your greenhouse gas emissions, and make you healthier. Keeping these points in mind, the aim of the project is to add features to our cars to make it eco friendly and user friendly. Following are the features:
 
-1) Detection of high smoke level inside the car and take appropriate actions.  
-2) Analyze driving pattern of the driver in real time to give a feedback on the route and driving pattern.  
-3) Automatic Temperature control in the car.
-4) Assistance in car parking.
+#Detection of high smoke level inside the car and take appropriate actions.  
+#Analyze driving pattern of the driver in real time to give a feedback on the route and driving pattern.  
+# Automatic Temperature control in the car.
+#Assistance in car parking.
 
 The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback of the driving pattern and monitoring the performance of the Air condition. It helps to keep a check on the air pollution level in the car, in order to give passengers a pollution free ride and even assist the driver in parking with the help of ultrasonic sensor. 
 
@@ -27,13 +27,13 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
 
 = Hardware Required =
 
-# MMA 7260 3 axis Accelerometer 
-#Smoke detector: Air quality control sensor, MQ135
-#Temperature Sensor LM35
-# LCD 16x2 h
-# Motor with Fan as an AC prototype: MOT-1191,12v 60rpm DC motor
-# Ultrasonic (distance) sensor
-# AVR Board
-# 12 V battery
-# Fan (for simulation of monitoring of AC)
-# Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V)
+# MMA 7260 3 axis Accelerometer.
+# Smoke detector: Air quality control sensor, MQ135l.
+# Temperature Sensor LM35.
+# LCD 16x2 h.
+# Motor with Fan as an AC prototype: MOT-1191,12v 60rpm DC motor.
+# Ultrasonic (distance) sensor.
+# AVR Board.
+# 12 V battery.
+# Fan (for simulation of monitoring of AC).
+# Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V).
