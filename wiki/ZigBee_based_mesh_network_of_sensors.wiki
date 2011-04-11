@@ -1,10 +1,9 @@
 #summary One-sentence summary of this page
 ZigBee is a specification for a suite of high level communication protocols using small, low-power digital radios based on the IEEE 802.15.4-2003 standard for Low-Rate Wireless Personal Area Networks (LR-WPANs), such as wireless light switches with lamps, electrical meters with in-home-displays, consumer electronics equipment via short-range radio needing low rates of data transfer.
 
+Mesh networking (topology) is a type of networking where each node must not only capture and disseminate its own data, but also serve as a relay for other sensor nodes, that is, it must collaborate to propagate the data in the network.
+
 Add your content here.
-
-
-= Details =
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
