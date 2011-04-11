@@ -2,38 +2,39 @@
 
 = Aim & Applications =
 
-Energy efficient vehicles can cut your travel costs, reduce your greenhouse gas emissions, and make you healthier. Keeping these points in mind, the aim of the project is to add features to our cars to make it eco friendly and user friendly. Following are the features:
+Energy efficient vehicles can cut your travel costs, reduce your greenhouse gas emissions, and make you healthier. Keeping these points in mind, the aim of the project is to add features to our cars to make them eco friendly and user friendly by providing low cost solutions. Following are the features:
 
-#Detection of high smoke level inside the car and take appropriate actions.  
-#Analyze driving pattern of the driver in real time to give a feedback on the route and driving pattern.  
-# Automatic Temperature control in the car.
-#Assistance in car parking.
+ # Detection of high smoke level inside the car and take appropriate           actions.  
+ # Analyze driving pattern of the driver in real time to give a feedback on the route and driving pattern.  
+ # Automatic Temperature control in the car.
+ # Assistance in car parking.
 
-The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback of the driving pattern and monitoring the performance of the Air condition. It helps to keep a check on the air pollution level in the car, in order to give passengers a pollution free ride and even assist the driver in parking with the help of ultrasonic sensor. 
+The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback of the driving pattern and monitoring the performance of the Air condition. It helps to keep a check on the air pollution level in the car, in order to give passengers a pollution free ride and even assist the driver in parking the vehicle. 
 
 
 
 
 = Motivation =
 
-•Our aim is to create a multifunctional device that would at least be useful to us and we will love to put it in our cars. 
-•It is a fact that improving mileage would compromise safety is untrue, increasing fuel efficiency would cost consumers significantly more. EHCB would be cheap and the return on investment would be really good as it’s highly useful thing.
-•Automobiles, 2nd biggest factor after industry to contributing to global warming by producing green house gases such as: CO, CO2, NO2, CH4 (methane).
-•Low fuel efficiencies make us more vulnerable to oil price spikes and greater use of fuel.
-•So much pollution in the air, especially on busy roads poses threat to humans.  
-
+ # Our aim is to create a multifunctional device that would at least be  useful to us and we will love to put it in our cars. 
+ # It is a fact that improving mileage would compromise safety is untrue, increasing fuel efficiency would cost consumers significantly more. EHCB would be cheap and the return on investment would be really good as it’s highly useful thing.
+ # Automobiles, 2nd biggest factor after industry to contributing to global warming by producing green house gases such as: CO, CO2, NO2, CH4 (methane).
+ # Low fuel efficiencies make us more vulnerable to oil price spikes and greater use of fuel.
+ # So much pollution in the air, especially on busy roads poses threat to humans.  
 
 
 
 = Hardware Required =
 
-# MMA 7260 3 axis Accelerometer.
-# Smoke detector: Air quality control sensor, MQ135l.
-# Temperature Sensor LM35.
-# LCD 16x2 h.
-# Motor with Fan as an AC prototype: MOT-1191,12v 60rpm DC motor.
-# Ultrasonic (distance) sensor.
-# AVR Board.
-# 12 V battery.
-# Fan (for simulation of monitoring of AC).
-# Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V).
+ # MMA 7260 3 axis Accelerometer.
+ # Smoke detector: Air quality control sensor, MQ135l.
+ # Temperature Sensor LM35.
+ # LCD 16x2 h.
+ # Motor with Fan as an AC prototype: MOT-1191,12v 500rpm DC motor.
+ # Ultrasonic (distance) sensor.
+ # AVR Board.
+ # 12 V battery.
+ # Fan (for simulation of monitoring of AC).
+ # Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V).
+
+ 
