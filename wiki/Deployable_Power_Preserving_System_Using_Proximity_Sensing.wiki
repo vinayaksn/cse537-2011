@@ -17,15 +17,19 @@ The microcontroller would also store the daily power consumption of the device a
 
 _First deadline_
 
-Interfacing the IR sensing module with the micro-controller and experimenting to discover the optimal threshold values. 
+Interfacing the IR sensing module with the micro-controller and experimenting to discover the optimal threshold values and the optimal sensing frequency for the IR module. 
 
 ==Hardware Requirements==
 
 Microcontroller Board: ATMega328p (already have)
+
 IR Sensor : Infrared Proximity Sensor Long Range - Sharp GP2Y0A02YK0F
 Price : Rs. 880/-http://www.rhydolabz.com
 _/index.php?main_page=product_info&cPath=137_150&products_id=469_
-Relay 
+
+Relay Switches.
+ 
 Current Sensor: ACS712 Current Sensor (already have)
+
 SD Card Reader : already have. 
 
