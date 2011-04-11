@@ -1,4 +1,4 @@
-_Designing a automatic cutoff system for electronic appliances using proximity sensor and measuring the power use statistics with a current sensor_   
+#summary _Designing a automatic cutoff system for electronic appliances using proximity sensor and measuring the power use statistics with a current sensor_
 
 = Introduction =
 
@@ -32,4 +32,3 @@ Relay Switches.
 Current Sensor: ACS712 Current Sensor (already have)
 
 SD Card Reader : already have. 
-
