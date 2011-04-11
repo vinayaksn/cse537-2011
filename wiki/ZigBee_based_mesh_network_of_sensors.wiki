@@ -8,7 +8,7 @@ Mesh networking (topology) is a type of networking where each node must not only
 In this Project we will form a Mesh network of ZigBee Nodes which will used to pass sensory data from multiple node to Master Node. Each Zigbee node will be interfaced with sensors. Sensory data collected from these nodes will pass to Master Node using this mesh network.
 
 =Objectives=
-1)Make a point to multipoint and mesh network of ZigBee nodes.\n
-2)Configuring ZigBee coordinator and router\n
+1)Make a point to multipoint and mesh network of ZigBee nodes.
+2)Configuring ZigBee coordinator and router
 3)Interfacing sensors (temperature or motion) to each node and deploy the
 network and collecting data.
