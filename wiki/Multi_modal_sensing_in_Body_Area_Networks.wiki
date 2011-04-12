@@ -7,7 +7,7 @@ A Body Area Network is a network of miniaturized Body Sensor Units and a single 
 
 = Details =
  Dr. Eric Topol presentation on Body Area Network
-<wiki:video url="http://video.ted.com/talks/dynamic/EricTopol_2009P-medium.flv"/>  
+<wiki:video url="http://www.youtube.com/watch?v=pTZM9X3JfTk"/>  
  
 = References =
   * http://www.usc.edu/dept/ee/scip/assets/004/72287.pdf
