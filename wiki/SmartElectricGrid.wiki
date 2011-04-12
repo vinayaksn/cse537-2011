@@ -4,6 +4,9 @@ The traditional electric power grid is one way push-out-to-consumers. It will be
 
 U.S. power industry experts say smart electrical grids that synchronize supply and demand will be a crucial weapon in the fight against global climate change. It allows households to cut electricity costs by using energy-consuming devices at low-rate times of day and enables utility companies to cut peak-time demand and avoid costly blackouts. [1]
 
+For a better understanding of the smart grid:
+http://www.youtube.com/watch?v=-8cM4WfZ_Wg
+
 = Security Issues =
 When estimating the risk level of any new technology, we have to think about the potential attackers and their motives.
 "For example, if we compare two technologies that are emerging, internet connectivity to kitchen appliances and the smart power grid, there is not much to be gained from hacking a fridge, so the risk is not likely, but extremists might want to take down electricity nationwide"
