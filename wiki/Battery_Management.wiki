@@ -31,6 +31,14 @@ Examples of such cars are:
  # Pollution 
 
  the Electric Vehicles(EVs) came into existence. But they are still unable to penetrate into the consumer market. One of the major reason of the lack of acceptance of EVs powered by battery could be the presence of only 1 source of power i.e. battery, which makes it less usable as even the advanced battery system could only support 140 to 150 kms at one go. So after every 100 to 150 kms you need to recharge your battery overnight and due to low of number of recharging stations, you can't rely only on the battery powered vehicle for long distance travel. 
+
+= Types of batteries =
+ As there are many types of electric and hybrid electric vehicles which are used according to specifications and the power needed by the electric motor of the car. The most commonly used batteries are:
+ # Li-Ion battery
+ # NiMH Battery
+ # Lead Acid battery(now rarely used)
+These cars use different mechanisms to recharge these batteries and mainly use the electric engine at lower speeds.
+ 
 = Factors Affecting Battery Performance =
 There are  a number of factors affecting batteries in vehicle hence it is important to have effecient battery management. The factors affecting battery life are :
  # _Temperature_ :Temperature has severe affects on battery performance and these affects depend greatly on the battery chemistry used. A rule of thumb for temperature degradation is that battery performance will decrease by 35% at either the upper or lower range of the specified operating threshold, outside the threshold the battery may not                     work at all.
@@ -40,6 +48,10 @@ There are  a number of factors affecting batteries in vehicle hence it is import
  # _Power to weight ratio_ : The battery capacity also depends on the weight of the vehicle as we need more and more powerful batteries for heavier vehicles.
  # _Other factors_ : factors like cell ageing, weather, usage, maintainance, etc. also affect the battery and these should also be catered to.
 
+= Mechanism = 
+The mechanisms that electric and hybrid electric vehicles use to recharge their batteries are: 
+ # Regenerative Braking: This mechanism help the car convert its kinetic energy into electrical energy of the battery instead of letting it go waste as heat by the usual brake mechanism. While braking the rotors slow down the car while charging the battery.
+ # Electrical Generator: This is the conventional way of recharging the battery as this convert mechanical energy in electrical energy.
 
 = _References_ =
  # http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
@@ -49,3 +61,4 @@ There are  a number of factors affecting batteries in vehicle hence it is import
  # http://www.mpoweruk.com/bms.htm
  # http://www.mpoweruk.com/life.htm
  # http://en.wikipedia.org/wiki/Battery_management_system
+ # http://web.cecs.pdx.edu/~strom/ev2/articles/Gover_slides_tutorial _EV_HEV.pdf
