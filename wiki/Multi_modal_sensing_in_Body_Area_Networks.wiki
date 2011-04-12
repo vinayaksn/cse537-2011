@@ -11,5 +11,6 @@ A Body Area Network is a network of miniaturized Body Sensor Units and a single 
  
  <h2>KNOWME:</h2>
  A complete end-to-end  body area sensing system that integrates off-the-shelf biometric sensors with a Nokia N95 mobile phone to continuously monitor the metabolic signals of subject.
+http://www.freeimagehosting.net/uploads/ef781e095d.jpg
 = References =
   * http://www.usc.edu/dept/ee/scip/assets/004/72287.pdf
