@@ -9,6 +9,7 @@ A Body Area Network is a network of miniaturized Body Sensor Units and a single 
  Dr. Eric Topol presentation on Body Area Network
 <wiki:video url="http://www.youtube.com/watch?v=pTZM9X3JfTk"/>  
  
- KNOWME:
+ <h2>KNOWME:<h/2>
+ A complete end-to-end  body area sensing system that integrates off-the-shelf biometric sensors with a Nokia N95 mobile phone to continuously monitor the metabolic signals of subject.
 = References =
   * http://www.usc.edu/dept/ee/scip/assets/004/72287.pdf
