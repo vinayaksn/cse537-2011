@@ -32,6 +32,10 @@ Examples of such cars are:
 
  the Electric Vehicles(EVs) came into existence. But they are still unable to penetrate into the consumer market. One of the major reason of the lack of acceptance of EVs powered by battery could be the presence of only 1 source of power i.e. battery, which makes it less usable as even the advanced battery system could only support 140 to 150 kms at one go. So after every 100 to 150 kms you need to recharge your battery overnight and due to low of number of recharging stations, you can't rely only on the battery powered vehicle for long distance travel. 
 
+= Need for Battery Management =
+
+For operating at its full efficiency, a hybrid car must use the full capacity of its battery during each discharge cycle, i.e. when the car is running on electric motors and the internal combustion engine is not consuming any energy. In such scenario if the battery control system turns the internal combustion engine on before the battery is fully discharged, the fuel consumption is increased which is totally opposite to its aim of increasing the efficiency and reducing the overall fuel consumption. However, if the control system waits for too long before the restart of the engine, there is a risk of car break down if the battery will fully discharge. Hence, in order to avoid such scenarios there is a dire need for efficient battery management.
+
 = Types of batteries =
  As there are many types of electric and hybrid electric vehicles which are used according to specifications and the power needed by the electric motor of the car. The most commonly used batteries are:
  # Li-Ion battery
