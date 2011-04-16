@@ -7,12 +7,6 @@ The hybrid electric vehicle (HEV) is quickly becoming the most popular green car
 Another class of cars that are growing are electric cars which right now are low in number but is going to be the thing to turn to after fuel becomes scarce for Hybrid vehicles as these solely run on the battery and hence battery management is an even bigger task here.
 Hybrid electric vehicles employ complex power electronic circuitry to control the flow of electric energy through the vehicle.
 
-Examples of such cars are:
- # Toyota Prius
- # Honda Civic
- # Honda Insight
- # Honda Accord
- # Ford Escape
  
 = Contents = 
  # Hybrid Electric Vehicles (Need /Types)
@@ -32,6 +26,26 @@ Examples of such cars are:
 
  the Electric Vehicles(EVs) came into existence. But they are still unable to penetrate into the consumer market. One of the major reason of the lack of acceptance of EVs powered by battery could be the presence of only 1 source of power i.e. battery, which makes it less usable as even the advanced battery system could only support 140 to 150 kms at one go. So after every 100 to 150 kms you need to recharge your battery overnight and due to low of number of recharging stations, you can't rely only on the battery powered vehicle for long distance travel. 
 
+Some of the advantages of such vehicles could be-
+ # The presence of both gasoline and electric vehicles renders the best of both worlds.
+ # About two times more efficient than the traditional internal combustion engine.
+ # It has equivalent power, range, cost and safety of a conventional vehicle while reducing fuel costs and harmful emissions.
+ # The battery is continuously recharged by a motor/generator driven by the Internal Combustion Engine (ICE) or by regenerative braking.
+
+Examples of such cars are:
+ # Toyota Prius
+ # Honda Civic
+ # Honda Insight
+ # Honda Accord
+ # Ford Escape
+
+= Mechanism = 
+The mechanisms that electric and hybrid electric vehicles use to recharge their batteries are: 
+ # _Regenerative Braking_ : This mechanism help the car convert its kinetic energy into electrical energy of the battery instead of letting it go waste as heat by the usual brake mechanism. While braking the rotors slow down the car while charging the battery.
+ # _Electrical Generator_: This is the conventional way of recharging the battery as this convert mechanical energy in electrical energy.
+
+ The _Controller Area Network (CAN)_ uses high-speed communication busses to facilitate communication between the microprocessors and the various control systems. For example, battery management systems, transmission controller, engine controller, etc.
+
 = Need for Battery Management =
 
 For operating at its full efficiency, a hybrid car must use the full capacity of its battery during each discharge cycle, i.e. when the car is running on electric motors and the internal combustion engine is not consuming any energy. In such scenario if the battery control system turns the internal combustion engine on before the battery is fully discharged, the fuel consumption is increased which is totally opposite to its aim of increasing the efficiency and reducing the overall fuel consumption. However, if the control system waits for too long before the restart of the engine, there is a risk of car break down if the battery will fully discharge. Hence, in order to avoid such scenarios there is a dire need for efficient battery management.
@@ -46,16 +60,19 @@ These cars use different mechanisms to recharge these batteries and mainly use t
 = Factors Affecting Battery Performance =
 There are  a number of factors affecting batteries in vehicle hence it is important to have effecient battery management. The factors affecting battery life are :
  # _Temperature_ :Temperature has severe affects on battery performance and these affects depend greatly on the battery chemistry used. A rule of thumb for temperature degradation is that battery performance will decrease by 35% at either the upper or lower range of the specified operating threshold, outside the threshold the battery may not                     work at all.
- # _DOD(Depth of Discharge)_ : The rate at which the battery is discharged and for how long also affects the battery life.
+ # _DOD(Depth of Discharge)_ : Batteries are able to maintain their performance longer when they are not deeply discharged regularly.
  # _Charging_: The level of charging, the voltage at which the battery is charged and for how long at a stretch also affects the battery as charging the battery for too long might damage it and other such factors.
  # _Voltage affects_ : Rechargeable batteries each have a characteristic working voltage range associated with the particular cell chemistry employed. The practical voltage limits are a consequence of the onset of undesirable chemical reactions which take place beyond the safe working range.
  # _Power to weight ratio_ : The battery capacity also depends on the weight of the vehicle as we need more and more powerful batteries for heavier vehicles.
  # _Other factors_ : factors like cell ageing, weather, usage, maintainance, etc. also affect the battery and these should also be catered to.
 
-= Mechanism = 
-The mechanisms that electric and hybrid electric vehicles use to recharge their batteries are: 
- # Regenerative Braking: This mechanism help the car convert its kinetic energy into electrical energy of the battery instead of letting it go waste as heat by the usual brake mechanism. While braking the rotors slow down the car while charging the battery.
- # Electrical Generator: This is the conventional way of recharging the battery as this convert mechanical energy in electrical energy.
+= Battery Management System =
+ BMS for hybrid cars consists of a _battery_, a _generator_ which only produces electric power and an _electric motor_ which can act as both a motor and a generator. For example, it can draw energy from the batteries to accelerate the car and it can also slow down the car down and return energy to the batteries.
+
+SOC: The State of Charge of a battery is its available capacity expressed as a percentage of its rated capacity
+
+= Research =
+ #http://puregreencars.com/Green-Cars-News/Technology/ricardo_shows_low_cost_battery_pack_for_hybrid_electric_vehicles.html
 
 = _References_ =
  # http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
