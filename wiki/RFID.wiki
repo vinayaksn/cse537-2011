@@ -78,11 +78,16 @@ they can be used in access applications. The size could be as small as a pencil 
 
 There are two types of RFID tags:-
 
-1) Active RFID Tags: - contain a battery and therefore can transmit signals automatically and they are read/write tags i.e. the tag data can be written or modified. The memory size of active tag varies according to the requirements.
+* Active RFID Tags: - 
 
-2) Passive RFID Tags: -doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
+ They contain a battery and therefore can transmit signals automatically and they are read/write tags i.e. the tag data can be written or modified. The memory size of active tag varies according to the requirements.
 
+* Passive RFID Tags: -
+
+ They doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
+
+----
 
 = References =
 
-[http://en.wikipedia.org/wiki/Radio-frequency_identification]-to visit the Wikipedia page of RFID.
+[http://en.wikipedia.org/wiki/Radio-frequency_identification]
