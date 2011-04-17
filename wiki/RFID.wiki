@@ -18,8 +18,7 @@ RFID is designed to enable readers to capture data on
 tags and transmit it to a computer system—without 
 needing any manual intervention.
 
-
-
+----
 
 = Types of RFID Systems =
 
@@ -54,7 +53,7 @@ or railroad car tracking
 * -higher performance results in higher costs
 
 
-
+----
 
 = Components of a RFID System =
 
@@ -65,6 +64,11 @@ The basic components of RFID are : -
 * RFID reader - used to read the information in the tag.
 
 An antenna is installed in the RFID tag which can transmit and receive signals which can be caught by the RFID reader. Apart from this, an IC (integrated circuit) is installed in the tag to store and process the information.
+
+== Structure of RFID Tag ==
+
+A RFID tag basically consists of a microchip attached to a radio 
+antenna mounted on a substrate. It provides a storage capacity of 2 KB which can store information about the product or shipment like Date of manufacture, destination, selling date etc.
 
 = Types of RFID tags =
 
