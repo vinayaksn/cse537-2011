@@ -1,7 +1,7 @@
 #summary With the Advent of technical advancements, the concept of smarter building is also picking up alot of pace. This page tries to throw light on all these new advancements.
+#labels SmartBuildings,SmartBuildingTechnologies,Survey
 
 = Introduction =
-===What is a Smart Building ? ===
 A Smart Building is the integration of _* Building*_, _*Technology*_, and _*Energy Systems*_. These systems may include: 
   * Building Automation, 
   * Life Safety, 
@@ -9,7 +9,8 @@ A Smart Building is the integration of _* Building*_, _*Technology*_, and _*Ener
   * User Systems, and 
   * Facility Management Systems. 
 
-
+<br>
+==What is a Smart Building ? ==
 Smart Buildings recognises and reflects the technological advancements and convergence of building systems, the common elements of the systems and the additional functionality that integrated systems provide. Smart buildings provide actionable information about a building or space within a building to allow the building owner or occupant to manage the building or space.
 
 Smart buildings provide the most cost effective approach to the design and the deployment of building technology systems. The traditional way to design and construct a building is to _*design, install, and operate each system separately*_. A smart building takes a different approach and _*integrates the design and installation of the systems in the construction process itself*_. This process reduces the _inefficiencies in the design_ and _construction process_, *saving time and money*.
@@ -17,7 +18,7 @@ Smart buildings provide the most cost effective approach to the design and the d
 Even though they are confused with [http://en.wikipedia.org/wiki/Green_building Green Buildings], Green Buildings actually constitute into Smart Buildings.
 
 <br>
-===Why Smart Buildings ?===
+==Why Smart Buildings ?==
 There are various advantages of Smart Buildings, some of them being:
   * Helps _*Save Money*_, by:
     # Increasing Energy Savings(by about 40%),
@@ -28,7 +29,7 @@ There are various advantages of Smart Buildings, some of them being:
   * Brings Information together into management dashboards and improves productivity.
 
 <br>
-=== History of Smart Buildings ===
+== History of Smart Buildings ==
 The high technology concept of intelligent building systems was introduced in United States in early 1980’s. An Intelligent Building provides a productive and cost-effective environment through the integration of _*Structure, Systems, Services, and Management*_.
 
 <br>
@@ -47,7 +48,7 @@ We also note that:
   * Intelligent buildings must respond to user requirements.
 
 <br>
-===Control Theory===
+=Control Theory=
 Control technologies, allows integration, automation, and optimisation of all the services and equipment. Also, they are:
   * *Need & Time based* - providing heating or lighting services, etc., only when required,
   * *Optimiser Parameter based* - often utilising a representative aspect of the service, such as temperature for space heating or illuminance for lighting.
@@ -72,6 +73,17 @@ Smart Buildings consist of majorly the following systems:
   * HVAC Solutions
   * Sustainable Energy Technologies
 which control, supervise and coordinate the intelligent building subsystems.
+
+<br>
+===Technology to Implementation===
+These high level technologies are really meant to be applied into basic environment and thus, to do the implementations in real world, we consider:
+  * Using Task specific components/sensors that reduce human effort, require lesser power, much efficient and are smaller in size.
+  * Installing/implementing the Building management/building automation systems, work over a network, so making the same available to every equipment/appliance is very important and is achieved by a variety of wired or wireless technologies.
+  * A data collector unit also needs to be used wherein the preferences of the user are stored, which further helps improving the overall service quality according to user preferences.
+  * A fully integrated BAS has every appliance/equipment connected with a central controller, so the central controller needs to maintain a addressing database wherein it may know before hand what equipment is trying to communicate before hand.
+
+
+
 
 
 
