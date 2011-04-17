@@ -1,6 +1,6 @@
 #summary This wiki-page explores Radio Frequency ID(RFID) and tries to analyse how it can be used for access control/inventory management options.
 
-= Introduction =
+= 1. Introduction =
 
 RFID stands for Radio Frequency Identification. It is a generic term used to describe a system that transmits identity of an object/person through 
 wireless means/radio waves.It is basically used for tracking and identification purposes and has been widely used all over the world in libraries, shopping stores, smart cards etc.It is grouped under the broad category of automatic identification technologies.
@@ -20,7 +20,7 @@ needing any manual intervention.
 
 ----
 
-= Types of RFID Systems =
+= 2. Types of RFID Systems =
 
 There are basically two types of RFID systems depending upon their frequency of operation.
 
@@ -55,7 +55,7 @@ or railroad car tracking
 
 ----
 
-= Components of a RFID System =
+= 3. Components of a RFID System =
 
 The basic components of RFID are : -
 
@@ -86,7 +86,38 @@ There are two types of RFID tags:-
 
  They doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
 
+
+== Structure of RFID Reader ==
+
+RFID Reader is used to retrieve the data stored on an RFID tag. The basic structure of RFID Reader consists of one or more antennas which emit the radio waves and receive the signals sent back from the tag.The reader then passes the information in digital form to a computer system.
+
 ----
+
+= 4. How RFID works =
+
+The working of RFID is explained as follows : -
+
+Antenna starts emitting radio signals to activate the tag 
+and to read/write data to it. The basic job of antenna is to act as a connecting medium between the tag and the reader. 
+
+Antenna produces an electromagnetic field and it can be present there constantly if multiple tags are expected continuously or a sensor can be deployed if the case is the other one.
+
+The reader emits some radio waves in range of 1 inch - 100 feet and more, depending upon the radio frequency and power output used. When an RFID tag passes through that electromagnetic zone, reader’s activation signal is detected by it. After that the reader decodes the data encoded in tag's IC and then this data is passed to the computer for processing.
+
+----
+
+= 5. Use of RFID in Inventory Management and Access Control =
+
+RFID has been widely used in these two fields for quite some time now. Many libraries use RFID systems for both access control and inventory management. Moreover, each object at shopping mall has a RFID tag with it to help in these two jobs. Lets have a look how RFID can be applied to do these two jobs : -
+
+== Inventory Management ==
+== Access Control ==
+
+----
+
+= Advantages of RFID System =
+
+
 
 = References =
 
