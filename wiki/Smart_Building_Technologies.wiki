@@ -1,9 +1,33 @@
-#summary With the Advent of technical advancements, the concept of smarter building is also picking up alot of pace.
+#summary With the Advent of technical advancements, the concept of smarter building is also picking up alot of pace. This page tries to throw light on all these new advancements.
 
 = Introduction =
-A smart building is the integration of building, technology, and energy systems. These systems may include building automation, life safety, telecommunications, user systems and facility management systems. Smart buildings recognize and reflect the technological advancements and convergence of building systems, the common elements of the systems and the additional functionality that integrated systems provide. Smart buildings provide actionable information about a building or space within a building to allow the building owner or occupant to manage the building or space.
+    A Smart Building is the integration of _* Building, Technology, and Energy Systems*_. These systems may include: 
 
-Smart buildings provide the most cost effective approach to the design and the deployment of building technology systems. The traditional way to design and construct a building is to design, install, and operate each system separately. A smart building takes a different approach and integrates the design and installation of the systems. This process reduces the inefficiencies in the design and construction process, saving time and money.
+* Building Automation, 
+* Life Safety, 
+* Telecommunications, 
+* User Systems, and 
+* Facility Management Systems. 
+
+Smart buildings recognizes and reflects the technological advancements and convergence of building systems, the common elements of the systems and the additional functionality that integrated systems provide. Smart buildings provide actionable information about a building or space within a building to allow the building owner or occupant to manage the building or space.
+
+Smart buildings provide the most cost effective approach to the design and the deployment of building technology systems. The traditional way to design and construct a building is to -*design, install, and operate each system separately*_. A smart building takes a different approach and _*integrates the design and installation of the systems in the construction process itself*_. This process reduces the _inefficiencies in the design_ and _construction process_, *saving time and money*.
+
+	Even though they are confused with [http://en.wikipedia.org/wiki/Green_building Green Buildings], they are just a constituing part of the Smart Buildings.
+= History of Smart Buildings = 
+The high technology concept of intelligent building systems was introduced in United States in early 1980’s. An Intelligent Building provides a productive and cost-effective environment through the integration of _*Structure, Systems, Services, and Management*_.
+
+
+
+
+
+
+
+
+
+
+
+
 
 = Background =
 
@@ -17,9 +41,9 @@ Using such advanced intelligent-building technology provides both property manag
 
     1.Standardized building wiring systems that permit full building control over a single infrastructure
     2.Higher building value and leasing potential via increased individual environmental control
-    3.Consumption costs that are managed through zone control on a time-of-day schedule
+    3.Consumption costs that are managed through zone control on a time-of-day schedule 
     4.Tenant control over building systems via computer or telephone interface
-    5.Comprehensive tracking of tenant after-hour use for chargeback purposes
+    5.Comprehensive tracking of tenant after-hour use for chargeback purposes 
     6.A single human-resources interface that modifies telephone, security, parking, local-area network, wireless devices, building directories, etc.
 
 Increasingly, intelligent-building technologies are noted for their capacity to concurrently carry both a tenant's voice and data communications over the same wiring infrastructure that carries building control data. Many industry insiders say that an intelligent building should have high-speed wiring, real-time communications, real-time information, real-time services, and real-time integration. Generally, an intelligent building also should be flexible. 
