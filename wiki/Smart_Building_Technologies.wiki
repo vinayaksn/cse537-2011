@@ -1,8 +1,7 @@
 #summary With the Advent of technical advancements, the concept of smarter building is also picking up alot of pace. This page tries to throw light on all these new advancements.
 
 = Introduction =
-    A Smart Building is the integration of _* Building, Technology, and Energy Systems*_. These systems may include: 
-
+    A Smart Building is the integration of _* Building*_, _*Technology*_, and _*Energy Systems*_. These systems may include: 
 * Building Automation, 
 * Life Safety, 
 * Telecommunications, 
@@ -49,4 +48,3 @@ Using such advanced intelligent-building technology provides both property manag
 Increasingly, intelligent-building technologies are noted for their capacity to concurrently carry both a tenant's voice and data communications over the same wiring infrastructure that carries building control data. Many industry insiders say that an intelligent building should have high-speed wiring, real-time communications, real-time information, real-time services, and real-time integration. Generally, an intelligent building also should be flexible. 
 
 References :-
-
