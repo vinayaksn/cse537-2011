@@ -5,7 +5,7 @@
 RFID stands for Radio Frequency Identification. It is a generic term used to describe a system that transmits identity of an object/person through 
 wireless means/radio waves.It is basically used for tracking and identification purposes and has been widely used all over the world in libraries, shopping stores, smart cards etc.It is grouped under the broad category of automatic identification technologies.
 
-= Automatic Identification Technologies =
+== Automatic Identification Technologies ==
 
 These technologies are used to automatically identify an object/person without any manual intervention. Examples of Auto-ID technologies include bar codes, optical character readers, some biometric technologies, such 
 as retinal scans. 
@@ -21,23 +21,23 @@ needing any manual intervention.
 
 There are basically two types of RFID systems depending upon their frequency of operation.
 
-* Low-frequency systems has the following characteristics: -
+== Low-frequency systems has the following characteristics: - ==
 
-# short reading range
-# lower system costs
-# operate on a frequency ranging from 30 KHz-500 KHz. 
-# commonly used in security access, asset tracking, and 
+* short reading range
+* lower system costs
+* operate on a frequency ranging from 30 KHz-500 KHz. 
+* commonly used in security access, asset tracking, and 
 animal identification applications. 
 
-*High-frequency systems has the following characteristics: -
+== High-frequency systems has the following characteristics: - ==
 
-# offers read ranges of more than 90 feet
-# have high reading speeds
-# operate on a frequency ranging from 850-950 MHz and 2.4-
+* offers read ranges of more than 90 feet
+* have high reading speeds
+* operate on a frequency ranging from 850-950 MHz and 2.4-
 2.5 GHz. 
-# generally used for applications like automatic toll collection 
+* generally used for applications like automatic toll collection 
 or railroad car tracking
-# higher performance results in higher costs.
+* higher performance results in higher costs.
 
 The basic components of RFID are : -
 
