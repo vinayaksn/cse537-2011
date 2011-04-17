@@ -5,6 +5,18 @@
 RFID stands for Radio Frequency Identification. It is a generic term used to describe a system that transmits identity of an object/person through 
 wireless means/radio waves.It is basically used for tracking and identification purposes and has been widely used all over the world in libraries, shopping stores, smart cards etc.It is grouped under the broad category of automatic identification technologies.
 
+= Automatic Identification Technologies =
+
+These technologies are used to automatically identify an object/person without any manual intervention. Examples of Auto-ID technologies include bar codes, optical character readers, some biometric technologies, such 
+as retinal scans. 
+
+They are used to reduce the amount of time and labor needed to input data manually and to improve data accuracy.Some auto-ID technologies - like bar code systems, require a person to manually scan a label or tag to 
+capture the data. 
+
+RFID is designed to enable readers to capture data on 
+tags and transmit it to a computer system—without 
+needing any manual intervention.
+
 The basic components of RFID are : -
 
 1) RFID tag - which is inserted in the object to be tracked.
