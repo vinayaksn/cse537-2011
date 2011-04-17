@@ -75,6 +75,13 @@ There are  a number of factors affecting batteries in vehicle hence it is import
 
 SOC: The State of Charge of a battery is its available capacity expressed as a percentage of its rated capacity
 
+= Overall Process =
+ # Various sensors-temperature, voltage, current report to Main Unit.
+ # Respective comparators compare with the threshold.
+ # If above the specified threshold-
+    # warn by displaying on LED, activating a buzzer.
+    # if critical then cutting off the battery supply.
+
 = Research =
 Frazer–Nash and Henry Ronald Godfrey formed Frazer-Nash to produce affordable motor vehicles.
 The FN BMS is available in two formats:
