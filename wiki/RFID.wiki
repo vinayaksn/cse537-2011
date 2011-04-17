@@ -80,11 +80,11 @@ There are two types of RFID tags:-
 
 * Active RFID Tags: - 
 
- They contain a battery and therefore can transmit signals automatically and they are read/write tags i.e. the tag data can be written or modified. The memory size of active tag varies according to the requirements.
+They contain a battery and therefore can transmit signals automatically and they are read/write tags i.e. the tag data can be written or modified. The memory size of active tag varies according to the requirements.
 
 * Passive RFID Tags: -
 
- They doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
+They doesn’t contain a battery and therefore are dependent on an external system for transmission of signals. They are much lighter, less expensive and have a very high lifetime as compared to the active tags. But they have a shorter range than active tags.
 
 
 == Structure of RFID Reader ==
@@ -114,10 +114,44 @@ RFID has been widely used in these two fields for quite some time now. Many libr
 == Access Control ==
 
 ----
+= Pros and Cons of RFID System =
 
-= Advantages of RFID System =
+== Advantages ==
+
+There are many advantages of RFID system, some of which are : -
+
+* Non-contact, non-line of sight technology
+
+Increases it's applicability and increases the number of areas where it can be applied.
+
+* Tags can be read through most of the substances such as leather, paint, wood, paper etc. where other system such as barcodes won’t work
+
+Remember passing through Delhi Metro Entry by touching only the purse. It's due to RFID only.
+
+* Speed at which RFID tags can be read even in challenging conditions
+
+In most of the cases, response time is less than even 100 milliseconds.
+
+* Read/write capability of an active RFID system 
+
+Provides significant advantage in applications which are interactive and maintain, update data regularly.
 
 
+== Disadvantages ==
+
+* High Cost of RFID tags and readers
+
+Cost of RFID components have reduced considerably over the past years but still it remains a major problem
+
+* Privacy 
+
+It's harder to remove as RFID tags can act as a medium for surveillance and many campaigns against RFID have been reported in the past.
+
+*Security 
+
+A false person with a legitimate RFID tag can access the things which he is not allowed to. Hence there is a need to apply some additional systems like bio-metrics. Otherwise, human intervention will be required which will fail the purpose of RFID.
+
+----
 
 = References =
 
