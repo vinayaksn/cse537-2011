@@ -17,6 +17,28 @@ RFID is designed to enable readers to capture data on
 tags and transmit it to a computer system—without 
 needing any manual intervention.
 
+= Types of RFID Systems =
+
+There are basically two types of RFID systems depending upon their frequency of operation.
+
+* Low-frequency systems has the following characteristics: -
+
+# short reading range
+# lower system costs
+# operate on a frequency ranging from 30 KHz-500 KHz. 
+# commonly used in security access, asset tracking, and 
+animal identification applications. 
+
+*High-frequency systems has the following characteristics: -
+
+# offers read ranges of more than 90 feet
+# have high reading speeds
+# operate on a frequency ranging from 850-950 MHz and 2.4-
+2.5 GHz. 
+# generally used for applications like automatic toll collection 
+or railroad car tracking
+# higher performance results in higher costs.
+
 The basic components of RFID are : -
 
 1) RFID tag - which is inserted in the object to be tracked.
