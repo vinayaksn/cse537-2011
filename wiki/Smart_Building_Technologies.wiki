@@ -1,0 +1,28 @@
+#summary With the Advent of technical advancements, the concept of smarter building is also picking up alot of pace.
+
+= Introduction =
+A smart building is the integration of building, technology, and energy systems. These systems may include building automation, life safety, telecommunications, user systems and facility management systems. Smart buildings recognize and reflect the technological advancements and convergence of building systems, the common elements of the systems and the additional functionality that integrated systems provide. Smart buildings provide actionable information about a building or space within a building to allow the building owner or occupant to manage the building or space.
+
+Smart buildings provide the most cost effective approach to the design and the deployment of building technology systems. The traditional way to design and construct a building is to design, install, and operate each system separately. A smart building takes a different approach and integrates the design and installation of the systems. This process reduces the inefficiencies in the design and construction process, saving time and money.
+
+= Background =
+
+The commonly accepted definition of a building automation system (BAS) includes the comprehensive automatic control of one or more major building system functions required in a facility, such as heating, ventilating, and air-conditioning systems. Automated systems include a collection of sensors that determine the condition or status of parameters to be controlled, such as temperature, relative humidity, and pressure. Similarly, output devices impart electronic signals or physical action to the control devices, which may be electric relays or damper and valve actuators. The sensors and output devices are connected either to a unitary controller or to a distributed processor.
+
+Unitary controllers are limited to the needs of an intended function and, thus, have limited capabilities, such as memory size. Distributed processors can accommodate the requirements of several unitary controllers, as well as connect directly to input and output devices. Intelligent-building technologies revolve around the use of distributed processors that constitute "integrated systems."
+
+Integrated systems bring a modicum of centralized and simultaneous control over lighting, security, heating, ventilating, air conditioning, fire suppression, and other building systems that form the crux of any intelligent building system.
+
+Using such advanced intelligent-building technology provides both property managers and tenants with a comprehensive access and security system that can effectively and efficiently exchange information with other building systems. Fully integrated functionality makes it possible to open doors, notify responsible staff of unwanted intrusions, and ensure that lighting, fire, and other building-management systems are informed of personnel that enter or leave the building. This information then can be used to manage the local environment and resulting energy usage. Most intelligent-building systems are characterized by:
+
+    1.Standardized building wiring systems that permit full building control over a single infrastructure
+    2.Higher building value and leasing potential via increased individual environmental control
+    3.Consumption costs that are managed through zone control on a time-of-day schedule
+    4.Tenant control over building systems via computer or telephone interface
+    5.Comprehensive tracking of tenant after-hour use for chargeback purposes
+    6.A single human-resources interface that modifies telephone, security, parking, local-area network, wireless devices, building directories, etc.
+
+Increasingly, intelligent-building technologies are noted for their capacity to concurrently carry both a tenant's voice and data communications over the same wiring infrastructure that carries building control data. Many industry insiders say that an intelligent building should have high-speed wiring, real-time communications, real-time information, real-time services, and real-time integration. Generally, an intelligent building also should be flexible. 
+
+References :-
+
