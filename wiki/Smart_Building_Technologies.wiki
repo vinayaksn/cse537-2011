@@ -16,8 +16,9 @@ Smart buildings provide the most cost effective approach to the design and the d
 
 Even though they are confused with [http://en.wikipedia.org/wiki/Green_building Green Buildings], Green Buildings actually constitute into Smart Buildings.
 
-------
+<br>
 ===Why Smart Buildings ?===
+[[File:http://www.energyworks.com/uploads/images/smart_buildings.jpg|right|100px|caption]]
 There are various advantages of Smart Buildings, some of them being:
   * Helps _*Save Money*_, by:
     # Increasing Energy Savings(by about 40%),
@@ -27,11 +28,11 @@ There are various advantages of Smart Buildings, some of them being:
   * Responds to price of electricity over the grid, and
   * Brings Information together into management dashboards and improves productivity.
 
-------
+<br>
 === History of Smart Buildings ===
 The high technology concept of intelligent building systems was introduced in United States in early 1980’s. An Intelligent Building provides a productive and cost-effective environment through the integration of _*Structure, Systems, Services, and Management*_.
-------
 
+<br>
 ===Traditional Buildings vs Smart Buildings===
 Traditional Buildings generally followed conventional protocols whereas Smart Buildings follow Open Protocols, differences between these protocols may be noted as:
 
@@ -40,18 +41,13 @@ Traditional Buildings generally followed conventional protocols whereas Smart Bu
 || Isolated systems result in wasted energy || Open systems allow full information sharing ||
 || High Operations & Maintenance Costs || Low Operations & Maintenance Costs ||
 
+<br>
+We also note that:
+  * The traditional way to design and construct a building is to design, install, and operate each system separately.
+  * Smart building integrates data from all the technical systems and provide integrated control of the system
+  * Intelligent buildings must respond to user requirements.
 
-
-
-
-
-
-
-
-
-
-
-
+<br>
 = Background =
 
 The commonly accepted definition of a building automation system (BAS) includes the comprehensive automatic control of one or more major building system functions required in a facility, such as heating, ventilating, and air-conditioning systems. Automated systems include a collection of sensors that determine the condition or status of parameters to be controlled, such as temperature, relative humidity, and pressure. Similarly, output devices impart electronic signals or physical action to the control devices, which may be electric relays or damper and valve actuators. The sensors and output devices are connected either to a unitary controller or to a distributed processor.
