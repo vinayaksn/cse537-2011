@@ -18,7 +18,6 @@ Even though they are confused with [http://en.wikipedia.org/wiki/Green_building 
 
 <br>
 ===Why Smart Buildings ?===
-[[File:http://www.energyworks.com/uploads/images/smart_buildings.jpg|right|100px|caption]]
 There are various advantages of Smart Buildings, some of them being:
   * Helps _*Save Money*_, by:
     # Increasing Energy Savings(by about 40%),
@@ -48,6 +47,44 @@ We also note that:
   * Intelligent buildings must respond to user requirements.
 
 <br>
+===Control Theory===
+Control technologies, allows integration, automation, and optimisation of all the services and equipment. Also, they are:
+  * *Need & Time based* - providing heating or lighting services, etc., only when required,
+  * *Optimiser Parameter based* - often utilising a representative aspect of the service, such as temperature for space heating or illuminance for lighting.
+
+<br>
+Due to all this, we are able to do:
+  # *Equipment scheduling* : turning equipment off and on as required).
+  # *Optimum start/stop* : turning heating and cooling equipment on in advance to ensure the building is at the required temperature during occupancy.
+  # *Operator adjustment* : accessing operator set-points that tune system to changing conditions.
+  # *Monitoring* : logging of temperature, energy use, equipment start times, operator logon, etc.
+  # *Alarm Reporting* : notifying the operator of failed equipment, out of limit temperature/pressure conditions or need for maintenance.
+
+<br>
+==Smart Building Systems==
+Smart Buildings consist of majorly the following systems:
+  * Building Network and Network Management Systems
+  * Building Automation Systems (BAS)
+  * Energy Management Systems (EMS)
+  * Communication Management Systems (CMS)
+  * Security Systems
+  * Lightning Solutions
+  * HVAC Solutions
+  * Sustainable Energy Technologies
+which control, supervise and coordinate the intelligent building subsystems.
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
 = Background =
 
 The commonly accepted definition of a building automation system (BAS) includes the comprehensive automatic control of one or more major building system functions required in a facility, such as heating, ventilating, and air-conditioning systems. Automated systems include a collection of sensors that determine the condition or status of parameters to be controlled, such as temperature, relative humidity, and pressure. Similarly, output devices impart electronic signals or physical action to the control devices, which may be electric relays or damper and valve actuators. The sensors and output devices are connected either to a unitary controller or to a distributed processor.
