@@ -167,7 +167,9 @@ The biggest and the most prominent obstacle to be faced in achieving the above v
 
 = Significant Projects =
 
-== Two Professors at MIT- David Brock and Sanjay Sharma are working from early past decade in putting low-cost RFID tags on all products made to track them through the supply chain == 
+== Project at MIT ==
+
+Two professors at MIT, David Brock and Sanjay Sharma are working from early past decade in putting low-cost RFID tags on all products made to track them through the supply chain 
 
 The key idea to lower the cost is to put only a serial number on the tag. Less data on tag would mean less cost. Data associated with the serial number on the tag could be then read from a database which is accessible over the Internet.
 
