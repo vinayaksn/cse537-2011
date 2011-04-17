@@ -82,38 +82,76 @@ These high level technologies are really meant to be applied into basic environm
   * A data collector unit also needs to be used wherein the preferences of the user are stored, which further helps improving the overall service quality according to user preferences.
   * A fully integrated BAS has every appliance/equipment connected with a central controller, so the central controller needs to maintain a addressing database wherein it may know before hand what equipment is trying to communicate before hand.
 
-
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br>
-
-
-
-
-
-
-
-
-
-= Background =
-
+<br>
+=Building Automation Systems(BAS)=
 The commonly accepted definition of a building automation system (BAS) includes the comprehensive automatic control of one or more major building system functions required in a facility, such as heating, ventilating, and air-conditioning systems. Automated systems include a collection of sensors that determine the condition or status of parameters to be controlled, such as temperature, relative humidity, and pressure. Similarly, output devices impart electronic signals or physical action to the control devices, which may be electric relays or damper and valve actuators. The sensors and output devices are connected either to a unitary controller or to a distributed processor.
 
 Unitary controllers are limited to the needs of an intended function and, thus, have limited capabilities, such as memory size. Distributed processors can accommodate the requirements of several unitary controllers, as well as connect directly to input and output devices. Intelligent-building technologies revolve around the use of distributed processors that constitute "integrated systems."
 
-Integrated systems bring a modicum of centralized and simultaneous control over lighting, security, heating, ventilating, air conditioning, fire suppression, and other building systems that form the crux of any intelligent building system.
+Integrated systems bring a modicum of centralised and simultaneous control over lighting, security, heating, ventilating, air conditioning, fire suppression, and other building systems that form the crux of any intelligent building system.
 
-Using such advanced intelligent-building technology provides both property managers and tenants with a comprehensive access and security system that can effectively and efficiently exchange information with other building systems. Fully integrated functionality makes it possible to open doors, notify responsible staff of unwanted intrusions, and ensure that lighting, fire, and other building-management systems are informed of personnel that enter or leave the building. This information then can be used to manage the local environment and resulting energy usage. Most intelligent-building systems are characterized by:
-
-    1.Standardized building wiring systems that permit full building control over a single infrastructure
-    2.Higher building value and leasing potential via increased individual environmental control
-    3.Consumption costs that are managed through zone control on a time-of-day schedule 
-    4.Tenant control over building systems via computer or telephone interface
-    5.Comprehensive tracking of tenant after-hour use for chargeback purposes 
-    6.A single human-resources interface that modifies telephone, security, parking, local-area network, wireless devices, building directories, etc.
+Most intelligent-building systems are characterised by:
+  # Standardised building wiring systems that permit full building control over a single infrastructure
+  # Higher building value and leasing potential via increased individual environmental control
+  # Consumption costs that are managed through zone control on a time-of-day schedule 
+  # Tenant control over building systems via computer or telephone interface
+  # Comprehensive tracking of tenant after-hour use for chargeback purposes 
+  # A single human-resources interface that modifies telephone, security, parking, local-area network, wireless devices, building directories, etc.
 
 Increasingly, intelligent-building technologies are noted for their capacity to concurrently carry both a tenant's voice and data communications over the same wiring infrastructure that carries building control data. Many industry insiders say that an intelligent building should have high-speed wiring, real-time communications, real-time information, real-time services, and real-time integration. Generally, an intelligent building also should be flexible. 
 
-References :-
+<br>
+In Short, Building automation systems (BAS) are networks of microprocessor controls that:
+  * Control the climate in the building,
+  * Supervise and control the heating, ventilation, and air conditioning equipment,
+  * Perform facility management (generate reports, graphs and annunciate alarms when there is a problem),
+  * Perform energy management strategies to reduce operating and energy costs, and
+  * Integrate building systems such as security, fire alarm, lighting controls, etc.
+
+===BAS – Controllers===
+  * Controllers: small, purpose-built computers with input and output capabilities.
+    * Inputs : read temperatures, humidity, pressure, current flow, air flow, and other essential factors.
+    * Outputs: send command and control signals to slave devices.
+  * Programmable Logic Controllers (PLCs), System/Network controllers, and Terminal Unit controllers
+
+=Building Energy Management System(BEMS)=
+BEMS works under the following goals, they being:
+  * Lower energy cost Lower operations cost
+  * Increase flexibility
+  * Ensure quality building environment
+
+<br>
+==Factors Affecting Energy Usage==
+  * In buildings
+    * Thermal efficiency of building envelope
+      * Thermal insulation, air tightness, solar gains
+    * Requirements of indoor environment
+      * Temperature schedule, ventilation needs, humidity control, indoor air quality, lighting, lifts, etc.
+    * Processes within the building
+      * IT or office equipment, industrial processes
+
+<br>
+===Energy Management===
+  * Energy management is the process of monitoring, controlling, and conserving energy in a building or organisation.
+<p align="center">*How to go about using it then?*</p>
+  * Metering your energy consumption and collecting the data.
+  * Finding opportunities to save energy, and estimating how much energy each opportunity could save.
+  * Analyse the meter data to find and quantify routine energy waste, and you might also investigate the energy savings that you could make by replacing equipment (e.g. lighting) or by upgrading your building's insulation.
+  * Tackling the routine waste and replacing or upgrading the inefficient equipment.
+    * Tracking your progress by analysing your meter data to see how well your energy-saving efforts have worked.
+
+<br>
+==BEMS – Smart Meters==
+  * A Smart meters can:
+    * Read electricity consumption remotely,
+    * Detect outages,
+    * Identify electricity theft,
+    * Remotely connect and disconnect service,
+    * Deliver prepaid electricity to those who require it.
+  * Smart meters connected to a smart grid give utilities immediate access to data so that they can better project demand from the grid.
+    * When electricity demand is high, typically on hot or humid days, the grid becomes constrained, forcing utilities to make difficult decisions, such as increasing production in a coal-fired plant or simply reducing electricity consumption among its customers.
+    * A popular solution to this problem involves shifting demand from peak periods to off-peak periods through energy awareness.
+
+
+==Water Smart Buildings==
+[[File:Smart_Building_Technologies_Images/waterscarcitymap.jpg|thumb|500px]]
