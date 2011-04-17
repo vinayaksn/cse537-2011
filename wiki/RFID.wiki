@@ -114,7 +114,7 @@ RFID has been widely used in these two fields for quite some time now. Many libr
 == Access Control ==
 
 ----
-= Pros and Cons of RFID System =
+= 6. Pros and Cons of RFID System =
 
 == Advantages ==
 
@@ -153,6 +153,38 @@ A false person with a legitimate RFID tag can access the things which he is not 
 
 ----
 
+= Future Vision =
+
+The ultimate vision is to flip the supply chain around. Currently, the suppliers produce their products on a monthly forecast. If the forecast turns out to be less than the real, they lose sales and if the forecast turns out to be greater than the real, then they lose money in the form of wasted products. 
+The main idea is to reverse this cycle and make this supply chain dynamic and real time. To achieve this RFID readers could be deployed at every layer of supply chain. 
+For example, RFID readers can be deployed at the shelves in shopping mall and market.RFID readers on shelves would monitor how many products are sold. They will signal the backroom when the shelves get low and request more inventory. When inventory in the backroom gets low, readers there would signal the warehouse to send more product. When inventory in the warehouse gets low, readers would signal the manufacturer to send more product and so on.
+
+== Problems to be tackled ==
+
+The biggest and the most prominent obstacle to be faced in achieving the above vision is the *cost*. Deploying RFID readers everywhere will cost too much and hence will not serve the purpose.
+
+----
+
+= Significant Projects =
+
+== Two Professors at MIT- David Brock and Sanjay Sharma are working from early past decade in putting low-cost RFID tags on all products made to track them through the supply chain == 
+
+The key idea to lower the cost is to put only a serial number on the tag. Less data on tag would mean less cost. Data associated with the serial number on the tag could be then read from a database which is accessible over the Internet.
+
+== DIT’s  "National RFID Program" project initiated in April, 2007 == 
+
+The program is being implemented jointly by IIT, Kanpur, 
+C-DAC, Noida and SAMEER, Mumbai. Major highlights of project are software/hardware development, middleware integration and development of 
+end-to-end solutions for RFID systems.
+
+----
+
 = References =
 
 [http://en.wikipedia.org/wiki/Radio-frequency_identification]
+[http://www.rfidjournal.com/article/view/1339/2]
+[http://www.rfidjournal.com/article/view/1338/2]
+[http://www.rfidjournal.com/article/articleview/1336/1/129/]
+[http://www.mit.gov.in/content/radio-frequencyidentification-rfid]
+
+----
