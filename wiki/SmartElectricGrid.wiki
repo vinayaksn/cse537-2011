@@ -16,7 +16,7 @@ http://www.youtube.com/watch?v=-8cM4WfZ_Wg
  * Excessive dependence on non- renewable sources of energy.
 
 
-= Characteristics of Modern Grid =
+= Characteristics of Modern Grid [3]=
 
 Last month's column explored the Modern Grid Initiative's approach to a national solution for modernizing the grid. We embrace the systems view, which considers the technical, economic, regulatory, political, and societal aspects.
 This month, I will focus on the principal characteristics of the modern grid. In addition, I want you to be aware of the upcoming Southeast Modern Grid Regional Summit (workshop).
@@ -54,3 +54,4 @@ To make smart grids a reality it's a foremost important to defend the possible s
 
 [1] http://www.upi.com/Top_News/World-News/2010/11/19/Smart-electrical-grids-coming/UPI-16221290199711/#ixzz1ICBOmTUG
 [2] http://www.computerweekly.com/Articles/2011/01/25/245074/Smart-meter-and-smart-grids-security-risk-or-opportunity.htm
+[3] http://www.smartgridnews.com/artman/publish/article_147.html
