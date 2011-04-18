@@ -46,5 +46,7 @@ http://www.sciencedaily.com/releases/2011/04/110412143123.htm
 
 *5. Future Developments*
 
+Things to be added
+Techonoligies used, DKIW triangle, Design considerations, Application
 
 _Please feel free to give your suggestions and comments._
