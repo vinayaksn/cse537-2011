@@ -152,7 +152,38 @@ BEMS works under the following goals, they being:
     * When electricity demand is high, typically on hot or humid days, the grid becomes constrained, forcing utilities to make difficult decisions, such as increasing production in a coal-fired plant or simply reducing electricity consumption among its customers.
     * A popular solution to this problem involves shifting demand from peak periods to off-peak periods through energy awareness.
 
-
+<br>
 ==Water Smart Buildings==
+  * Water saving technologies that are readily available include:
+    * Flow Restrictors
+    * Low Flow Showerheads
+    * Water Efficient white goods, including dishwashers and washing machines
+    * Water Efficient Designs
+    * Urinal Sensors.
+  * Consistent implementation of water efficiency measures
+  * Monitoring of water usage to ascertain water savings are being reliably delivered
+  * Compliance with current water restrictions and WEMP requirements.
 
+<br>
+==Energy Conservation Building Code (ECBC): India==
+   * Energy conservation is a key for India with its power and energy shortages. With high and increasing energy consumption in buildings, about 149 billion units, energy conservation in buildings is one of the priority area.
 
+  * The, launched on 28 June 2007, it is a document that specifies the energy performance requirements for all commercial buildings that are to be constructed in India. Buildings with an electrical connected load of 100 kW or more are covered by the ECBC.
+===ECBC Design Code===
+  * Building envelope, including thermal performance requirements for walls, roofs, and windows,
+  * Using proper insulators and shielding.
+  * Lighting system, including day lighting, and lamps and luminaire performance requirements,
+  * Design plans and sensory systems for control
+  * HVAC system, including energy performance of chillers and air distribution systems,
+  * Room/building level insulations, overall building design considerations, variable speed compressors.
+  * Electrical system,
+  * Smart Metering and equipment's, load balancing by pre-computed data as well as real-time requirements.
+  * Water heating and pumping systems, including requirements for,
+  * solar hot-water systems, encourage secondary energy sources, and optimize water usages.
+
+===ECBC Implementation===
+  * During the development of ECBC, analysis conducted indicated that ECBC-compliant buildings may use 40 to 60% less energy than similar buildings being designed and constructed at that time.
+  * To help the implementation of ECBE, various facilitative measures are being undertaken/planned.
+  * The energy conservation awards scheme
+  * Awareness generation and training related activities
+  * Capacity building of State and Municipal implementing agencies
