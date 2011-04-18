@@ -52,6 +52,6 @@ To make smart grids a reality it's a foremost important to defend the possible s
 
 = References =
 
-[1] http://www.upi.com/Top_News/World-News/2010/11/19/Smart-electrical-grids-coming/UPI-16221290199711/#ixzz1ICBOmTUG
-[2] http://www.computerweekly.com/Articles/2011/01/25/245074/Smart-meter-and-smart-grids-security-risk-or-opportunity.htm
-[3] http://www.smartgridnews.com/artman/publish/article_147.html
+ * [1] http://www.upi.com/Top_News/World-News/2010/11/19/Smart-electrical-grids-coming/UPI-16221290199711/#ixzz1ICBOmTUG
+ * [2] http://www.computerweekly.com/Articles/2011/01/25/245074/Smart-meter-and-smart-grids-security-risk-or-opportunity.htm
+ * [3] http://www.smartgridnews.com/artman/publish/article_147.html
