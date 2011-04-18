@@ -154,4 +154,5 @@ BEMS works under the following goals, they being:
 
 
 ==Water Smart Buildings==
-[[File:Smart_Building_Technologies_Images/waterscarcitymap.jpg|thumb|500px]]
+
+
