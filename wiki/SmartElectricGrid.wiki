@@ -7,6 +7,26 @@ U.S. power industry experts say smart electrical grids that synchronize supply a
 For a better understanding of the smart grid:
 http://www.youtube.com/watch?v=-8cM4WfZ_Wg
 
+= Motivation =
+- Today’s grid is aging and outmoded.
+- Unreliability is costing consumers billions of  dollars.
+- Today’s grid is vulnerable to attack and natural disaster.
+- An extended loss of today’s grid could be catastrophic to our security, economy and quality of life.
+- Disturbing trends in prices, reliability, peak loads, transmission congestion, & asset utilization. 
+- Excessive dependence on non- renewable sources of energy.
+
+= Smart grid functions =
+
+Before examining particular technologies, a proposal can be understood in terms of what it is being required to do. The governments and utilities funding development of grid modernization have defined the functions required for smart grids. According to the United States Department of Energy's Modern Grid Initiative report,[26] a modern smart grid must:
+Be able to heal itself
+Motivate consumers to actively participate in operations of the grid
+Resist attack
+Provide higher quality power that will save money wasted from outages
+Accommodate all generation and storage options
+Enable electricity markets to flourish
+Run more efficiently
+Enable higher penetration of intermittent power generation sources.
+
 = Security Issues =
 When estimating the risk level of any new technology, we have to think about the potential attackers and their motives.
 "For example, if we compare two technologies that are emerging, internet connectivity to kitchen appliances and the smart power grid, there is not much to be gained from hacking a fridge, so the risk is not likely, but extremists might want to take down electricity nationwide"
