@@ -111,9 +111,34 @@ The reader emits some radio waves in range of 1 inch - 100 feet and more, depend
 RFID has been widely used in these two fields for quite some time now. Many libraries use RFID systems for both access control and inventory management. Moreover, each object at shopping mall has a RFID tag with it to help in these two jobs. Lets have a look how RFID can be applied to do these two jobs : -
 
 == Inventory Management ==
-== Access Control ==
+image a store in which you just walk in, collect items and walk out. No need for standing in long queues, billing and wasting time. RFID tags can make all this mechanism automatic.
+ effective inventory control:
+1) consolidating 
+2) integrating
+3) analyzing data from many sources
 
-----
+conventional tracking systems require manual intervention. But RFID in inventory control has various significant advantages which are as follows:
+ 
+1) Inventory monitoring and asset visibility – Smart Shelves
+2) PoS Data
+3) Reduced Bullwhip effect 
+4) Lead-time Reduction
+5) Improves sort/pick rate
+6) Reduced inventory shrinkage
+7) Perishable inventory control
+8) Issuing policies 
+
+ 
+== Access Control ==
+the past conventional systems like bar code and magnetic stripe require to handle badges and place the badges close to the readers. The RFID access control technology allows users to enjoy complete hands free access control. RFID tags can be read up-to 5meters and thus eliminates the need to handle the batch.
+Many models of RFID readers can connect to access control computer through wireless communications. This makes the installation simple and easy to use. 
+Access Control reports any authorized access and issues alert to the host software.
+Benefits of Access Control:
+1) hands-free usage
+2) easy installation
+3) allows surveillance camera and video recording equipment to be triggered
+4) RFID tracker software allows RFID asset tags to be linked with the owner.
+
 = 6. Pros and Cons of RFID System =
 
 == Advantages ==
