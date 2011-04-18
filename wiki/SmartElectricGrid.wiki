@@ -15,17 +15,21 @@ http://www.youtube.com/watch?v=-8cM4WfZ_Wg
  * Disturbing trends in prices, reliability, peak loads, transmission congestion, & asset utilization. 
  * Excessive dependence on non- renewable sources of energy.
 
-= Smart grid functions =
 
-Before examining particular technologies, a proposal can be understood in terms of what it is being required to do. The governments and utilities funding development of grid modernization have defined the functions required for smart grids. According to the United States Department of Energy's Modern Grid Initiative report,[26] a modern smart grid must:
- * Be able to heal itself
- * Motivate consumers to actively participate in operations of the grid
- * Resist attack
- * Provide higher quality power that will save money wasted from outages
- * Accommodate all generation and storage options
- * Enable electricity markets to flourish
- * Run more efficiently
- * Enable higher penetration of intermittent power generation sources.
+= Characteristics of Modern Grid =
+
+Last month's column explored the Modern Grid Initiative's approach to a national solution for modernizing the grid. We embrace the systems view, which considers the technical, economic, regulatory, political, and societal aspects.
+This month, I will focus on the principal characteristics of the modern grid. In addition, I want you to be aware of the upcoming Southeast Modern Grid Regional Summit (workshop).
+The Principal Characteristics
+If designed and operated with following characteristics at the core, the nation’s grid would significantly improve in reliability, efficiency, and support to the consumers, especially those that rely on electricity for business and jobs.
+ * Self Heals – The grid monitors itself and automatically detects, analyzes, responds to, and restores grid components or network sections to maintain reliability, security, affordability, power quality, and an efficient state.
+ * Motivates and Includes the Consumer – Individual, business, and industry consumers become integral, active parts of the electric power system. Participating in electricity markets will benefit both the individual consumer and overall system reliability.
+ * Resists Attack – It is critical for the modern grid to address security from the outset, making security a requirement and ensuring an integrated and balanced approach across the system.
+ * Provides Power Quality For 21st Century Needs – Sensitive loads represent an increasing portion of the total power system load. The power quality delivered by the modern grid must be improved to meet the requirements of these sensitive loads. In addition, improvements in the design of the loads will make them more tolerant of distorted power.
+ * Accommodates all Generation and Storage Options – The modern grid will accommodate a portfolio of diverse generation types, necessitating a greatly simplified interconnection process analogous to plug-and-play in today’s computer environment, particularly at the distributed energy resources level.
+ * Enables Markets – The modern grid will integrate electricity markets into the fabric of the electric system because operations, planning, pricing, and reliability are dependent on how open-access markets are designed and instituted. For this reason, it will not only support wholesale electric markets but also retail markets where applicable.
+ * Optimizes Assets and Operates Efficiently – Assets will be managed in concert so that, as a system, they can deliver functionality at a minimum cost. For example, advanced sensing and robust communications will allow early problem detection, preventive maintenance and corrective action.
+
 
 = Security Issues =
 When estimating the risk level of any new technology, we have to think about the potential attackers and their motives.
