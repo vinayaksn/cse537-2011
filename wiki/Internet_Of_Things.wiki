@@ -34,6 +34,9 @@ With the Internet of Things we are looking at objects being able to communicate 
 
 *4. State-of-Art*
 
+The ESNA project:
+http://www.sciencedaily.com/releases/2011/04/110412143123.htm
+
 *5. Future Developments*
 
 
