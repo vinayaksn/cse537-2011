@@ -15,6 +15,16 @@ In this Project we will form a Mesh network of ZigBee Nodes which will used to p
 
 
 =So far...=
+<h3>Interfacing Sensor and XBee without any microcontroller</h3>
+  * The XBee has 6 usable A/D pins. 
+  * Using a single ADC pin one can achieve a sampling rate o 1 KHz.
+  * The A/D feature can be enabled with the ATDx=2 command where x= 0-5(the A/D pin you wish to use). 
+  * Vref must be tied to an appropriate voltage (0 < Vref <= Vcc).
+  * The sample rate can be set with the ATIR command and is set in units of ms, so ATIR=0xA is a sample rate of 10ms or 100Hz.
+  * XBee can buffer up to 93 bytes worth of sample data
+  * XBee has 10 bit ADC. So each sample requires 2 Byte Hence maximum of 46 data samples.
+  * To set the number of samples to be taken before the data is transmitted, the command is ATIT. Maximum value for this is ATIT=0x2E.
+  
 ==Point to multi-point==
   * Configure a multi-point to to master node.
   * Configure the ADCs in ZigBee node
