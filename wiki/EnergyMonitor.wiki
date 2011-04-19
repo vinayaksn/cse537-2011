@@ -1,0 +1,38 @@
+#summary This project is on connecting TelosB nodes together with a server to monitor and control the energy usage inside a building
+
+= Week 1 =
+  * Completed mote to PC data transfer module
+
+= Week 2 =
+  * Completed graphing interface
+  * Completed serial processing interface
+  * Initial phase of web-based UI completed
+
+= Details =
+== Scenario ==
+Electricity bills depend upon the energy consumption. Energy consumption is not as explicit to the people and therefore they are often surprised by the huge bill they get. Even though they may not be using a particular device at a particular time, they may forget to switch it off, leading to high power consumption.
+
+== Proposal ==
+A system consisting of a network of motes which monitor and control the energy consumption of a place (home, office etc), switching devices on and off at a specified time. This may result into a system which would ensure that the electricity bill does not go beyond a upper limit set by the person.
+
+== System Details ==
+  * Owner sets the time duration during which particular devices will be on
+  * The individual nodes installed at each output point will read the sensor values of the energy consumption at their respective output points.
+  * Every node sends its calculated power consumption to the central node, which passes it on to the PC.
+  * The central server creates a history for each node and present statistical information to the user based on the history.Server provides statistics of consumption like electricity bill till now, history of energy consumption of individual devices, along with a graph of that history. The statistical information also include graphical representation of real-time power consumption at each node.
+  * The final power consumption and bill is predicted according to the energy consumed.
+  * Also,the user can control the power consumption through a user interface at the central server.The system allows the user to set the times during day for which a particular device has to be switched on/off. 
+
+== Components of the system ==
+  # Current sensor
+    We will interface one of the following current sensors/transformers to the TelosB mote depending on availability and other factors.
+    http://iteadstudio.com/store/index.php?main_page=product_info&cPath=4&products_id=154
+    http://www.seeedstudio.com/depot/noninvasive-ac-current-sensor-30a-max-p-519.html?cPath=144_154
+    http://www.rhydolabz.com/index.php?main_page=product_info&cPath=137_139&products_id=506&zenid=22995ec3ba8a72aa61dcf65e1b1adb2b
+
+
+  # Network
+    All nodes will connect to a central node over an RF network, transmitting the power consumption and toggling state toggling information between each node and the central server
+
+  # Web-based UI and server
+    This will be responsible for calculation of the net power consumption as well as toggling the devices on and off.
