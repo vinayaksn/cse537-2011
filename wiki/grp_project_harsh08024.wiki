@@ -16,3 +16,6 @@ Relays to connect to the external ciruitry interfaced with the microcontroller a
  * Interfaced the bluetooth module(bluelink2) to the microcontroller. 
   * used level converter at Tx because bluelink worked on 3.3V.
  * Connected to my laptop(for now) through hyperlink.	
+further progres....
+ * Application for device discovery(on the emulator)
+ * interfaced a relay for testing.
