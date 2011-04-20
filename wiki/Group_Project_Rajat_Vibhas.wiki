@@ -8,8 +8,11 @@ As more and more vehicles continue to crowd the roads, the traffic jams are beco
 
 Currently, we are making a system which will estimate the traffic density between only two traffic lights based on data obtained from the cars crossing the light.
 The system will be tested on the following basis:
+
 1. The accuracy of transmission between the car and the red light will be tested for different speeds.
+
 2. It will be tested by using two transmitter nodes and one receiver node.
+
 
 
 = Hardware Requirement =
@@ -30,7 +33,11 @@ The two main components which will constitute the system are:
 
 1. Currently, we have interfaced the Zigbee module with the micro-controller and exchanged data between two modules. The programming is done in Arduino.
 Tutorial For Zigbee: http://www.ladyada.net/make/xbee/
+
 2. We are using different serial pins for communicating between the microcontroller with PC and Zigbee modules with the microcontroller.
+
 3. Currently, we fix the receiver node (traffic light) at one place and try to move the transmitter node. We are transmitting a constant value from the transmitter node and when the receiver node receives the data, it is automatically updated on Twitter (http://twitter.com/#!/TrafficTerrific).
+
 4. For transmitting the value, we have incorporated a starting byte and an end byte to correctly identify the value at receiver.
+
 5. The accelerometer has been ordered and it got delayed due to which we could not interface it with the microcontroller.
