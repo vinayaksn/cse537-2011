@@ -29,10 +29,7 @@ A system consisting of a network of motes which monitor and control the energy c
     http://iteadstudio.com/store/index.php?main_page=product_info&cPath=4&products_id=154
     http://www.seeedstudio.com/depot/noninvasive-ac-current-sensor-30a-max-p-519.html?cPath=144_154
     http://www.rhydolabz.com/index.php?main_page=product_info&cPath=137_139&products_id=506&zenid=22995ec3ba8a72aa61dcf65e1b1adb2b
-
-
   # Network
     All nodes will connect to a central node over an RF network, transmitting the power consumption and toggling state toggling information between each node and the central server
-
   # Web-based UI and server
     This will be responsible for calculation of the net power consumption as well as toggling the devices on and off.
