@@ -29,8 +29,7 @@ In this Project we will form a Mesh network of ZigBee Nodes which will used to p
 Connect the RX,TX of XBee module to RX,TX of Micro-controller. Connect the Vcc and ground of XBee and Microcontroller to 5V regulator. The following Diagram illustrates the connection for better understanding .
 
 <h4>Figure 1</h4>
-
-
+http://www.freeimagehosting.net/uploads/c78de40aea.jpg
 
 
 
