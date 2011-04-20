@@ -24,7 +24,17 @@ In this Project we will form a Mesh network of ZigBee Nodes which will used to p
   * XBee can buffer up to 93 bytes worth of sample data
   * XBee has 10 bit ADC. So each sample requires 2 Byte Hence maximum of 46 data samples.
   * To set the number of samples to be taken before the data is transmitted, the command is ATIT. Maximum value for this is ATIT=0x2E.
-  
+ <h3>Interfacing micro-controller and XBee for customized operation</h3>
+   We interfaced XBee note to Atmega 328p micro-controller with the minimum component. The things required were 5V voltage regulator, RC crystal of 12 MHz. First attach the Crystal to Port B pin 6 and 7.
+Connect the RX,TX of XBee module to RX,TX of Micro-controller. Connect the Vcc and ground of XBee and Microcontroller to 5V regulator. The following Diagram illustrates the connection for better understanding .
+
+<h4>Figure 1</h4>
+
+
+
+
+
+
 ==Point to multi-point==
   * Configure a multi-point to to master node.
   * Configure the ADCs in ZigBee node
