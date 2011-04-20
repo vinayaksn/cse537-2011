@@ -31,6 +31,11 @@ Connect the RX,TX of XBee module to RX,TX of Micro-controller. Connect the Vcc a
 <h4>Figure 1</h4>
 http://www.freeimagehosting.net/uploads/c78de40aea.jpg
 
+<h4>Figure 2</h4>
+http://www.freeimagehosting.net/uploads/9088695d6b.jpg
+
+<h4>Figure 3</h4>
+http://www.freeimagehosting.net/uploads/a57ceba211.jpg
 
 
 
