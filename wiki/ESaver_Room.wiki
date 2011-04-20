@@ -41,6 +41,10 @@ Two types of relay will be used - 5A and 15A for fan and AC
 
 5.Through the Ethernet shield send the collected data to the computer, where it can be hoisted on the web. (To be done)
 
+6.Use PIR sensor to detect movement in the room.(Done) 
+
+7. A piezo-buzzer to be used as a burglars alarm on detection of  unauthorized entry of any individual in the room.(this situation is when the counter measures 0 number of people in the room and still movement is detected by the PIR sensor).
+
 = Project Demo =
 
 When somebody enters into the room then the counter is incremented by one and the light and other appliances in the room will be switched ON and when any one leaves the room then the counter is decremented by one.
@@ -51,4 +55,4 @@ The microcontroller with the help of relay does the above job. It receives the s
 
 Microcontroller ATmega328P continuously monitors the Infrared Receivers, When any object passes through the IR Receiver's then the IR Rays falling on the receivers are obstructed , this obstruction is sensed by the Microcontroller and the counter is incremented or decremented accordingly.
 
-Further current sensors will be used to monitor the current usage and then ethernet shield will be used to send this data on to the net so that the user can view the usage log(functionality of smart meter).
+Further current sensors will be used to monitor the current usage and then ethernet shield will be used to send this data on to the net so that the user can view the usage log(functionality of smart meter).PIR sensor will be used to detect any movement in the room and if at count 0 any movement is detected then using a piezo-buzzer alarm will be raised, thereby taking care of the security.
