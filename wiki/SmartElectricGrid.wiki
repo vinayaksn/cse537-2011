@@ -31,6 +31,39 @@ If designed and operated with following characteristics at the core, the nation�
  * Optimizes Assets and Operates Efficiently – Assets will be managed in concert so that, as a system, they can deliver functionality at a minimum cost. For example, advanced sensing and robust communications will allow early problem detection, preventive maintenance and corrective action.
 
 
+= Real World And The Smart Grid =
+President Obama has called for the installation of 40 million smart meters and 3,000 miles of transmission lines. That means 2009 could be the year that we finally start seeing real attention being paid to “Power Grid 2.0” — basically turning the electrical grid of the 60s and 70s into a modern network that uses microprocessors and software to work efficiently and to connect to renewable energy generation.
+
+A build-out of the smart grid could also be one of the largest creators of wealth in the decade. As smart grid analyst Jesse Berst said recently, the smart grid will “spawn new Googles and Microsofts,” and is “akin to the transcontinental railroad, the phone system, the interstate highway system and the Internet.”
+
+== Key Players: Smart Meter Firms ==
+
+ * GE: GE makes a variety of hardware and software for smart meters, and the conglomerate has won several large utilities deals for smart meter deployments as of late. Northern California utility PG&E is installing 3.3 million GE smart meters in California, and American Electric Power plans to install an initial 200,000 smart meters, with an end goal of 5 million users by 2015.
+
+ * Itron: Itron and GE have been battling it out for the large utility deployments. Itron scored a 5.3 million smart meter deployment with Southern California utility Southern California Edison, and is working with Connecticut Light and Power (CL&P), San Diego Gas and Electric, and Tucson Electric Power, among others. The 30-year-old Washington state-based company is also aggressively partnering with innovative startups.
+
+ * Landis+Gyr: Century-old Landis+Gyr has 5,000 employees and is a forerunner in the advanced meter infrastructure market. The company announced in October that it will provide a portion of the 5 million smart meters set to roll out to PG&E (those that GE isn’t providing). Earlier, it inked a four-year, $360 million contract with Texas utility Oncor, a $10 million deal with Idaho Power, and a $52 million deal with Arizona utility Salt River Power. The company says it has annual sales of more than $1.25 billion in 30 countries worldwide.
+
+ * Sensus Metering Systems: Raleigh, N.C.-based Sensus announced last month that Hawaiian Electric, which provides electricity for 95 percent of Hawaii’s residents, plans to install Sensus FlexNet smart meters for 430,000 residential and commercial electric customers, subject to approval of the Hawaii Public Utilities Commission. The technology provides automated meter reading, data collection, voltage monitoring, notification of outages and remote control of customer loads.
+
+ * SmartSynch: One of the smaller innovative startups in the smart meter space, SmartSynch makes smart meters that communicate via IP networks like GPRS and Wi-Fi. The company founded in 1998 says it works with 75 power providers in the U.S. SmartSynch is backed by $80 million from Credit Suisse, Battelle Ventures, Beacon Group, JP Morgan Partners, Nth Power, Siemens Venture Capital and Duke Ventures.
+
+= How Big Is The Market =
+According to some reports, utilities will need to add an aggregate of nearly 40 gigawatts of clean energy generation by 2030, and to get all that power to customers, a total investment of as much as $2 trillion into transmission and distribution networks will be required. And that’s just the additional clean power — there will be even more investment in the software, hardware, and wireless networks to enable the power grid to intelligently manage all the additional capacity.
+
+Smart meters can cost anywhere from $100 to $300 per meter to install depending on the sophistication of the meter. So, say there’s 40 million smart meters installed, that could costs a minimum of $4 billion.
+
+Historically the investment into smart grid technology has been minimal, but venture capitalists have recently started to pump money into the sector. According to the Cleantech Group, smart grid startups brought in a record $202 million in the third quarter of 2008, which included $120 million for Gridpoint, $40 million for Trilliant, $23 million for BPL Global, and $18.5 million for Eka Systems.
+
+== Utilities ==
+ * Southern California Edison
+ * PG&E
+ * XCel Energy
+ * Austin Energy
+ * Sempra
+ * Oncor
+ * San Diego Gas and Electric
+
 = Security Issues =
 When estimating the risk level of any new technology, we have to think about the potential attackers and their motives.
 "For example, if we compare two technologies that are emerging, internet connectivity to kitchen appliances and the smart power grid, there is not much to be gained from hacking a fridge, so the risk is not likely, but extremists might want to take down electricity nationwide"
