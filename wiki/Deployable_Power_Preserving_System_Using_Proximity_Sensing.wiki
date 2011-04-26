@@ -33,6 +33,5 @@ Price : Rs. 880
 
 Relay Switches.
  
-Current Sensor: ACS712 Current Sensor (already have)
 
-SD Card Reader : already have. 
+Current Sensor: ACS712 Current Sensor.
