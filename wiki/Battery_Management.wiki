@@ -45,6 +45,9 @@ The mechanisms that electric and hybrid electric vehicles use to recharge their 
  # _Electrical Generator_: This is the conventional way of recharging the battery as this convert mechanical energy in electrical energy.
 
  The _Controller Area Network (CAN)_ uses high-speed communication busses to facilitate communication between the microprocessors and the various control systems. For example, battery management systems, transmission controller, engine controller, etc.
+The following video gives a brief overview of the working of HEVs-
+
+<wiki:video url="http://www.youtube.com/watch?v=2HrQeGzIZoI&feature=related"/>
 
 = Need for Battery Management =
 
@@ -73,7 +76,7 @@ There are  a number of factors affecting batteries in vehicle hence it is import
 = Battery Management System =
  BMS for hybrid cars consists of a _battery_, a _generator_ which only produces electric power and an _electric motor_ which can act as both a motor and a generator. For example, it can draw energy from the batteries to accelerate the car and it can also slow down the car down and return energy to the batteries.
 
-SOC: The State of Charge of a battery is its available capacity expressed as a percentage of its rated capacity
+  _SOC_: The State of Charge of a battery is its available capacity expressed as a percentage of its rated capacity
 
 = Overall Process =
  # Various sensors-temperature, voltage, current report to Main Unit.
@@ -85,14 +88,16 @@ SOC: The State of Charge of a battery is its available capacity expressed as a p
 = Research =
 Frazer–Nash and Henry Ronald Godfrey formed Frazer-Nash to produce affordable motor vehicles.
 The FN BMS is available in two formats:
- #Standard Format: The BMS is offered with the Slaves in an industry standard half Eurocard format, which allows the user to quickly develop a prototype system to evaluate the performance and establish suitability of the system as a whole.
 
- #Integrated Format: Experience has shown that by integrating the design of the BMS with the mechanical design of the battery pack as a whole then substantial savings in size, weight and cost can be achieved.
+ # Standard Format: The BMS is offered with the Slaves in an industry standard half Eurocard format, which allows the user to quickly develop a prototype system to evaluate the performance and establish suitability of the system as a whole.
+ # Integrated Format: Experience has shown that by integrating the design of the BMS with the mechanical design of the battery pack as a whole then substantial savings in size, weight and cost can be achieved.
 
- #http://www.fn-energy.com/
- #http://puregreencars.com/Green-Cars-News/Technology/ricardo_shows_low_cost_battery_pack_for_hybrid_electric_vehicles.html
+= Forecast =
+Over the past decade, there has been a considerable amount of growth in the battery technology which has been triggered by the need for better performance of such batteries. A survey done on batteries for electric cars by Boston Consultancy Group puts forward 6 dimensions on which the current Li-ion batteries can be evaluated.These are: safety, lifespan, performance, specific energy, specific power and cost. Out of these, cost and performance become the two major hurdles for electric cars.
 
+According to a survey by bcg.com , the battery costs will decline steeply till 2020 as the production volume increases. Cost for equipments, individual parts and also the growing levels of automation should trim the cost. Around 70% of the hybrid cars would be using Li-ion batteries and 30% using Ni-Mh batteries till 2020. According to a survey done by pikeresearch.com , vehicles will slowly move from Li-ion to NiMH technology thus reducing the cost. According to the analysis given by bcg.com , the amount that an equipment manufacturer will have to pay will decrease around 60-65% from 2009-2020. Hence the price to consumers will also fall $1400 – $1800 per KWh to $570 - $700 per KWh. 
 
+ ftp:///C://Users//prateek//Desktop//j1.jpg
 = References =
  # http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
  # http://www.dolcera.com/wiki/index.php?title=Hybrid_Electric_Vehicle_Battery_System
