@@ -45,13 +45,13 @@ b) Require to develop a serial port monitor which can plot the data being sent f
 
   * Developed the analog amplifying circuit and tested it.
   * Developed the system software to read serial data, plot it and save it as an ECG.
- 
+
 
 *Issues Faced*
 
  * Availability of components of specific values like Resistors, capacitors.
 
- * Differential voltages from body is in range of -5mV to +5mV. Due to long wires a lot of noise was introduced in the circuit.
+ * Differential voltages from body is in range of -5mV to +5mV. Due to long unshielded wires, a lot of noise was introduced in the signals. Making it difficult to infer the readings and pulses.
 
 * Present work * 
   * Circuit with shielded wires to reduce noise is currently under testing. .
