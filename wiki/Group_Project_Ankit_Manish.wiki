@@ -24,32 +24,46 @@ a) Arduino IDE
 b) Require to develop a serial port monitor which can plot the data being sent from serial port in real time.
 
 == Progress So Far ==
+
+*Week 1*
+
+  * Installation of necessary software has been done as well as   familiarity of various softwares like Processing(An open-source serial monitor) has been built.
+
+  * Some examples of plotting analog values received at one of the port of the host system have been attempted.
+
+*Week 2*
+
+  * Read about basics of ECG. For example,how voltages are generated from body ,different ways of measuring, amplifying it and representing these voltages as wave.
+
+  * Went through different circuits available online to amplify low range differential voltages from the body.
+
+  * Due to non-availability of some components circuit selected to try out the things :
+  http://www.eng.utah.edu/~jnguyen/ecg/bigsch.gif 
+
+
+*Week 3*
+
+  * Developed the analog amplifying circuit and tested it.
+  * Developed the system software to read serial data, plot it and save it as an ECG.
  
-=== Week 1 === 
-* The installation of necessary software has been done as well as familiarity of various softwares like *Processing*(An open-source serial monitor) has been built.
 
-* Some examples of plotting analog values received at one of the port of the host system have been attempted.
+*Issues Faced*
 
-=== Week 2 ===  
+ * Availability of components of specific values like Resistors, capacitors.
 
-* Read about basics of ECG. For example,how voltages are generated from body ,different ways of measuring, amplifying it and representing these voltages as wave.
+ * Differential voltages from body is in range of -5mV to +5mV. Due to long wires a lot of noise was introduced in the circuit.
 
-* Identified circuitry and required components to amplify the signals from the body. 
-
-=== Week 3 ===
-
-* Developed the analog amplifying circuit and tested it.
-
-* Developed the system software to read serial data, plot it and save it as an ECG.
- 
+* Present work * 
+  * Circuit with shielded wires to reduce noise is currently under testing. .
 
 
 == Reference ==
 
-1. [http://www.processing.org/]
 
-2. [http://www.arduino.cc/]
+1. [http://www.arduino.cc/]
 
-3. [http://en.wikipedia.org/wiki/Electrocardiography]
+2. [http://en.wikipedia.org/wiki/Electrocardiography]
 
-4. [http://www.open-ecg-project.org/]
+3. [http://www.open-ecg-project.org/]
+
+4. [http://www.eng.utah.edu/~jnguyen/ecg]
