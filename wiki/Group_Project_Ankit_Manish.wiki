@@ -24,18 +24,21 @@ b) Require to develop a serial port monitor which can plot the data being sent f
 
 = Progress So Far =
  
-Week 1 
+= Week 1 = 
 
-1. The installation of necessary software has been done as well as familiarity of various softwares like *Processing*(An open-source serial monitor) has been built.
-2. Some examples of plotting analog values received at one of the port of the host system have been attempted.
+a) The installation of necessary software has been done as well as familiarity of various softwares like *Processing*(An open-source serial monitor) has been built.
 
-Week 2 
-3. Read about basics of ECG. For example,how voltages are generated from body ,different ways of measuring, amplifying it and representing these voltages as wave.
-4. Identified circuitry and required components to amplify the signals from the body. 
+b) Some examples of plotting analog values received at one of the port of the host system have been attempted.
 
-Week 3 
-5. Developed the analog amplifying circuit and tested it.
-6. Developed the system software to read serial data, plot it and save it as an ECG.
+= Week 2 =  
+a) Read about basics of ECG. For example,how voltages are generated from body ,different ways of measuring, amplifying it and representing these voltages as wave.
+
+b) Identified circuitry and required components to amplify the signals from the body. 
+
+= Week 3 =
+a) Developed the analog amplifying circuit and tested it.
+
+b) Developed the system software to read serial data, plot it and save it as an ECG.
  
 
 
