@@ -20,17 +20,23 @@ c) 4-5 operational amplifiers i.e LF353N ,resistors 100K and 10K.
 
 a) Arduino IDE
 
-b) Processing : It is an open source programming language and environment used in our project for generating visual presentation of the data serially written by the micro-controller.
+b) Require to develop a serial port monitor which can plot the data being sent from serial port in real time.
 
 = Progress So Far =
+ 
+Week 1 
 
-1. The installation of necessary software has been done as well as the familiarity with the *Processing* has been built.
-
+1. The installation of necessary software has been done as well as familiarity of various softwares like *Processing*(An open-source serial monitor) has been built.
 2. Some examples of plotting analog values received at one of the port of the host system have been attempted.
 
-3. Some readings about basics of ECG like how voltages are generated and how it can be represented as wave.
-
+Week 2 
+3. Read about basics of ECG. For example,how voltages are generated from body ,different ways of measuring, amplifying it and representing these voltages as wave.
 4. Identified circuitry and required components to amplify the signals from the body. 
+
+Week 3 
+5. Developed the analog amplifying circuit and tested it.
+6. Developed the system software to read serial data, plot it and save it as an ECG.
+ 
 
 
 = Reference =
