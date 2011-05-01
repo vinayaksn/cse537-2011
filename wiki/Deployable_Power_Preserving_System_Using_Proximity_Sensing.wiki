@@ -23,7 +23,9 @@ _Second deadline_
 
 Addition of a configuration button through which a user can always change the optimum distance from the monitor of that particular user. This requires the user to press the button and sit in the optimum position in front of the system. The system after some delay will start sensing the optimum distance and take the average value for 5 seconds and set this as a new threshold in the system. Since the value would be stored in EEPROM, the threshold would be preserved even if the system is switched off. 
 
-_System Components_
+
+
+==_System Components_==
 
 ===Micro controller Board (ATMEGA 328p)===
 
@@ -49,9 +51,13 @@ Features
 
 ===System controlled Electric Plug Board===
 
-_Circuit Diagram_
+
+
+==_Circuit Diagram_==
 
 https://lh3.googleusercontent.com/-AuhJ-9yMpJI/TbxueNVeR_I/AAAAAAAAABE/cvQdw2Mo8to/s912/mbed_project_fig.jpg
+
+
  
 
 ==Hardware Requirements==
@@ -66,6 +72,8 @@ Relay Switches.
  
 
 Current Sensor: ACS712 Current Sensor.
+
+
 
 == System Applications ==
 
