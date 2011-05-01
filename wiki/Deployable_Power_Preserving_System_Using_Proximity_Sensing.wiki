@@ -13,7 +13,7 @@ The power supply of the monitor would have a relay attached to it which will reg
 The switch board of the monitor would also be connected to a current sensor will basically measure the power consumption of monitor which would be a good thing to do for estimating the value for money of the device and also for making users realize the amount of electricity wasted in such activities. The current sensor will convert the drop/rise in current to drop/rise in voltage.  A microcontroller will take this drop in voltage as an ADC input and thus calculate the power consumed by the monitor also this microcontroller would also be connected to the relay and IR sensor and will direct the relay to switch on or off the power.
 The microcontroller would also store the daily power consumption of the device and the power saved by this system in a SD card and this information will be useful in the estimation of the amount of electricity saved by the system thus giving the value for money of the system.
 
-===Implementation Plan===
+==Implementation Plan==
 
 _First deadline_
 
@@ -25,17 +25,29 @@ Addition of a configuration button through which a user can always change the op
 
 _System Components_
 
-Micro controller Board (ATMEGA 328p)
+===Micro controller Board (ATMEGA 328p)===
 
-IR Sensor (Sharp GP2Y0A02YK0F)
+===IR Sensor (Sharp GP2Y0A02YK0F)===
 
-RGB LED
+Features
 
-Relay Switch (5V)
+1. Distance measuring range : 20 to 150 cm
 
-Current Sensor
+2. Analog output type
 
-System controlled Electric Plug Board
+3. Package size : 29.5×13×21.6 mm
+
+4. Consumption current : Typ. 33 mA
+
+5. Supply voltage : 4.5 to 5.5 V
+
+===RGB LED===
+
+===Relay Switch (5V)===
+
+===Current Sensor===
+
+===System controlled Electric Plug Board===
 
 _Circuit Diagram_
 
@@ -54,3 +66,15 @@ Relay Switches.
  
 
 Current Sensor: ACS712 Current Sensor.
+
+== System Applications ==
+
+1. Touch-less switch
+(Sanitary equipment, Control of illumination, etc. )
+
+2. Sensor for energy saving
+(ATM, Copier, Vending machine, Laptop computer,
+LCD monitor)
+
+3. Amusement equipment
+(Robot, Arcade game machine)
