@@ -37,4 +37,15 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
  # Fan (for simulation of monitoring of AC).
  # Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V).
 
- 
+= Demonstration 1: April' 11 =
+We planned to demonstrate our system deployed in the car in the first milestone. The following were demonstrated in the first demo:
+# Interfaced a light sensor and a fan to the micro controller and adjusted it's speed proportional to the intensity of the light falling on the sensor. We were successfully able to adjust the fan speed using PWM.
+
+# Interfaced the accelerometer and LED to the micro controller and adjusted the intensity of the LED proportional to the acceleration value. If the change in acceleration is very high then the LED would light up to it's maximum intensity indicating warning for watage of fuel due to poor driving.
+
+# We even displayed the accelerometer value, sampled every 1 millisecond on the LCD screen.
+
+# The complete system was deployed successfully in the car.
+
+== Improvements Needed ==
+   
