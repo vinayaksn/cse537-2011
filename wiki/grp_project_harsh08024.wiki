@@ -1,7 +1,7 @@
-A wireless switching system
+Device Control using Bluetooth
 
 =Introduction=
-A system where a mobile phone can be used to control electronic appliances or any circuitary connected.The microcontroller and the mobile phone connect through bluetooth over which the communication takes place.The actual switching is done through relays which are interfaced with the mcu and the circuitry involved.The mcu will have a bluetooth module interfaced to it from which it can communicate to a mobile.
+A system where a mobile phone can be used to control electronic appliances or any circuitry connected.The microcontroller and the mobile phone connect through bluetooth over which the communication takes place.The actual switching is done through relays which are interfaced with the mcu and the circuitry involved.The mcu will have a bluetooth module interfaced to it from which it can communicate to a mobile.
 
 =Hardware Required=
 Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
