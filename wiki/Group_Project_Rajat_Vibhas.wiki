@@ -25,16 +25,30 @@ The two main components which will constitute the system are:
 2. A traffic red light with the following hardware:
   ● A microcontroller
   ● A Zigbee module (Coordinator)
-  ● An Ethernet shield (required in case of Twitter updates)
+  ● An USART cable for updating the status on twitter
 
 = Transmission Protocol =
 
 To guarantee a successful transmission, the following protocol was implemented between the traffic light node and the node in the car:
 
+1. The node at the traffic light will act as a server and will continuously broadcast a request to receive packets from the nodes in the car.
+
+2. The other nodes will respond to the request from the server and send their respective IDs to the server.
+
+3. Upon receiving the ID from any of the node in the car, the sever broadcasts the same ID again back to the nodes.
+
+4. The respective node will send the data to the server on receiving its own ID back from the server.
+
+5. The server sends an acknowledgement back on receiving the data.
+
+To ensure synchronizations of the different states of all the nodes, a flag based system is used which keeps the track of its state.
+
+There is a timeout implemented in case of any locking state.
 
 = Results =
 
 Our system was tested under various scenarios.
+
 1. We fixed the receiver at one place and the transmitter in the car crossed the receiver with varying speeds.
 
 2. It was tested for speeds at 25, 40, 60 and 80 Km/Hr and successful transmissions were recorded at all times.
