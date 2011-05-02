@@ -13,8 +13,6 @@ The system will be tested on the following basis:
 
 2. It will be tested by using two transmitter nodes and one receiver node.
 
-
-
 = Hardware Requirement =
 
 The two main components which will constitute the system are:
@@ -29,15 +27,24 @@ The two main components which will constitute the system are:
   ● A Zigbee module (Coordinator)
   ● An Ethernet shield (required in case of Twitter updates)
 
-= Progress So Far =
+= Transmission Protocol =
 
-1. Currently, we have interfaced the Zigbee module with the micro-controller and exchanged data between two modules. The programming is done in Arduino.
-Tutorial For Zigbee: http://www.ladyada.net/make/xbee/
+To guarantee a successful transmission, the following protocol was implemented between the traffic light node and the node in the car:
 
-2. We are using different serial pins for communicating between the microcontroller with PC and Zigbee modules with the microcontroller.
 
-3. Currently, we fix the receiver node (traffic light) at one place and try to move the transmitter node. We are transmitting a constant value from the transmitter node and when the receiver node receives the data, it is automatically updated on Twitter (http://twitter.com/#!/TrafficTerrific).
+= Results =
 
-4. For transmitting the value, we have incorporated a starting byte and an end byte to correctly identify the value at receiver.
+Our system was tested under various scenarios.
+1. We fixed the receiver at one place and the transmitter in the car crossed the receiver with varying speeds.
 
-5. The accelerometer has been ordered and it got delayed due to which we could not interface it with the microcontroller.
+2. It was tested for speeds at 25, 40, 60 and 80 Km/Hr and successful transmissions were recorded at all times.
+
+3. The average transmission time was calculated to be around 40 milliseconds.
+
+4. The maximum distance at which a successful transmission was held was noted to be as 25 meters.
+
+5. The Twitter posts can be found on the following page - (http://twitter.com/#!/TrafficTerrific).
+
+
+= References =
+[1] Tutorial for Zigbee: http://www.ladyada.net/make/xbee/ 
