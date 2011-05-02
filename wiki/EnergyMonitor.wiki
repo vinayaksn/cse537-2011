@@ -8,6 +8,16 @@
   * Completed serial processing interface
   * Initial phase of web-based UI completed
 
+= Week 3 =
+  * Completed radio interface
+  * Fixed errors in the python sdk
+  * Created python serial monitor
+  * Created ADC interface
+
+= Week 4 =
+  * Final phase of web-UI
+  * Completion of networking module
+
 = Details =
 == Scenario ==
 Electricity bills depend upon the energy consumption. Energy consumption is not as explicit to the people and therefore they are often surprised by the huge bill they get. Even though they may not be using a particular device at a particular time, they may forget to switch it off, leading to high power consumption.
