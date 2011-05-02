@@ -38,17 +38,19 @@ The EHCB(Energy and Health Car Buddy) helps conserve energy by giving feedback o
  # Pin to convert the voltage provided the car power outlet (12V)to the voltage supported by our avr board(5V).
 
 = Demonstration 1: April' 11 =
-We planned to demonstrate our system deployed in the car in the first milestone. The following were demonstrated in the first demo:
-# Interfaced a light sensor and a fan to the micro controller and adjusted it's speed proportional to the intensity of the light falling on the sensor. We were successfully able to adjust the fan speed using PWM.
-
- # Interfaced the accelerometer and LED to the micro controller and adjusted the intensity of the LED proportional to the acceleration value. If the change in acceleration is very high then the LED would light up to it's maximum intensity indicating warning for watage of fuel due to poor driving.
-
+We planned to deploy our system in the car in the first milestone. The following were demonstrated in the first demo:
+ # Interfaced a light sensor and a fan to the micro controller and adjusted it's speed proportional to the intensity of the light falling on the sensor. We were successfully able to adjust the fan speed and the direction using PWM.
+ # Interfaced the accelerometer and LED to the micro controller and adjusted the intensity of the LED proportional to the acceleration value. If the change in acceleration is very high then the LED would light up to it's maximum intensity indicating warning for wastage of fuel due to poor driving.
  # We even displayed the accelerometer value, sampled every 1 millisecond on the LCD screen.
-
  # The complete system was deployed successfully in the car. 
 
 == Improvements Needed ==
-For the second milestone we are supposed to the following :
+For the final demonstration we are supposed to the following :
  # Adjust the threshold for the PWM of the accelerometer as the LED was lighting up even for a small change in the acceleration.
  # Interfacing Ultra sonic sensor for the parking assistance.
- #   
+ # Interfacing a smoke sensor instead of the light sensor and rotating the fan in anti clockwise direction when the smoke value is high. This will help us change the normal fan to an exhaust fan in case when the smoke level is high in the car.
+ 
+= Demonstration 2: April' 20 = 
+In this milestone we demonstrated the following:
+ # Interface an ultra sonic sensor along with a buzzer. The sound of the buzzer was adjusted  inversely proportional to the distance of the sensor from any other object.
+ # The sensor was deployed in the car on the back bumper. It was successfully demonstrated in the parking lot of IIIT-Delhi. Distance of 0m to 4m  were detected and feedback to the user was given by the buzzer.  
