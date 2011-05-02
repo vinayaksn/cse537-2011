@@ -18,12 +18,12 @@ Two types of relay will be used - 5A and 15A for fan and AC
 = Hardware Functionality =
 
 1. IR sensors: the sensors help to identify the presence of number of people entering or leaving the room.
-
+[[image(http://www.google.co.in/imgres?imgurl=http://image.ec21.com/image/arielworld/simg_GC04328059_CA04328060/PIR_Sensor_Module.jpg&imgrefurl=http://www.ec21.com/product-details/PIR-Sensor-Module--4328060.html&usg=__lWEv9lqXKNFMzv-3rFW1n-7CxqE=&h=163&w=200&sz=5&hl=en&start=184&zoom=1&tbnid=2qfxBM6oI-fH7M:&tbnh=85&tbnw=104&ei=p5--TZnRFomSuwOV6bjGBQ&prev=/search%3Fq%3Dpir%2Bsensor%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1)]]
 2. Relays: it will be used to operate all the lights and fans in the room.
 
 3. Ethernet Shield: it will be used to inform the user over the internet about the status of the electricity usage in the room.
 
-4. Current Sensor: it will be used to measure the total electricity usage in the room.
+4. Piezoelectric Buzzer: it creates sound when any movement is detected by proximity sensor
 
 5. LCD: To display the number of people in the room.
 
