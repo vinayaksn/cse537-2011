@@ -51,12 +51,8 @@ Two types of relay will be used - 5A and 15A for fan and AC
 
 = Project Demo =
 
-When somebody enters into the room then the counter is incremented by one and the light and other appliances in the room will be switched ON and when any one leaves the room then the counter is decremented by one.
- 
-The light will be only switched OFF until all the persons in the room go out. The total number of persons inside the room is also displayed on the LCD. 
+When somebody enters into the room then the counter is incremented by one and the light and other appliances in the room will be switched ON. When any one leaves the room then the counter is decremented by one. The light will be switched OFF only when everyone goes out of the room and counter is zero. The total number of persons inside the room is also displayed on the LCD. 
 
-The microcontroller with the help of relay does the above job. It receives the signals from the IR sensors, and this signal is operated under the control of software, which is stored in ROM.
+Further proximity sensors is used to monitor any movement in the room. In case if the counter reads zero and proximity sensor detects any movement, burglar alarm will switch on, alerting unauthorized intrusion. Also, a contact sensor is used to detect when the door is closed or opened.
 
-Microcontroller ATmega328P continuously monitors the Infrared Receivers, When any object passes through the IR Receiver's then the IR Rays falling on the receivers are obstructed , this obstruction is sensed by the Microcontroller and the counter is incremented or decremented accordingly.
-
-Further current sensors will be used to monitor the current usage and then ethernet shield will be used to send this data on to the net so that the user can view the usage log(functionality of smart meter).PIR sensor will be used to detect any movement in the room and if at count 0 any movement is detected then using a piezo-buzzer alarm will be raised, thereby taking care of the security.
+A desktop application is used to take this data over network and show the inference (in terms of total number of people in the room, time since last presence was detected using PIR and status of window/door) in real time. Ethernet shield is used to send this data on to the network so that the user can view the status of the appliances and automatically switch the corresponding appliance on/off.
