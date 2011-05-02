@@ -4,18 +4,28 @@ Device Control using Bluetooth
 A system where a mobile phone can be used to control electronic appliances or any circuitry connected.The microcontroller and the mobile phone connect through bluetooth over which the communication takes place.The actual switching is done through relays which are interfaced with the mcu and the circuitry involved.The mcu will have a bluetooth module interfaced to it from which it can communicate to a mobile.
 
 =Hardware Required=
-Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
-A mobile device with midp support.
-Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
+ * Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
+ * A mobile device supporting java(specifically jsr 82).
+ * Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
 =Steps=
  * Interface the bluetooth module to the microcontroller.
  * Build an application for the mobile to connect to the mcu which allows one to choose the device from a list which can then be operated on.
  * Interface relays with the microcontroller and integrate.
 
 =Progress=
+==Week 1==
+(First demo)
  * Interfaced the bluetooth module(bluelink2) to the microcontroller. 
   * used level converter at Tx because bluelink worked on 3.3V.
  * Connected to my laptop(for now) through hyperlink.	
-further progres....
- * Application for device discovery(on the emulator)
- * interfaced a relay for testing.
+==Week 2==
+(Second demo)
+ * Wrote an application for device discovery.
+ * Made a relay board for testing.
+==Week 3== 
+ * Completed the mobile application and installed it on the phone.
+ * Wrote the necessary code for the mcu.
+ * Tested it with the relay board using Leds.
+==Week 5==
+ * Made another relay board.
+ * Tested it on an actual appliance in the lab.
