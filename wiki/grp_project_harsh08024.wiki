@@ -17,6 +17,7 @@ A system where a mobile phone can be used to control electronic appliances or an
     * Dimension: 30mm x 14mm x 2.2 mm
     * Serial communications: 9600-115200bps
     * Operating Temperature: -40 ~ +70C  
+ * Link to the website: http://www.rhydolabz.com/index.php?main_page=product_info&cPath=130_132&products_id=454
  * A mobile device supporting java(specifically jsr 82).
  * Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
 =Steps=
