@@ -41,7 +41,7 @@ b) Require to develop a serial port monitor which can plot the data being sent f
   http://www.eng.utah.edu/~jnguyen/ecg/bigsch.gif 
 
 
-*Week 3* (12-20)(Second demo) 
+*Week 3* (12-20 April)(Second demo) 
 
   * Developed the analog amplifying circuit and tested it.
   * Developed the system software to read serial data, plot it and save it as an ECG.
