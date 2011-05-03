@@ -75,3 +75,12 @@ Our system was tested under various scenarios.
 2. We would like to thank our batch-mate, Sunpreet Singh Arora to allow us to use his car to test our application.
 
 = Testing in Progress :) =
+
+1. Zigbee module installed on the car.
+http://cse537-2011.googlecode.com/svn/trunk/Group-projects/rajat08044%20vibhas08057/Car.jpg
+
+2. Module acting as the server installed at a height on the road.
+http://cse537-2011.googlecode.com/svn/trunk/Group-projects/rajat08044%20vibhas08057/Server.jpg
+
+3. Transmission taking place.
+http://cse537-2011.googlecode.com/svn/trunk/Group-projects/rajat08044%20vibhas08057/Transmission.jpg
