@@ -1,9 +1,9 @@
-Device Control using Bluetooth
+=Device Control through Bluetooth=
 
-=Introduction=
+==Introduction==
 A system where a mobile phone can be used to control electronic appliances or any circuitry connected.The microcontroller and the mobile phone connect through bluetooth over which the communication takes place.The actual switching is done through relays which are interfaced with the mcu and the circuitry involved.The mcu will have a bluetooth module interfaced to it from which it can communicate to a mobile.
 
-=Hardware Required=
+==Hardware Required==
  * Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
    * Specification of the bluetooth module:
     * Support Master & Slave Mode
@@ -17,28 +17,31 @@ A system where a mobile phone can be used to control electronic appliances or an
     * Dimension: 30mm x 14mm x 2.2 mm
     * Serial communications: 9600-115200bps
     * Operating Temperature: -40 ~ +70C  
- * Link to the website: http://www.rhydolabz.com/index.php?main_page=product_info&cPath=130_132&products_id=454
+     * Link to the website: http://www.rhydolabz.com/index.php?main_page=product_info&cPath=130_132&products_id=454
  * A mobile device supporting java(specifically jsr 82).
  * Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
-=Steps=
+
+==Steps==
  * Interface the bluetooth module to the microcontroller.
  * Build an application for the mobile to connect to the mcu which allows one to choose the device from a list which can then be operated on.
  * Interface relays with the microcontroller and integrate.
 
-=Progress=
-==Week 1==
+==Circuit Diagrams==
+
+==Progress==
+===Week 1===
 (First demo)
  * Interfaced the bluetooth module(bluelink2) to the microcontroller. 
   * used level converter at Tx because bluelink worked on 3.3V.
  * Connected to my laptop(for now) through hyperlink.	
-==Week 2==
+===Week 2===
 (Second demo)
  * Wrote an application for device discovery.
  * Made a relay board for testing.
-==Week 3== 
+===Week 3=== 
  * Completed the mobile application and installed it on the phone.
  * Wrote the necessary code for the mcu.
  * Tested it with the relay board using Leds.
-==Week 5==
+===Week 5===
  * Made another relay board.
  * Tested it on an actual appliance in the lab.
