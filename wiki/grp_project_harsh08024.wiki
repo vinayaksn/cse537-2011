@@ -5,6 +5,18 @@ A system where a mobile phone can be used to control electronic appliances or an
 
 =Hardware Required=
  * Bluetooth Module to connect to the microcontroller through which communication to the mobile device takes place.
+   * Specification of the bluetooth module:
+    * Support Master & Slave Mode
+    * Bluetooth core V2.0 compliant
+    * SPP (Serial Port Profile) support
+    * Support UART,USB,PCM,I2C interface to host system
+    * Encrypted connection
+    * Frequency: 2.4~2.524 GHz
+    * Built-in Chip antenna
+    * Power Supply:  3V3
+    * Dimension: 30mm x 14mm x 2.2 mm
+    * Serial communications: 9600-115200bps
+    * Operating Temperature: -40 ~ +70C  
  * A mobile device supporting java(specifically jsr 82).
  * Relays to connect to the external ciruitry interfaced with the microcontroller and used as switch.
 =Steps=
