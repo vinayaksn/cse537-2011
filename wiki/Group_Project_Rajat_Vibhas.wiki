@@ -59,6 +59,15 @@ Our system was tested under various scenarios.
 
 5. The Twitter posts can be found on the following page - (http://twitter.com/#!/TrafficTerrific).
 
+= Challenges =
+1. The main challenge of our project to come up with a transmission algorithm to guarantee successful transmission of the data between the nodes.
+
+2. The next big challenge was to test the application in real world scenarios and for different speeds.
 
 = References =
-[1] Tutorial for Zigbee: http://www.ladyada.net/make/xbee/ 
+1. Tutorial for Zigbee: http://www.ladyada.net/make/xbee/ 
+
+= Acknowledgements =
+
+1. We would like to thank our instructor Dr. Amarjeet Singh to guide us through this project.
+2. We would like to thank our batch-mate, Sunpreet Singh Arora to allow us to use his car to test our application.
