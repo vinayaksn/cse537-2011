@@ -53,9 +53,14 @@ b) Require to develop a serial port monitor which can plot the data being sent f
 
  * Differential voltages from body is in range of -5mV to +5mV. Due to long unshielded wires, a lot of noise was introduced in the signals. Making it difficult to infer the readings and pulses.
 
+
 * Present work * 
   * Circuit with shielded wires to reduce noise is currently under testing. .
-
+* Results *
+  * Following results are obtained from testing.
+  https://code.google.com/p/cse537-2011/source/browse/trunk/Individual%20Projects/ankit08008/ECG_readings.jpg
+  * Readings shows variation in body signals in range of 0-25mV.
+  
 
 == Reference ==
 
