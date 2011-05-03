@@ -9,6 +9,14 @@ We propose an alternate design to deal with the guests. We will use a simple key
 
 = Details =
 
+Week Wise progress of our Group : 
+
+1. Week 1 : Learning to interface Arduino Ethernet Shield with the micro-controller and letting it function as a network Entity. 
+
+2. Week 2 : It was spent trying to interface the keypad and allow functionality such as taking in multiple key inputs from the keyboard. 
+
+3. Week 3: Putting the whole thing together, designing the daemon running on the faculty's terminal .
+
 The project details are explained in following parts 
 
 == Application Design ==
@@ -26,7 +34,7 @@ the guest on the other side is sees the response on the LCD screen in the recept
 == Hardware characteristics ==
 1. The Keypad being used is a very basic arduino keypad 
 
-2. The Ethernet sheild acts as a server ans its the one hosting the web page where the faculty gives his response to the guest. 
+2. The Ethernet sheild acts as a server and its the one hosting the web page where the faculty gives his response to the guest. 
 
 3. The Ethernet shield is given a mac address and the Ip address of its own. However to ensure security , we can put the value of subnet such that the ethernet shield is accessed by just the teachers.  
 
@@ -55,7 +63,9 @@ the guest on the other side is sees the response on the LCD screen in the recept
 
 
 = References = 
-http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1246826892/all
+
 http://www.arduino.cc/en/Main/ArduinoEthernetShield
-http://www.abctransformers.in/current-transformer.html
-http://www.altoindia.com/query.php
+
+http://arduino.cc/playground/Code/Keypad
+
+http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1206024602
