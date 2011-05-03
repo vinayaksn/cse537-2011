@@ -27,6 +27,11 @@ A system where a mobile phone can be used to control electronic appliances or an
  * Interface relays with the microcontroller and integrate.
 
 ==Circuit Diagrams==
+For interfacing bluetooth module with the MCU:
+
+
+For Relays:
+
 
 ==Progress==
 ===Week 1===
