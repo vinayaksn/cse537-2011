@@ -31,7 +31,7 @@ For interfacing bluetooth module with the MCU:
 http://oi53.tinypic.com/28jfe5h.jpg
 
 For Relays:
-
+http://www.rentron.com/PicBasic/relay-circuit.gif
 
 ==Progress==
 ===Week 1===
