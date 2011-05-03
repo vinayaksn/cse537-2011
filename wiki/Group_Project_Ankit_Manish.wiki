@@ -47,20 +47,20 @@ b) Require to develop a serial port monitor which can plot the data being sent f
   * Developed the system software to read serial data, plot it and save it as an ECG.
 
 
-*Issues Faced*
-
- * Availability of components of specific values like Resistors, capacitors.
-
- * Differential voltages from body is in range of -5mV to +5mV. Due to long unshielded wires, a lot of noise was introduced in the signals. Making it difficult to infer the readings and pulses.
-
-
 * Present work * 
   * Circuit with shielded wires to reduce noise is currently under testing. .
 * Results *
   * Following results are obtained from testing.
-  https://code.google.com/p/cse537-2011/source/browse/trunk/Individual%20Projects/ankit08008/ECG_readings.jpg
+  For image follow the link: [code.google.com/p/cse537-2011/source/browse/trunk/Individual%20Projects/ankit08008/ECG_readings.jpg]
   * Readings shows variation in body signals in range of 0-25mV.
-  
+ 
+*Issues Faced*
+
+ * Availability of components of specific values like Resistors, capacitors.
+
+ * Differential voltages from body is in range of -5mV to +5mV. Due to long unshielded wires, a lot of noise is introduced in the signals. Making it difficult to infer the readings and pulses.
+
+
 
 == Reference ==
 
