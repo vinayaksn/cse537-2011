@@ -1,25 +1,41 @@
-We are essentially finding a way to transfer the electricity consumption from each wire to a central point through Ethernet. 
+Our Project tries to implement the functionality of the intercom in a building over internet without the usage of phones. 
 
 = Introduction =
-We live in the age of internet. In this project we will try and take a small step in this direction by transmitting the electrical usage on the ethernet to some remote location. 
-
-Add your content here.
+Whenever a guest comes into our college building his first point of interaction is the guard. He tells to the guard about the faculty he wants to meet with . The guard either makes a phone call or personally goes to the faculty to tell him about the guest. 
+We propose an alternate design to deal with the guests. We will use a simple keypad and an Ethernet shield along with our micro controller to connect the reception area with each faculty. 
 
 
 = Details =
 
-The reading from the wires is taken through the Current Transformers. It's a transformer designed to measure the AC current flowing in a single conductor. The current to be measured is a wire routed through the center hole of the transformer. The measured AC current is the ratio transferred to the windings of the CT. To use in a Arduino this secondary current must be terminated in a resistance load and then rectified, filtered and scaled before wiring to an Arduino A/D input pin. A current transformer is a basically a transformer where the wire going in acts as a primary and the output is coming from an output coil. 
+The project details are explained in following parts 
+== Application Design ==
+The whole System Design is as follows. 
+1. The guest comes in and punches the key combination corresponding to the faculty he wants to meet.(key combination for different faculties can be printed on a sheet and put up on the reception desk)
+2. Based on the keys pressed the concerned faculty will automatically get notified via a pop up on the browser . The pop up on the browser will be a web page. This task is achieved by a daemon running on the faculty's terminal. We have programmed and created that daemon. (It is Designed in java so it will work on all the platforms)
+3. The web page will have two options . He can click either one of them based on the action he wants to take. Either he can ask the guest to come in , or he can ask him to wait. 
+4. Once the faculty chooses the option , and clicks the submit button ,   
+the guest on the other side is sees the response on the LCD screen in the reception area. 
 
-In the first stage,we will put multiple clamp-on CTs in multiple output connections and connect them to multiple ADC channels. We will send this individual CT information over ethernet to a central location. In this stage we will connect a meter and manually take the readings from the meter (or some other accurate source such that we know the accuracy of your experiments). 
+== Hardware characteristics ==
+1. The Keypad being used is a very basic arduino keypad 
+2. The Ethernet sheild acts as a server ans its the one hosting the web page where the faculty gives his response to the guest. 
+2. The Ethernet shield is given a mac address and the Ip address of its own. However to ensure security , we can put the value of subnet such that the ethernet shield is accessed by just the teachers.  
 
-In the Second stage we will , add a smart meter as well and interface it to the microcontroller over serial interface.The serial interface can be RS232. 
+== Challenges == 
+1. Interfacing the keypad with the Microcontoller.
+2. Sending the keypress information over the Ethernet. 
+3. Automatically refreshing the HTML page hosted on the Ethernet Shield. 
 
-= Hardware = 
-1. Ethernet Shield
-2. Current Tranformers
-3. Atmega 328p micro controller. 
-4. Smart meters.
-5. Normal meters.  
+== Softwares used ==
+1. Arduino to program on the microcontroller
+2. Java to build the daemon running on the faculty's terminal at all times. 
+3. HTML to make the web page. 
+
+== Hardwares used ==
+1. Arduino Keypad
+2. Atmeage328p microcontroller
+3. Arduino Ethernet Shield.
+4. LCD screen 
 
 = References = 
 http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1246826892/all
