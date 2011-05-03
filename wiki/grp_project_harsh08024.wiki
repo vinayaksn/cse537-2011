@@ -66,8 +66,8 @@ http://www.rentron.com/PicBasic/relay-circuit.gif
  * Tested it on an actual appliance in the lab.
 
 ==References==
-http://www.technologyquestions.com/technology/windows-xp/240129-com-port-connection.html
-http://developers.sun.com/mobility/midp/articles/bluetooth2/
-http://www.nowires.org/Presentations-PDF/AndreKpresentasjon.pdf
-http://j2mesamples.blogspot.com/2009/02/how-to-find-active-bluetooth-devices.html
-datasheet of bluelink2
+ * http://www.technologyquestions.com/technology/windows-xp/240129-com-port-connection.html
+ * http://developers.sun.com/mobility/midp/articles/bluetooth2/
+ * datasheet of bluelink2
+ * http://www.nowires.org/Presentations-PDF/AndreKpresentasjon.pdf
+ * http://j2mesamples.blogspot.com/2009/02/how-to-find-active-bluetooth-devices.html
