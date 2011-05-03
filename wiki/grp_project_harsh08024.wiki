@@ -34,6 +34,19 @@ For Relays:
 
 http://www.rentron.com/PicBasic/relay-circuit.gif
 
+
+==Components Involved==
+ * A microcontroller, interfaced with an external bluetooth module to make it bluetooth compatible.
+ * Relays (switches that can be controlled through the MCU), interfaced between the appliances and the MCU.
+ * A J2ME application, installed on a mobile which can communicate to the MCU and provide a UI for controlling appliances.
+
+==Working==
+ * Initially the mcu is powered on and is ready to be connected.
+   * The mobile app searches for the mcu.
+ * Once found,a connection is established between the two.
+ * When the user switches a device On/Off through the application UI,some data is sent to the mcu.
+   * The mcu interprets the recieved data and sends back its status.
+
 ==Progress==
 ===Week 1(5-10 april 2011)===
 (First demo)
@@ -51,3 +64,5 @@ http://www.rentron.com/PicBasic/relay-circuit.gif
 ===Week 5(2nd May 2011)===
  * Made another relay board.
  * Tested it on an actual appliance in the lab.
+
+==references==
