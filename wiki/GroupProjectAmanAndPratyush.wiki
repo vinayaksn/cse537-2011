@@ -1,3 +1,5 @@
+= Summary = 
+
 Our Project tries to implement the functionality of the intercom in a building over internet without the usage of phones. 
 
 = Introduction =
