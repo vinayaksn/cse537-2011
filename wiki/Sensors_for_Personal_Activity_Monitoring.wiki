@@ -4,3 +4,22 @@
 
 This page will provide a brief overview of commercially available devices that monitor physical activities. We will also try to include all possible technologies used in these devices. Many of these devices can be effectively used in metabolic assessment, behavior therapy, and weight management, becoming an essential part of the solution to diabetes, obesity and chronic diseases.
 Characteristics of physical activity are indicative of one’s mobility level, latent chronic diseases and aging process.
+
+= Why do we need PA monitoring =
+
+  * Surveillance: 
+PA monitoring can be used to monitor the working habits of one's employees and based on the analysis, problems can be identified and can be sorted out too.
+
+  * Health:
+Amount of daily physical activity directly influences the health condition and quality of life. Accurate monitoring of physical activities and energy expenditure are important to keep ourselves healthy. PA monitors can be used to keep a track of a patient's medical condition and can be helpful in diagnosis too.
+
+  * Customization of Products:
+Data collected from PA monitors can be used for finding patterns in a user's activity and depending on it products can be customized for better user satisfaction and convenience.
+
+= Properties of PA monitors =
+  # Very light in weight 
+  # Absolutely Non-invasive 
+  # Compatible with daily activities 
+  # Able to present the recorded data in an understandable and useful way 
+  # Easy to calibrate 
+ 
