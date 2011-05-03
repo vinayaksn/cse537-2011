@@ -31,22 +31,23 @@ For interfacing bluetooth module with the MCU:
 http://oi53.tinypic.com/28jfe5h.jpg
 
 For Relays:
+
 http://www.rentron.com/PicBasic/relay-circuit.gif
 
 ==Progress==
-===Week 1===
+===Week 1(5-10 april 2011)===
 (First demo)
  * Interfaced the bluetooth module(bluelink2) to the microcontroller. 
   * used level converter at Tx because bluelink worked on 3.3V.
  * Connected to my laptop(for now) through hyperlink.	
-===Week 2===
+===Week 2(11-17 april 2011)===
 (Second demo)
  * Wrote an application for device discovery.
  * Made a relay board for testing.
-===Week 3=== 
+===Week 3 (18-24 april 2011)=== 
  * Completed the mobile application and installed it on the phone.
  * Wrote the necessary code for the mcu.
  * Tested it with the relay board using Leds.
-===Week 5===
+===Week 5(2nd May 2011)===
  * Made another relay board.
  * Tested it on an actual appliance in the lab.
