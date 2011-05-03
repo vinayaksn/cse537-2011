@@ -45,6 +45,10 @@ To ensure synchronizations of the different states of all the nodes, a flag base
 
 There is a timeout implemented in case of any locking state.
 
+The image below tries to summarize the transmission protocol. In this case there are two cars A and B and communication is done with node A.
+
+http://cse537-2011.googlecode.com/svn/trunk/Group-projects/rajat08044%20vibhas08057/Transmission%20Protocol.png
+
 = Results =
 
 Our system was tested under various scenarios.
