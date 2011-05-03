@@ -13,6 +13,7 @@ The project details are explained in following parts
 
 == Application Design ==
 The whole System Design is as follows. 
+
 1. The guest comes in and punches the key combination corresponding to the faculty he wants to meet.(key combination for different faculties can be printed on a sheet and put up on the reception desk)
 
 2. Based on the keys pressed the concerned faculty will automatically get notified via a pop up on the browser . The pop up on the browser will be a web page. This task is achieved by a daemon running on the faculty's terminal. We have programmed and created that daemon. (It is Designed in java so it will work on all the platforms)
