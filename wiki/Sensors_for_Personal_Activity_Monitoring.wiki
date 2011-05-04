@@ -121,8 +121,7 @@ Using Sensor Networks to Measure Intensity in Sporting Activities: Consists of a
   * Correlated the data between the match timings and the values from the monitor. 
 
 = References =
-  * http://grc.yzu.edu.tw/OptimalWeb/articlesystem/article/compressedfile/(2011-02-
-21)%20Chapter%202%20A%20review%20of%20accelerometry-based%20wearable%20motion%20detectors%20for%20physical%20activity%20monitoring.pdf 
+  * http://grc.yzu.edu.tw/OptimalWeb/articlesystem/article/compressedfile/(2011-02-21)%20Chapter%202%20A%20review%20of%20accelerometry-based%20wearable%20motion%20detectors%20for%20physical%20activity%20monitoring.pdf 
   * http://www.mdpi.com/1424-8220/10/8/7772/pdf 
   * http://www.icta.ufl.edu/projects/publications/chao08a.pdf 
   * http://www.hindawi.com/journals/js/2010/434863/ 
