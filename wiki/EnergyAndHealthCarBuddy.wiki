@@ -57,7 +57,7 @@ In this milestone we demonstrated the following:
 
 
 <img src="http://i.imgur.com/pJf10.jpg" />
-Figure 1: Parking sensor in action. A car with 4 parking sensors.
+ # Figure 1: Parking sensor in action. A car with 4 parking sensors.
 
 =Plan For Final Demonstration: May 3 =
 We plan to deliver the complete system with all the components developed in the first two demonstrations. We also plan to put our complete system in a box just showing the LCD, LED, Accelerometer and the Ultra sonic sensor. Hence the deliverable are as follows:
