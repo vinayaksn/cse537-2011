@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page describes the details about the ESaver Room Project. It covers all the devices and their functionalities that 
+This page describes the details about the ESaver Room Project. It covers all the devices in detail with their respective functionalities.
 
 = Why do we need a ESaver_room? =
 
