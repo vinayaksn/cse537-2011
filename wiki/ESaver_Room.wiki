@@ -73,7 +73,7 @@ The software has a setup where the ethernet sheild is setup and the loop which t
 
 3.If the count is equal to 0 i.e. there is no one in the room turn off all of the appliances. (Done) 
 
-4.)
+4.
 
 5.Through the Ethernet shield send the collected data to the computer, where it can be hoisted on the web. (To be done)
 
@@ -100,20 +100,12 @@ A desktop application is used to take this data over network and show the infere
 
 1. Setting up the whole system in the real world was very different from the basic setup of our project. (Making the wires not visible and having clean connections)
 
-2. The microcontroller and the wires which we were using in our project were taken by different group and they refused to return it at the time of the demo. We were left with broken wires and did not get to crimp them the wires because the other group had taken it from the lab.
+2. The microcontroller and the wires which we were using in our project were taken by different group and they refused to return it at the time of the demo. We were left with broken wires and did not get to crimp the wires because the other group had taken it from the lab.
 
 3. We were sharing the ethernet shield with 2 other groups. 
 
 4. The contact sensor we bought did not work as the IR rays were not emitted by the emitter in the sensor.
 
-5. The 
-
-
-
-
-
-=======
->>>>>>> theirs
 
 = Acknowledgenment =
 
