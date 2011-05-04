@@ -1,8 +1,8 @@
-#summary A Wireless Pulse-Oximter with an ability to log Data over an SD card as well as to the Internet
+#summary A Wired/Wireless Pulse Meter
 
 = Introduction =
 
-  Pulse Oximetry is a non invasive method of measuring a person's oxygenation level. It monitors the percentage of hemoglobin (Hb) which is saturated with oxygen. A probe is attached to the patients finger or ear lobe comprising LEDs and photo-detector. As the light from the two LEDs (red - 660 nm and infrared - 950 nm) pass through the body tissues to a photo-detector, it is absorbed by blood and soft tissue.
+  Pulsemetry is a non invasive method of measuring a person's pulse. It monitors the person's heart beat rate. A probe is attached to the patients finger or ear lobe comprising LEDs and photo-detector. As the light from the two LEDs (red - 660 nm and infrared - 950 nm) pass through the body tissues to a photo-detector, it is absorbed by blood and soft tissue.
 
 
 = Theory & Working Principle =
@@ -19,8 +19,8 @@ Pulse oximetry uses a light emitter with red and infrared LEDs that shines throu
 = Basic Architecture =
 
 The whole system comprises of two subsystems, namely :-
-	a) The Sensor subsystem, and
-	b) The Base Station
+﻿  a) The Sensor subsystem, and
+﻿  b) The Base Station
 The Sensor subsystem comprises of IR and Red LEDs, Photo-Detector, RF Transmitters, a low power small size microcontroller(preferably from the ATTiny family, though not fully decided) to keep all these components working in proper manner.
 
 The Base station comprises of RF Receivers, SD cards attached to an SD card reader-writer(to Log data locally), LCDs(to Display Data Real Time), an Ethernet Shield(to log data over the Internet), all joined over together with our Arduino Boards.
@@ -33,22 +33,43 @@ The sensors are worn by the patient in the form of a clip over his finger wherei
 = Hardware Requirement =
 
 1) For Sensor Subsystem:-
-	* RED LED,
-	* IR Transmitter
-	* Photo-Detector(namely TSL235R)
-	* LM358N Amplifier
-	* RF Transmitter(434 Mhz)
-	* A Micro-Controller(confusion still remians whether to go for Atmega168A or an ATTiny85 Micro-Controller)
-	* Power Source
+﻿  * RED LED,
+﻿  * IR Transmitter
+﻿  * Photo-Detector(namely TSL235R)
+﻿  * LM358N Amplifier
+﻿  * RF Transmitter(434 Mhz)
+﻿  * A Micro-Controller i.e. ATMega8L
+﻿  * Power Source
 
 2) For Base Station:-
-	* RF Receivers
-	* SD Card slot
-	* SD Card
-	* Ethernet Shield
-	* LCDs
-	* Arduino Boards
-	* Power Source
+﻿  * RF Receivers
+﻿  * Arduino Boards
+﻿  * Power Source
+
+= Stages Of Development =
+=== Testing for Various Photo Sensors ===
+After doing much research on various viable and available photo-sensors, both IR as well as IR-cum-Light sensors, we settled for :
+  * 2N5777 Photo-Darlington
+      Even though it's performance was very low, we kept this on hand because of it's easy availability and non-requirement of an external amplifier
+  * TSL235R Light to Digital Signal Converter
+      Being very easy to interface, this photo-sensor(worked only on RED LED) also gave quite accurate results,
+  * Normal IR receivers
+      Easy Availability, low cost, easy interfacing -> ideal choice
+      
+=== Testing for Working of the chosen Photo-sensors ===
+These Selected photo-sensors gave absurd values in start, but as we proceeded with our research on their working, we were able to interface TSL235R and IR sensors with ease, though the 2N5777 photo Darlington was very difficult to because of it's low on-line support as well as because of it's transistor based multiple capabilities.
+
+=== Interfacing the Micro-Controller as Standalone ===
+We wanted a minimal configuration of the Micro-Controller Unit so as to reduce upon the size, for this all the UART, external Oscillators, resistors and capacitors were required to be stripped off. We planned to use the Micro-Controllers' internal 8Mhz Oscillator as the main clock source.
+Due to this, the module turned out to be very time consuming as at first we got our hands on a ATMega168 with no boot-loader. Though we had success on burning a bootloader in the chip, bu somehow, weren't able to burn programs on it using our Arduino Boards as ISP.
+
+Because of this flaw, we had to move on to a smaller and cheaper Micro-Controller, i.e. ATMega8L, we got online support from [http://todbot.com/blog/2009/05/26/minimal-arduino-with-atmega8/] and were easily able to do all the required burning of bootloaders as well as programs to finally get the Micro-Controller be used under our needs.
+
+=== Putting All The modules Together ===
+After being able to get the modules up and running as standalone, we had to get them working in a small packaging, small enough to worn on hand, though we ultimately had to sacrifice it's being worn capability due to our requirements of having to interface several sensors, so we had to make it in a form of small table gadget, on which we put on our fingers to get the desired results.
+==== Mishapping ====
+During our soldering exercise of putting every module in one place, we accidentally burnt the TSL235R sensor thus decreasing upon the overall output of our gadget to a very large extent.
+
 
 = Reference =
 
@@ -57,4 +78,3 @@ The sensors are worn by the patient in the form of a clip over his finger wherei
 2. [http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1276174700]
 
 3. [http://en.wikipedia.org/wiki/Pulse_oximetry]
-
