@@ -6,27 +6,27 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 
 = Hardware required =
 The following are the hardware required:                                
- # IR sensors
+ # IR sensors-Rs 30 (Everest sales shop no 629)
 http://elecrom.files.wordpress.com/2008/02/cropir-sensors.jpg
 
- # Relays
+ # Relays -Rs 30 (Everest sales shop no 629)
 http://upload.ecvv.com/upload/Info/200801/China_I_2006315213813493072_PCB_Relays.jpg
 
 Two types of relay will be used - 5A and 15A for fan and AC
 
- # Ethernet shield
+ # Ethernet shield -Rs2500
 http://www.liquidware.com/system/0000/1920/Arduino_Ethernet_Shield.jpg
 
- # Piezoelectric Buzzer
+ # Piezoelectric Buzzer -Rs 50 (Everest sales shop no 629)
 http://walleymusic.com/inbindi/images/piezo_buzzer.jpg
 
  # ATmega328 microcontroller
 http://iteadstudio.com/store/images/produce/Platform/ATMega328/ATMega328.JPG
 
- # PIR sensor
+ # PIR sensor -Rs 250 (Everest sales shop no 629)
 http://www.tech-faq.com/wp-content/uploads/2011/01/PIR-Sensor.jpg
 
- # contact sensor(slotted optical sensor)
+ # contact sensor(slotted optical sensor)-Rs 50 (Everest sales shop no 629)
 http://rocky.digikey.com/weblib/Optek/Web%20photos/OPB960T11.jpg
 = Hardware Functionality =
 
