@@ -1,0 +1,232 @@
+/*
+      The circuit:
+     * LCD RS pin to digital pin 12
+     * LCD Enable pin to digital pin 11
+     * LCD D4 pin to digital pin 5
+     * LCD D5 pin to digital pin 4
+     * LCD D6 pin to digital pin 3
+     * LCD D7 pin to digital pin 2
+     * LCD R/W pin to ground
+     * 10K resistor:
+     * ends to +5V and ground
+     * wiper to LCD VO pin (pin 3)
+     */
+     
+     
+    // include the library code:
+    #include <LiquidCrystal.h>
+    #include <EEPROM.h>
+
+    
+    // initialize the library with the numbers of the interface pins
+    LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+    int ir_val;
+    int irSensor = 0;
+    int configSet = 1;
+    
+    void setup() {
+      pinMode(6, OUTPUT);
+      pinMode(13, OUTPUT);
+      pinMode(7, OUTPUT);
+      pinMode(8, OUTPUT);
+      pinMode(9, OUTPUT);
+      pinMode(10, OUTPUT);
+      digitalWrite(6,HIGH);
+      digitalWrite(13,LOW);
+      digitalWrite(8,LOW);
+      digitalWrite(10,LOW);
+      // set up the LCD's number of columns and rows: 
+      lcd.begin(16, 2);
+      Serial.begin(9600);
+            
+    }
+    
+    void loop() {
+      curr_sense();
+      int i=0;
+        for (i=0;i<60;++i){ 
+          int buttonPress = analogRead(configSet);
+          if(buttonPress<800){
+           config();      
+         }
+         else{
+           
+           int test = EEPROM.read(1);
+           int new_val = 0; 
+           if(test==1){
+            new_val = (EEPROM.read(0))+255;
+            }
+           else{
+            new_val = (EEPROM.read(0));
+           }  
+           int thVal= new_val;
+           //lcd.clear();
+           //lcd.print(thVal);
+           int m=0;
+           int av_val2=0;
+                       
+             for(m=0;m<50;++m){
+             
+                int irVal= analogRead(irSensor);
+                av_val2 = av_val2 + irVal;
+                delay(10);
+                
+               }
+               curr_sense();
+               
+               lcd.clear();
+               av_val2 = av_val2/50;
+               ir_val = av_val2;
+               //lcd.setCursor(7,0);
+               lcd.print(ir_val);
+           
+           //sample sensor value
+           if (thVal>ir_val)
+           {
+             lcd.clear(); 
+             standby();
+             
+           }
+           else{
+             digitalWrite(6,HIGH);
+             lcd.setCursor(0,1);
+             lcd.print("ON");
+           }
+         }
+       } 
+    }
+    
+    void config(){
+      
+         lcd.clear();
+         lcd.print("Configuration");
+         lcd.setCursor(0,1);
+         lcd.print("Mode");
+         delay(2000);
+         lcd.clear();
+         lcd.print("Set new");
+         lcd.setCursor(0,1);
+         lcd.print("threshold.");
+         delay(2000);
+         lcd.clear();
+         lcd.print("READY");
+         int n=0;
+         for(n;n<3;++n){
+           lcd.setCursor(n+5,0);
+           lcd.print(".");
+           delay(1000);
+         }
+         lcd.clear();
+         int m=0;
+         double av_val=0;
+         double av_val2=0;
+         
+         for(int k=0;k<10;++k){
+             
+           for(m=0;m<100;++m){
+           
+              int irVal= analogRead(irSensor);
+              av_val2 = av_val2 + irVal;
+              delay(5);
+              
+             }
+             
+             lcd.clear();
+             av_val2 = av_val2/(double)100;
+             lcd.print(av_val2);
+             curr_sense();
+             av_val = av_val + av_val2;
+          }  
+          
+         av_val = (av_val/10);
+         lcd.clear();
+         lcd.print("Average::");
+         lcd.print(av_val);
+         delay(2000);
+         lcd.clear();
+         
+         if (av_val>255){
+             EEPROM.write(0,(av_val-255));
+             EEPROM.write(1,1);
+           }
+         else{
+             EEPROM.write(0,(av_val));
+             EEPROM.write(1,0);        
+           }  
+         lcd.print("New Th. Value");
+         lcd.setCursor(0,1);
+         int test = EEPROM.read(1);
+         int new_val = 0; 
+         if(test==1){
+            new_val = (EEPROM.read(0))+255;
+           }
+         else{
+            new_val = (EEPROM.read(0));
+           }  
+         lcd.print(new_val);
+         delay(4000);
+         lcd.clear();      
+    }
+
+
+    void standby(){
+        
+      lcd.print("Standby Mode");
+      lcd.setCursor(0,1);
+      int test = EEPROM.read(1);
+           int new_val = 0; 
+           if(test==1){
+            new_val = (EEPROM.read(0))+255;
+            }
+           else{
+            new_val = (EEPROM.read(0));
+           }  
+           int thVal= new_val;
+           //lcd.clea
+           //lcd.print(thVal);
+           int m,n;
+           double av_val2=0;
+           double av_val3=0;
+           for(n=0;n<10;++n){            
+             for(m=0;m<50;++m){
+             
+                int irVal= analogRead(irSensor);
+                av_val2 = av_val2 + irVal;
+                delay(10);
+                
+               }
+               
+               lcd.clear();
+               av_val2 = av_val2/(double)50;
+               ir_val = av_val2;
+               //lcd.setCursor(7,0);
+               lcd.print(ir_val);
+               av_val3 = av_val2 + av_val3;
+               curr_sense();
+           }
+           av_val3=av_val3/(double)10; 
+           if (thVal> av_val3)
+           {
+             digitalWrite(6,LOW);
+             lcd.setCursor(0,1);
+             lcd.print("OFF");
+             delay(2000);
+             
+           }
+    }
+  
+   void curr_sense{
+
+      int curr_val = 0;
+      double mean_val=0,final=0;
+      for(int i = 0; i<160 ; ++i)
+         {
+           curr_val = analogRead(2) - 512;
+           curr_val = curr_val * curr_val ;
+           mean_val = mean_val + curr_val;
+         }
+     mean_val = mean_val/(double)160;
+     final = sqrt(mean_val) -3;
+     Serial.println(final);
+      
+   }
