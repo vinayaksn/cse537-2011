@@ -90,7 +90,9 @@ A desktop application is used to take this data over network and show the infere
 = Learnings =
 
 1. Coding in Arduino.
+
 2. Using the sensors and their interface with the microcontroller.
+
 3. interfacing ethernet shield with the microcontroller.
 
 
