@@ -49,6 +49,7 @@ http://rocky.digikey.com/weblib/Optek/Web%20photos/OPB960T11.jpg
 6. Contact sensor: tells when the door is opened.
 
 <<<<<<< yours
+http://www.ardx.org/src/circ/ARDX-SC-06-150.png
 
 = Software = 
 
