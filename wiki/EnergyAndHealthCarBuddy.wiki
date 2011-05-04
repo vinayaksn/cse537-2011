@@ -55,6 +55,10 @@ In this milestone we demonstrated the following:
  # Interface an ultra sonic sensor along with a buzzer. The sound of the buzzer was adjusted  inversely proportional to the distance of the sensor from any other object.
  # The sensor was deployed in the car on the back bumper. It was successfully demonstrated in the parking lot of IIIT-Delhi. Distance of 0m to 4m  were detected and feedback to the user was given by the buzzer.  
 
+
+<img src="http://i.imgur.com/pJf10.jpg" />
+Figure 1: Parking sensor in action. A car with 4 parking sensors.
+
 =Plan For Final Demonstration: May 3 =
 We plan to deliver the complete system with all the components developed in the first two demonstrations. We also plan to put our complete system in a box just showing the LCD, LED, Accelerometer and the Ultra sonic sensor. Hence the deliverable are as follows:
  # Parking Assistance giving feedback using the Buzzer
@@ -62,3 +66,11 @@ We plan to deliver the complete system with all the components developed in the 
  # The temperature sensor with the temperature value displayed on the LCD
  # A fan which adjusts it's speed with respect to the temperature value.
  # The smoke sensor was not working properly and hence we changed it with the temperature sensor. Due to lack of time we were not able to buy a new smoke sensor. In future, We will interface the smoke sensor also to the system and will be used by one of us in his car :):). 
+
+== Challenges ==
+ # Deploying the whole system in the car.
+ # The final iteration required the system to be put in a box. It was challenging to design the box accordingly(with proper holes) and ensure proper working of the system.
+ # Dependency of sensor on weather conditions.
+ # Setting proper thresholds.
+ # Powering the AVR board from the car.
+ # Deploying the whole system using only 1 avr board. This was a challenging task as our system had too many wires and we were falling short of pins. (esp PortC) 
