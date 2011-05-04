@@ -7,22 +7,27 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 = Hardware required =
 The following are the hardware required:                                
  # IR sensors
-http://www.google.co.in/imgres?imgurl=http://elecrom.files.wordpress.com/2008/02/cropir-sensors.jpg&imgrefurl=http://elecrom.wordpress.com/2008/02/19/how-to-make-simple-infrared-sensor-modules/&usg=__S9pgum11ioe6Lw9_atUI5r9S4Yo=&h=447&w=600&sz=76&hl=en&start=2&zoom=1&tbnid=OddpRCxo2XukgM:&tbnh=101&tbnw=135&ei=AdjATdDHAoeyrAf77OHtBw&prev=/search%3Fq%3DIR%2Bsensors%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
+http://elecrom.files.wordpress.com/2008/02/cropir-sensors.jpg
+
  # Relays
 http://upload.ecvv.com/upload/Info/200801/China_I_2006315213813493072_PCB_Relays.jpg
 
-http://www.google.co.in/imgres?imgurl=http://upload.ecvv.com/upload/Info/200801/China_I_2006315213813493072_PCB_Relays.jpg&imgrefurl=http://www.ecvv.com/selling-lead/775364.html&usg=__VqbTppSIT4eHU2PPOpKZj69OwVY=&h=604&w=493&sz=33&hl=en&start=69&zoom=1&tbnid=Gn2b5DYVg5Q1GM:&tbnh=135&tbnw=110&ei=Z9jATc3cGInovQPn5KGsBA&prev=/search%3Fq%3Drelays%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
 Two types of relay will be used - 5A and 15A for fan and AC
 
  # Ethernet shield
-http://www.google.co.in/imgres?imgurl=http://www.liquidware.com/system/0000/1920/Arduino_Ethernet_Shield.jpg&imgrefurl=http://www.liquidware.com/shop/show/ETH/Ethernet%2BShield&usg=__j-R-OhBnJAzZbJOL0NkvOhsCgcs=&h=900&w=900&sz=61&hl=en&start=0&zoom=1&tbnid=Yj7JvlUOBGb76M:&tbnh=155&tbnw=144&ei=0tfATcviDcnYrQf-j6nhAw&prev=/search%3Fq%3Dethernet%2Bshield%26hl%3Den%26sa%3DX%26biw%3D1158%26bih%3D635%26tbm%3Disch%26prmd%3Divns&itbs=1&iact=hc&vpx=554&vpy=72&dur=2645&hovh=225&hovw=225&tx=128&ty=161&page=1&ndsp=15&ved=1t:429,r:2,s:0
- # Piezoelectric Buzzer
-http://www.google.co.in/imgres?imgurl=http://walleymusic.com/inbindi/images/piezo_buzzer.jpg&imgrefurl=http://walleymusic.com/inbindi/making.php&usg=__anmXZvxzZFFJJ_yAG0soLeZ8ZNY=&h=156&w=200&sz=8&hl=en&start=1&zoom=1&tbnid=eGyC7W82sSklnM:&tbnh=81&tbnw=104&ei=SNfATdLAGM7OrQeUzYjWAw&prev=/search%3Fq%3Dpiezoelectric%2Bbuzzer%26hl%3Den%26sa%3DX%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
- # ATmega328 microcontroller
- # PIR sensor
-http://www.google.co.in/imgres?imgurl=http://www.tech-faq.com/wp-content/uploads/2011/01/PIR-Sensor.jpg&imgrefurl=http://www.tech-faq.com/pir-sensor.html&usg=__qfEdcJu-QVdSMrPgq7IoQxY6ozk=&h=345&w=450&sz=16&hl=en&start=0&zoom=1&tbnid=yASfyWEnSDN_2M:&tbnh=147&tbnw=204&ei=_9jATb6GEYvyrQeRzrTsAw&prev=/search%3Fq%3DPir%2Bsensor%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1&iact=hc&vpx=863&vpy=118&dur=757&hovh=197&hovw=256&tx=143&ty=122&page=1&ndsp=15&ved=1t:429,r:4,s:0
- # contact sensor
+http://www.liquidware.com/system/0000/1920/Arduino_Ethernet_Shield.jpg
 
+ # Piezoelectric Buzzer
+http://walleymusic.com/inbindi/images/piezo_buzzer.jpg
+
+ # ATmega328 microcontroller
+http://iteadstudio.com/store/images/produce/Platform/ATMega328/ATMega328.JPG
+
+ # PIR sensor
+http://www.tech-faq.com/wp-content/uploads/2011/01/PIR-Sensor.jpg
+
+ # contact sensor(slotted optical sensor)
+http://rocky.digikey.com/weblib/Optek/Web%20photos/OPB960T11.jpg
 = Hardware Functionality =
 
 1. IR sensors: the sensors help to identify the presence of number of people entering or leaving the room.
