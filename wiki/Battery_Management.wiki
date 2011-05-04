@@ -97,7 +97,6 @@ Over the past decade, there has been a considerable amount of growth in the batt
 
 According to a survey by bcg.com , the battery costs will decline steeply till 2020 as the production volume increases. Cost for equipments, individual parts and also the growing levels of automation should trim the cost. Around 70% of the hybrid cars would be using Li-ion batteries and 30% using Ni-Mh batteries till 2020. According to a survey done by pikeresearch.com , vehicles will slowly move from Li-ion to NiMH technology thus reducing the cost. According to the analysis given by bcg.com , the amount that an equipment manufacturer will have to pay will decrease around 60-65% from 2009-2020. Hence the price to consumers will also fall $1400 – $1800 per KWh to $570 - $700 per KWh. 
 
- ftp:///C://Users//prateek//Desktop//j1.jpg
 = References =
  # http://www.nrel.gov/vehiclesandfuels/energystorage/pdfs/3a_2002_01_1918.pdf
  # http://www.dolcera.com/wiki/index.php?title=Hybrid_Electric_Vehicle_Battery_System
