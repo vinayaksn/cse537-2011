@@ -117,4 +117,4 @@ A desktop application is used to take this data over network and show the infere
 
 = Acknowledgenment =
 
-We would like to thank Dr.Amarjeet Sir for guiding us in making the ESaver Room. A special thanks to Mr.Abhishek Bharadwaj and Sammy Sir for providing us 
+We would like to thank Dr.Amarjeet Sir for guiding us in making the ESaver Room. A special thanks to Mr.Abhishek Bharadwaj and Sammy sir for clearing our doubts and making the work easier by providing us with lab equipments on time.
