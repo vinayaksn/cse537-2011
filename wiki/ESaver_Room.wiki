@@ -51,6 +51,8 @@ http://rocky.digikey.com/weblib/Optek/Web%20photos/OPB960T11.jpg
 <<<<<<< yours
 http://www.ardx.org/src/circ/ARDX-SC-06-150.png
 
+http://coopy.sproutlab.com/projects/rain-umbrellas/images/rain-one-sensor-circuit-diagram.png
+
 = Software = 
 
 The software initially written on AVR C with the IR sensor, PIR sensor and the switching the bulb on and off was working untill the ethernet shild came in. 
