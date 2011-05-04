@@ -17,7 +17,8 @@ Two types of relay will be used - 5A and 15A for fan and AC
 
 = Hardware architecture diagram =
 
-We integrated together 5 different modules whose hardware 
+We integrated together 5 different modules whose hardware diagrams are shown below :
+
 = Hardware Functionality =
 
 1. IR sensors: the sensors help to identify the presence of number of people entering or leaving the room.
