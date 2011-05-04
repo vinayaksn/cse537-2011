@@ -6,56 +6,37 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 
 = Hardware required =
 The following are the hardware required:                                
- # IR sensors -Rs 30 (Everest sales shop no 629)
- # Relays - Rs 30 (Everest sales shop no 629)
+ # IR sensors
+http://www.google.co.in/imgres?imgurl=http://elecrom.files.wordpress.com/2008/02/cropir-sensors.jpg&imgrefurl=http://elecrom.wordpress.com/2008/02/19/how-to-make-simple-infrared-sensor-modules/&usg=__S9pgum11ioe6Lw9_atUI5r9S4Yo=&h=447&w=600&sz=76&hl=en&start=2&zoom=1&tbnid=OddpRCxo2XukgM:&tbnh=101&tbnw=135&ei=AdjATdDHAoeyrAf77OHtBw&prev=/search%3Fq%3DIR%2Bsensors%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
+ # Relays
+http://www.google.co.in/imgres?imgurl=http://upload.ecvv.com/upload/Info/200801/China_I_2006315213813493072_PCB_Relays.jpg&imgrefurl=http://www.ecvv.com/selling-lead/775364.html&usg=__VqbTppSIT4eHU2PPOpKZj69OwVY=&h=604&w=493&sz=33&hl=en&start=69&zoom=1&tbnid=Gn2b5DYVg5Q1GM:&tbnh=135&tbnw=110&ei=Z9jATc3cGInovQPn5KGsBA&prev=/search%3Fq%3Drelays%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
 Two types of relay will be used - 5A and 15A for fan and AC
- # Ethernet shield - Rs 2500
- # Piezoelectric buzzer - 
+ # Ethernet shield
+http://www.google.co.in/imgres?imgurl=http://www.liquidware.com/system/0000/1920/Arduino_Ethernet_Shield.jpg&imgrefurl=http://www.liquidware.com/shop/show/ETH/Ethernet%2BShield&usg=__j-R-OhBnJAzZbJOL0NkvOhsCgcs=&h=900&w=900&sz=61&hl=en&start=0&zoom=1&tbnid=Yj7JvlUOBGb76M:&tbnh=155&tbnw=144&ei=0tfATcviDcnYrQf-j6nhAw&prev=/search%3Fq%3Dethernet%2Bshield%26hl%3Den%26sa%3DX%26biw%3D1158%26bih%3D635%26tbm%3Disch%26prmd%3Divns&itbs=1&iact=hc&vpx=554&vpy=72&dur=2645&hovh=225&hovw=225&tx=128&ty=161&page=1&ndsp=15&ved=1t:429,r:2,s:0
+ # Piezoelectric Buzzer
+http://www.google.co.in/imgres?imgurl=http://walleymusic.com/inbindi/images/piezo_buzzer.jpg&imgrefurl=http://walleymusic.com/inbindi/making.php&usg=__anmXZvxzZFFJJ_yAG0soLeZ8ZNY=&h=156&w=200&sz=8&hl=en&start=1&zoom=1&tbnid=eGyC7W82sSklnM:&tbnh=81&tbnw=104&ei=SNfATdLAGM7OrQeUzYjWAw&prev=/search%3Fq%3Dpiezoelectric%2Bbuzzer%26hl%3Den%26sa%3DX%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1
  # ATmega328 microcontroller
- # PIR sensor - Rs 250 (Everest sales shop no 629)
- # contact sensor - Rs 50 (Everest sales shop no 629)
-
-= Hardware architecture diagram =
-
-We integrated together 5 different modules whose hardware diagrams are shown below :
+ # PIR sensor
+http://www.google.co.in/imgres?imgurl=http://www.tech-faq.com/wp-content/uploads/2011/01/PIR-Sensor.jpg&imgrefurl=http://www.tech-faq.com/pir-sensor.html&usg=__qfEdcJu-QVdSMrPgq7IoQxY6ozk=&h=345&w=450&sz=16&hl=en&start=0&zoom=1&tbnid=yASfyWEnSDN_2M:&tbnh=147&tbnw=204&ei=_9jATb6GEYvyrQeRzrTsAw&prev=/search%3Fq%3DPir%2Bsensor%26hl%3Den%26biw%3D1158%26bih%3D635%26tbm%3Disch&itbs=1&iact=hc&vpx=863&vpy=118&dur=757&hovh=197&hovw=256&tx=143&ty=122&page=1&ndsp=15&ved=1t:429,r:4,s:0
+ # contact sensor
 
 = Hardware Functionality =
 
 1. IR sensors: the sensors help to identify the presence of number of people entering or leaving the room.
+
+
+
 2. Relays: it will be used to operate all the lights and fans in the room.
+
+
+
 3. Ethernet Shield: it will be used to inform the user over the internet about the status of the electricity usage in the room.
-4. Piezoelectric Buzzer: it creates sound when any unauthorized  is detected by proximity sensor 
+
+4. Piezoelectric Buzzer: it creates sound when any movement is detected by proximity sensor
+
 5. LCD: To display the number of people in the room.
+
 6. Contact sensor: tells when the door is opened.
-
-
-= Software = 
-
-
-
-
-= Learnings =
-
-1. Coding in Arduino.
-2. Using the sensors and their interface with the microcontroller.
-3. interfacing ethernet shield with the microcontroller.
-
-
-= Challenges =
-
-1. Setting up the whole system in the real world was very different from the basic setup of our project. (Making the wires not visible and having clean connections)
-
-2. The microcontroller and the wires which we were using in our project were taken by different group and they refused to return it at the time of the demo. We were left with broken wires and did not get to crimp them the wires because the other group had taken it from the lab.
-
-3. We were sharing the ethernet shield with 2 other groups. 
-
-4. The contact sensor we bought did not work as the IR rays were not emitted by the emitter in the sensor.
-
-5. The 
-
-
-
-
 
 = Steps =
 
@@ -64,6 +45,8 @@ We integrated together 5 different modules whose hardware diagrams are shown bel
 2.If the count is greater than 0 i.e. there is one or more people in the room turn on all of the appliances. (Done) 
 
 3.If the count is equal to 0 i.e. there is no one in the room turn off all of the appliances. (Done) 
+
+4.The current sensors measure the current consumption in all the devices, through which we can calculate the energy saved. (To be done)
 
 5.Through the Ethernet shield send the collected data to the computer, where it can be hoisted on the web. (To be done)
 
@@ -78,5 +61,3 @@ When somebody enters into the room then the counter is incremented by one and th
 Further proximity sensors is used to monitor any movement in the room. In case if the counter reads zero and proximity sensor detects any movement, burglar alarm will switch on, alerting unauthorized intrusion. Also, a contact sensor is used to detect when the door is closed or opened.
 
 A desktop application is used to take this data over network and show the inference (in terms of total number of people in the room, time since last presence was detected using PIR and status of window/door) in real time. Ethernet shield is used to send this data on to the network so that the user can view the status of the appliances and automatically switch the corresponding appliance on/off.
-
-= References =
