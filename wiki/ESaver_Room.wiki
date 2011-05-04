@@ -36,10 +36,18 @@ We integrated together 5 different modules whose hardware diagrams are shown bel
 
 = Learnings =
 
+1. Coding in Arduino.
+2. Using the sensors and their interface with the microcontroller.
+3. interfacing ethernet shield with the microcontroller.
+
+
 = Challenges =
 
-1. 
-
+1. Setting up the whole system in the real world was very different from the basic setup of our project. (Making the wires not visible and having clean connections)
+2. The microcontroller and the wires which we were using in our project were taken by different group and they refused to return it at the time of the demo. We were left with broken wires and did not get to crimp them the wires because the other group had taken it from the lab.
+3. We were sharing the ethernet shield with 2 other groups. 
+4. The contact sensor we bought did not work as the IR rays were not emitted by the emitter in the sensor.
+5. The 
 
 
 
