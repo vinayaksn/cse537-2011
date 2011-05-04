@@ -6,14 +6,14 @@ We all waste a lot of power throughout the day due to our carelessness when we d
 
 = Hardware required =
 The following are the hardware required:                                
- # IR sensors 
- # Relays
+ # IR sensors -Rs 30 (Everest sales shop no 629)
+ # Relays - Rs 30 (Everest sales shop no 629)
 Two types of relay will be used - 5A and 15A for fan and AC
- # Ethernet shield
- # Piezoelectric buzzer
+ # Ethernet shield - Rs 2500
+ # Piezoelectric buzzer - 
  # ATmega328 microcontroller
- # PIR sensor
- # contact sensor
+ # PIR sensor - Rs 250 (Everest sales shop no 629)
+ # contact sensor - Rs 50 (Everest sales shop no 629)
 
 = Hardware architecture diagram =
 
