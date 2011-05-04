@@ -58,6 +58,8 @@ http://coopy.sproutlab.com/projects/rain-umbrellas/images/rain-one-sensor-circui
 
 http://www.sunrom.com/images/media/3565A.jpg
 
+https://mail.google.com/mail/?ui=2&ik=c9690a2170&view=att&th=12fb9a7ef4c919be&attid=0.1&disp=inline&realattid=f_gn9vkzv70&zw
+
 = Software = 
 
 The software initially written on AVR C with the IR sensor, PIR sensor and the switching the bulb on and off was working untill the ethernet shild came in. 
