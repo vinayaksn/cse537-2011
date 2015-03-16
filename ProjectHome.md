@@ -1,0 +1,1 @@
+The students will keep all the code for their programming assignments as well as for their projects on this code base.
